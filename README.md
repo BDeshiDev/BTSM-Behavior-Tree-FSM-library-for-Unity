@@ -21,3 +21,6 @@ To use:
 7. The Editor window will work during playmode.
 
 I mostly made this for myself but I will add a demo scene if there is interest. The project I'm using this in would be hard to use as an independent demo project.
+
+# Manual
+https://bdeshidev.github.io/BTSM-Behavior-Tree-FSM-library-for-Unity/manual/
