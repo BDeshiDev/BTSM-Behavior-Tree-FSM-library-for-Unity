@@ -1,0 +1,1119 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StateMachine&lt;TState&gt;
+ |  |  </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StateMachine&lt;TState&gt;
+ |  |  ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_StateMachine_1.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.StateMachine%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BDeshi.BTSM.StateMachine`1">
+
+
+
+  <h1 id="BDeshi_BTSM_StateMachine_1" data-uid="BDeshi.BTSM.StateMachine`1" class="text-break">
+    Class StateMachine&lt;TState&gt;
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BDeshi.html">BDeshi</a>.<a class="xref" href="BDeshi.BTSM.html">BTSM</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StateMachine&lt;TState&gt; : IRunnableStateMachine where TState : class, IState</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TState</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">StateMachine&lt;TState&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BDeshi.BTSM.IRunnableStateMachine.html">IRunnableStateMachine</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="BDeshi_BTSM_StateMachine_1__ctor_" data-uid="BDeshi.BTSM.StateMachine`1.#ctor*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1__ctor__0_" data-uid="BDeshi.BTSM.StateMachine`1.#ctor(`0)">
+  StateMachine(TState)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StateMachine(TState startingState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startingState</code> <span class="xref">TState</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_ShouldLog" data-uid="BDeshi.BTSM.StateMachine`1.ShouldLog">
+  ShouldLog
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldLog</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_emptyTransitions" data-uid="BDeshi.BTSM.StateMachine`1.emptyTransitions">
+  emptyTransitions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This is there in case current state does not have transitions
+and so that we don't have to create a new list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly List&lt;Transition&lt;TState&gt;&gt; emptyTransitions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_globalTransitions" data-uid="BDeshi.BTSM.StateMachine`1.globalTransitions">
+  globalTransitions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transitions that are always active</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Transition&lt;TState&gt;&gt; globalTransitions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_manualTransitions" data-uid="BDeshi.BTSM.StateMachine`1.manualTransitions">
+  manualTransitions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Transition&lt;TState&gt;&gt; manualTransitions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_startingState" data-uid="BDeshi.BTSM.StateMachine`1.startingState">
+  startingState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TState startingState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TState</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_transitions" data-uid="BDeshi.BTSM.StateMachine`1.transitions">
+  transitions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transitions from a state to another</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;IState, List&lt;Transition&lt;TState&gt;&gt;&gt; transitions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="BDeshi.BTSM.IState.html">IState</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_ActiveTransitions_" data-uid="BDeshi.BTSM.StateMachine`1.ActiveTransitions*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_ActiveTransitions" data-uid="BDeshi.BTSM.StateMachine`1.ActiveTransitions">
+  ActiveTransitions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transitions list for this state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TransitionBase&gt; ActiveTransitions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="BDeshi.BTSM.TransitionBase.html">TransitionBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_CurState_" data-uid="BDeshi.BTSM.StateMachine`1.CurState*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_CurState" data-uid="BDeshi.BTSM.StateMachine`1.CurState">
+  CurState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IState CurState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BDeshi.BTSM.IState.html">IState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_CurTypedState_" data-uid="BDeshi.BTSM.StateMachine`1.CurTypedState*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_CurTypedState" data-uid="BDeshi.BTSM.StateMachine`1.CurTypedState">
+  CurTypedState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TState CurTypedState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TState</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_DebugContext_" data-uid="BDeshi.BTSM.StateMachine`1.DebugContext*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_DebugContext" data-uid="BDeshi.BTSM.StateMachine`1.DebugContext">
+  DebugContext
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject DebugContext { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_GlobalTransitions_" data-uid="BDeshi.BTSM.StateMachine`1.GlobalTransitions*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_GlobalTransitions" data-uid="BDeshi.BTSM.StateMachine`1.GlobalTransitions">
+  GlobalTransitions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transitions that are always active</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TransitionBase&gt; GlobalTransitions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="BDeshi.BTSM.TransitionBase.html">TransitionBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_ManualTransition_" data-uid="BDeshi.BTSM.StateMachine`1.ManualTransition*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_ManualTransition" data-uid="BDeshi.BTSM.StateMachine`1.ManualTransition">
+  ManualTransition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transitions that are not evaluated by the fsm
+But can be made manually
+and will be tracked
+You can change states without this
+But that won't be shown in the UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TransitionBase&gt; ManualTransition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="BDeshi.BTSM.TransitionBase.html">TransitionBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_activeTransitions_" data-uid="BDeshi.BTSM.StateMachine`1.activeTransitions*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_activeTransitions" data-uid="BDeshi.BTSM.StateMachine`1.activeTransitions">
+  activeTransitions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transitions list for this state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Transition&lt;TState&gt;&gt; activeTransitions { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_HandleTransitioned_" data-uid="BDeshi.BTSM.StateMachine`1.HandleTransitioned*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_HandleTransitioned" data-uid="BDeshi.BTSM.StateMachine`1.HandleTransitioned">
+  HandleTransitioned()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set transitions list to curState's.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void HandleTransitioned()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_Tick_" data-uid="BDeshi.BTSM.StateMachine`1.Tick*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_Tick" data-uid="BDeshi.BTSM.StateMachine`1.Tick">
+  Tick()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Tick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_addGlobalTransition_" data-uid="BDeshi.BTSM.StateMachine`1.addGlobalTransition*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_addGlobalTransition_BDeshi_BTSM_Transition__0__" data-uid="BDeshi.BTSM.StateMachine`1.addGlobalTransition(BDeshi.BTSM.Transition{`0})">
+  addGlobalTransition(Transition&lt;TState&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transition&lt;TState&gt; addGlobalTransition(Transition&lt;TState&gt; t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_addGlobalTransition_" data-uid="BDeshi.BTSM.StateMachine`1.addGlobalTransition*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_addGlobalTransition__0_System_Func_System_Boolean__System_Action_" data-uid="BDeshi.BTSM.StateMachine`1.addGlobalTransition(`0,System.Func{System.Boolean},System.Action)">
+  addGlobalTransition(TState, Func&lt;bool&gt;, Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transition&lt;TState&gt; addGlobalTransition(TState to, Func&lt;bool&gt; condition, Action onTaken = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>to</code> <span class="xref">TState</span></dt>
+    <dd></dd>
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>onTaken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_addManualTransitionTo_" data-uid="BDeshi.BTSM.StateMachine`1.addManualTransitionTo*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_addManualTransitionTo__0_System_Action_" data-uid="BDeshi.BTSM.StateMachine`1.addManualTransitionTo(`0,System.Action)">
+  addManualTransitionTo(TState, Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>fsm never checks these during tick
+But can be used via forceTakeTransition()
+And also shows up in Editor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transition&lt;TState&gt; addManualTransitionTo(TState to, Action onTaken = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>to</code> <span class="xref">TState</span></dt>
+    <dd></dd>
+    <dt><code>onTaken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_addTransition_" data-uid="BDeshi.BTSM.StateMachine`1.addTransition*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_addTransition_BDeshi_BTSM_IState_BDeshi_BTSM_Transition__0__" data-uid="BDeshi.BTSM.StateMachine`1.addTransition(BDeshi.BTSM.IState,BDeshi.BTSM.Transition{`0})">
+  addTransition(IState, Transition&lt;TState&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transition&lt;TState&gt; addTransition(IState from, Transition&lt;TState&gt; t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="BDeshi.BTSM.IState.html">IState</a></dt>
+    <dd></dd>
+    <dt><code>t</code> <a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_addTransition_" data-uid="BDeshi.BTSM.StateMachine`1.addTransition*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_addTransition__0__0_System_Func_System_Boolean__System_Action_" data-uid="BDeshi.BTSM.StateMachine`1.addTransition(`0,`0,System.Func{System.Boolean},System.Action)">
+  addTransition(TState, TState, Func&lt;bool&gt;, Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transition&lt;TState&gt; addTransition(TState from, TState to, Func&lt;bool&gt; condition, Action onTaken = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <span class="xref">TState</span></dt>
+    <dd></dd>
+    <dt><code>to</code> <span class="xref">TState</span></dt>
+    <dd></dd>
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>onTaken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_cleanup_" data-uid="BDeshi.BTSM.StateMachine`1.cleanup*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_cleanup" data-uid="BDeshi.BTSM.StateMachine`1.cleanup">
+  cleanup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void cleanup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_enter_" data-uid="BDeshi.BTSM.StateMachine`1.enter*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_enter_System_Boolean_" data-uid="BDeshi.BTSM.StateMachine`1.enter(System.Boolean)">
+  enter(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void enter(bool callEnter = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callEnter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_exitCurState_" data-uid="BDeshi.BTSM.StateMachine`1.exitCurState*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_exitCurState" data-uid="BDeshi.BTSM.StateMachine`1.exitCurState">
+  exitCurState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void exitCurState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_forceTakeTransition_" data-uid="BDeshi.BTSM.StateMachine`1.forceTakeTransition*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_forceTakeTransition_BDeshi_BTSM_Transition__0__System_Boolean_" data-uid="BDeshi.BTSM.StateMachine`1.forceTakeTransition(BDeshi.BTSM.Transition{`0},System.Boolean)">
+  forceTakeTransition(Transition&lt;TState&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void forceTakeTransition(Transition&lt;TState&gt; t, bool reEnter = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;</dt>
+    <dd></dd>
+    <dt><code>reEnter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_getAllStates_" data-uid="BDeshi.BTSM.StateMachine`1.getAllStates*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_getAllStates" data-uid="BDeshi.BTSM.StateMachine`1.getAllStates">
+  getAllStates()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IState[] getAllStates()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BDeshi.BTSM.IState.html">IState</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_transitionTo_" data-uid="BDeshi.BTSM.StateMachine`1.transitionTo*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_transitionTo__0_System_Boolean_System_Boolean_" data-uid="BDeshi.BTSM.StateMachine`1.transitionTo(`0,System.Boolean,System.Boolean)">
+  transitionTo(TState, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transitions to a state given that it is null
+Calls oldstate.exit() if it is not null
+Then sets up newState via newState.enter()
+Handles recursion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void transitionTo(TState newState, bool callEnter = true, bool forceEnterIfSameState = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newState</code> <span class="xref">TState</span></dt>
+    <dd><p>Limit this to states this Dictionary knows about. Otherwise, the Actions/Transitions will not work</p>
+</dd>
+    <dt><code>callEnter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, call the enter function in the state(s) transitioned to
+Usecase: initialize curState without calling enter</p>
+</dd>
+    <dt><code>forceEnterIfSameState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_StateMachine_1_tryGetTransitionsForState_" data-uid="BDeshi.BTSM.StateMachine`1.tryGetTransitionsForState*"></a>
+
+  <h3 id="BDeshi_BTSM_StateMachine_1_tryGetTransitionsForState_BDeshi_BTSM_IState_System_Collections_Generic_IEnumerable_BDeshi_BTSM_TransitionBase___" data-uid="BDeshi.BTSM.StateMachine`1.tryGetTransitionsForState(BDeshi.BTSM.IState,System.Collections.Generic.IEnumerable{BDeshi.BTSM.TransitionBase}@)">
+  tryGetTransitionsForState(IState, out IEnumerable&lt;TransitionBase&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/StateMachine.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool tryGetTransitionsForState(IState state, out IEnumerable&lt;TransitionBase&gt; transitionsForState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="BDeshi.BTSM.IState.html">IState</a></dt>
+    <dd></dd>
+    <dt><code>transitionsForState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="BDeshi.BTSM.TransitionBase.html">TransitionBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/BDeshiDev" target="_blank">BDeshiDev</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

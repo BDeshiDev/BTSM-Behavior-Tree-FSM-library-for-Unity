@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class BTWrapperState
+      <title>Class SimpleTransition&lt;TState&gt;
  |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class BTWrapperState
+      <meta name="title" content="Class SimpleTransition&lt;TState&gt;
  |  |  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_BTWrapperState.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.BTWrapperState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_SimpleTransition_1.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.SimpleTransition%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,13 +85,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BDeshi.BTSM.BTWrapperState">
+        <article data-uid="BDeshi.BTSM.SimpleTransition`1">
 
 
 
-  <h1 id="BDeshi_BTSM_BTWrapperState" data-uid="BDeshi.BTSM.BTWrapperState" class="text-break">
-    Class BTWrapperState
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTWrapperState.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BDeshi_BTSM_SimpleTransition_1" data-uid="BDeshi.BTSM.SimpleTransition`1" class="text-break">
+    Class SimpleTransition&lt;TState&gt;
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/SimpleTransition.cs/#L5"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -103,26 +103,30 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BTWrapperState : StateBase, IState, IBTWrapperState</code></pre>
+    <pre><code class="lang-csharp hljs">public class SimpleTransition&lt;TState&gt; : Transition&lt;TState&gt;, TransitionBase where TState : IState</code></pre>
   </div>
 
 
 
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TState</code></dt>
+    <dd></dd>
+  </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.StateBase.html">StateBase</a></div>
-      <div><span class="xref">BTWrapperState</span></div>
+      <div><span class="xref">SimpleTransition&lt;TState&gt;</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BDeshi.BTSM.IState.html">IState</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.IBTWrapperState.html">IBTWrapperState</a></div>
+      <div><a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition</a>&lt;TState&gt;</div>
+      <div><a class="xref" href="BDeshi.BTSM.TransitionBase.html">TransitionBase</a></div>
     </dd>
   </dl>
 
@@ -130,27 +134,6 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_Prefix">StateBase.Prefix</a>
-    </div>
-    <div>
-      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_FullStateName">StateBase.FullStateName</a>
-    </div>
-    <div>
-      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_Parent">StateBase.Parent</a>
-    </div>
-    <div>
-      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_Name">StateBase.Name</a>
-    </div>
-    <div>
-      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_AsChildOf_BDeshi_BTSM_IState_">StateBase.AsChildOf(IState)</a>
-    </div>
-    <div>
-      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_GetParentChainName">StateBase.GetParentChainName()</a>
-    </div>
-    <div>
-      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_Clone">StateBase.Clone()</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -183,24 +166,31 @@
 </h2>
 
 
-  <a id="BDeshi_BTSM_BTWrapperState__ctor_" data-uid="BDeshi.BTSM.BTWrapperState.#ctor*"></a>
+  <a id="BDeshi_BTSM_SimpleTransition_1__ctor_" data-uid="BDeshi.BTSM.SimpleTransition`1.#ctor*"></a>
 
-  <h3 id="BDeshi_BTSM_BTWrapperState__ctor_BDeshi_BTSM_BtNodeBase_" data-uid="BDeshi.BTSM.BTWrapperState.#ctor(BDeshi.BTSM.BtNodeBase)">
-  BTWrapperState(BtNodeBase)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTWrapperState.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_SimpleTransition_1__ctor__0_System_Func_System_Boolean__System_Action_" data-uid="BDeshi.BTSM.SimpleTransition`1.#ctor(`0,System.Func{System.Boolean},System.Action)">
+  SimpleTransition(TState, Func&lt;bool&gt;, Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/SimpleTransition.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a transition to a state</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BTWrapperState(BtNodeBase btRoot)</code></pre>
+    <pre><code class="lang-csharp hljs">public SimpleTransition(TState s, Func&lt;bool&gt; evaluateFunc = null, Action onTaken = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>btRoot</code> <a class="xref" href="BDeshi.BTSM.BtNodeBase.html">BtNodeBase</a></dt>
+    <dt><code>s</code> <span class="xref">TState</span></dt>
     <dd></dd>
+    <dt><code>evaluateFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>If NULL Transition will ALWAYS BE TRUE</p>
+</dd>
+    <dt><code>onTaken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd><p>Executed if this is taken</p>
+</dd>
   </dl>
 
 
@@ -218,18 +208,18 @@
 </h2>
 
 
-  <a id="BDeshi_BTSM_BTWrapperState_BTRoot_" data-uid="BDeshi.BTSM.BTWrapperState.BTRoot*"></a>
+  <a id="BDeshi_BTSM_SimpleTransition_1_OnTaken_" data-uid="BDeshi.BTSM.SimpleTransition`1.OnTaken*"></a>
 
-  <h3 id="BDeshi_BTSM_BTWrapperState_BTRoot" data-uid="BDeshi.BTSM.BTWrapperState.BTRoot">
-  BTRoot
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTWrapperState.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_SimpleTransition_1_OnTaken" data-uid="BDeshi.BTSM.SimpleTransition`1.OnTaken">
+  OnTaken
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/SimpleTransition.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IBtNode BTRoot { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Action OnTaken { get; }</code></pre>
   </div>
 
 
@@ -238,7 +228,7 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
     <dd></dd>
   </dl>
 
@@ -249,18 +239,18 @@
 
 
 
-  <a id="BDeshi_BTSM_BTWrapperState_LastStatus_" data-uid="BDeshi.BTSM.BTWrapperState.LastStatus*"></a>
+  <a id="BDeshi_BTSM_SimpleTransition_1_SuccessState_" data-uid="BDeshi.BTSM.SimpleTransition`1.SuccessState*"></a>
 
-  <h3 id="BDeshi_BTSM_BTWrapperState_LastStatus" data-uid="BDeshi.BTSM.BTWrapperState.LastStatus">
-  LastStatus
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTWrapperState.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_SimpleTransition_1_SuccessState" data-uid="BDeshi.BTSM.SimpleTransition`1.SuccessState">
+  SuccessState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/SimpleTransition.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BTStatus LastStatus { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IState SuccessState { get; }</code></pre>
   </div>
 
 
@@ -269,7 +259,100 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
+    <dt><a class="xref" href="BDeshi.BTSM.IState.html">IState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_SimpleTransition_1_SuccessTypedState_" data-uid="BDeshi.BTSM.SimpleTransition`1.SuccessTypedState*"></a>
+
+  <h3 id="BDeshi_BTSM_SimpleTransition_1_SuccessTypedState" data-uid="BDeshi.BTSM.SimpleTransition`1.SuccessTypedState">
+  SuccessTypedState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/SimpleTransition.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TState SuccessTypedState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TState</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_SimpleTransition_1_TakenLastTime_" data-uid="BDeshi.BTSM.SimpleTransition`1.TakenLastTime*"></a>
+
+  <h3 id="BDeshi_BTSM_SimpleTransition_1_TakenLastTime" data-uid="BDeshi.BTSM.SimpleTransition`1.TakenLastTime">
+  TakenLastTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/SimpleTransition.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TakenLastTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_SimpleTransition_1_TransitionToSameState_" data-uid="BDeshi.BTSM.SimpleTransition`1.TransitionToSameState*"></a>
+
+  <h3 id="BDeshi_BTSM_SimpleTransition_1_TransitionToSameState" data-uid="BDeshi.BTSM.SimpleTransition`1.TransitionToSameState">
+  TransitionToSameState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/SimpleTransition.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TransitionToSameState { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -284,119 +367,28 @@
 </h2>
 
 
-  <a id="BDeshi_BTSM_BTWrapperState_EnterState_" data-uid="BDeshi.BTSM.BTWrapperState.EnterState*"></a>
+  <a id="BDeshi_BTSM_SimpleTransition_1_Evaluate_" data-uid="BDeshi.BTSM.SimpleTransition`1.Evaluate*"></a>
 
-  <h3 id="BDeshi_BTSM_BTWrapperState_EnterState" data-uid="BDeshi.BTSM.BTWrapperState.EnterState">
-  EnterState()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTWrapperState.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_SimpleTransition_1_Evaluate" data-uid="BDeshi.BTSM.SimpleTransition`1.Evaluate">
+  Evaluate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/SimpleTransition.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void EnterState()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BDeshi_BTSM_BTWrapperState_ExitState_" data-uid="BDeshi.BTSM.BTWrapperState.ExitState*"></a>
-
-  <h3 id="BDeshi_BTSM_BTWrapperState_ExitState" data-uid="BDeshi.BTSM.BTWrapperState.ExitState">
-  ExitState()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTWrapperState.cs/#L45"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void ExitState()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BDeshi_BTSM_BTWrapperState_Tick_" data-uid="BDeshi.BTSM.BTWrapperState.Tick*"></a>
-
-  <h3 id="BDeshi_BTSM_BTWrapperState_Tick" data-uid="BDeshi.BTSM.BTWrapperState.Tick">
-  Tick()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTWrapperState.cs/#L40"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Tick()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BDeshi_BTSM_BTWrapperState_createRootSuccessTransition_" data-uid="BDeshi.BTSM.BTWrapperState.createRootSuccessTransition*"></a>
-
-  <h3 id="BDeshi_BTSM_BTWrapperState_createRootSuccessTransition__1___0_" data-uid="BDeshi.BTSM.BTWrapperState.createRootSuccessTransition``1(``0)">
-  createRootSuccessTransition&lt;TState&gt;(TState)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTWrapperState.cs/#L23"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Creates a transition to a state when the root BT node is complete.
-DOES NOT automagically go to statemachine.
-Do that yourself.</p>
+  <div class="markdown level1 summary"><p>If Func return true, else return false</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BTCompleteTransition&lt;TState&gt; createRootSuccessTransition&lt;TState&gt;(TState to) where TState : IState</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Evaluate()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>to</code> <span class="xref">TState</span></dt>
-    <dd></dd>
-  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.BTCompleteTransition-1.html">BTCompleteTransition</a>&lt;TState&gt;</dt>
-    <dd><p>Newly Created transition.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TState</code></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
+
 
 
 

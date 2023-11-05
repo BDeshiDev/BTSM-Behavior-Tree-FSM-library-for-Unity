@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class FallbackNode
+      <title>Class MaintainConditionNode
  |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class FallbackNode
+      <meta name="title" content="Class MaintainConditionNode
  |  |  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_FallbackNode.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.FallbackNode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_MaintainConditionNode.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.MaintainConditionNode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,13 +85,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BDeshi.BTSM.FallbackNode">
+        <article data-uid="BDeshi.BTSM.MaintainConditionNode">
 
 
 
-  <h1 id="BDeshi_BTSM_FallbackNode" data-uid="BDeshi.BTSM.FallbackNode" class="text-break">
-    Class FallbackNode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BDeshi_BTSM_MaintainConditionNode" data-uid="BDeshi.BTSM.MaintainConditionNode" class="text-break">
+    Class MaintainConditionNode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -99,12 +99,11 @@
   
   </div>
 
-  <div class="markdown summary"><p>keep on trying child    ren one by one until one succeeds</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FallbackNode : BTMultiDecorator, IBtNode</code></pre>
+    <pre><code class="lang-csharp hljs">public class MaintainConditionNode : BtNodeBase, IBtNode</code></pre>
   </div>
 
 
@@ -115,9 +114,7 @@
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="BDeshi.BTSM.BtNodeBase.html">BtNodeBase</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.BTDecorator.html">BTDecorator</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.BTMultiDecorator.html">BTMultiDecorator</a></div>
-      <div><span class="xref">FallbackNode</span></div>
+      <div><span class="xref">MaintainConditionNode</span></div>
     </dd>
   </dl>
 
@@ -132,9 +129,6 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="BDeshi.BTSM.BTMultiDecorator.html#BDeshi_BTSM_BTMultiDecorator_appendChild_BDeshi_BTSM_IBtNode_">BTMultiDecorator.appendChild(IBtNode)</a>
-    </div>
     <div>
       <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_Tick">BtNodeBase.Tick()</a>
     </div>
@@ -185,54 +179,31 @@
 </h2>
 
 
-  <a id="BDeshi_BTSM_FallbackNode__ctor_" data-uid="BDeshi.BTSM.FallbackNode.#ctor*"></a>
+  <a id="BDeshi_BTSM_MaintainConditionNode__ctor_" data-uid="BDeshi.BTSM.MaintainConditionNode.#ctor*"></a>
 
-  <h3 id="BDeshi_BTSM_FallbackNode__ctor_System_Boolean_" data-uid="BDeshi.BTSM.FallbackNode.#ctor(System.Boolean)">
-  FallbackNode(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_MaintainConditionNode__ctor_System_Func_System_Boolean__System_Single_System_Boolean_BDeshi_BTSM_BTStatus_BDeshi_BTSM_BTStatus_" data-uid="BDeshi.BTSM.MaintainConditionNode.#ctor(System.Func{System.Boolean},System.Single,System.Boolean,BDeshi.BTSM.BTStatus,BDeshi.BTSM.BTStatus)">
+  MaintainConditionNode(Func&lt;bool&gt;, float, bool, BTStatus, BTStatus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FallbackNode(bool retry = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public MaintainConditionNode(Func&lt;bool&gt; func, float maintainTime, bool resetOnFail = true, BTStatus successState = BTStatus.Success, BTStatus waitState = BTStatus.Running)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>retry</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BDeshi_BTSM_FallbackNode__ctor_" data-uid="BDeshi.BTSM.FallbackNode.#ctor*"></a>
-
-  <h3 id="BDeshi_BTSM_FallbackNode__ctor_System_Collections_Generic_List_BDeshi_BTSM_IBtNode__" data-uid="BDeshi.BTSM.FallbackNode.#ctor(System.Collections.Generic.List{BDeshi.BTSM.IBtNode})">
-  FallbackNode(List&lt;IBtNode&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L20"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FallbackNode(List&lt;IBtNode&gt; children)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>children</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a>&gt;</dt>
+    <dt><code>maintainTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>resetOnFail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>successState</code> <a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
+    <dd></dd>
+    <dt><code>waitState</code> <a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
     <dd></dd>
   </dl>
 
@@ -252,16 +223,46 @@
 
 
 
-  <h3 id="BDeshi_BTSM_FallbackNode_retry" data-uid="BDeshi.BTSM.FallbackNode.retry">
-  retry
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_MaintainConditionNode_maintainTimer" data-uid="BDeshi.BTSM.MaintainConditionNode.maintainTimer">
+  maintainTimer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool retry</code></pre>
+    <pre><code class="lang-csharp hljs">public FiniteTimer maintainTimer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FiniteTimer</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="BDeshi_BTSM_MaintainConditionNode_resetOnFail" data-uid="BDeshi.BTSM.MaintainConditionNode.resetOnFail">
+  resetOnFail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool resetOnFail</code></pre>
   </div>
 
 
@@ -281,33 +282,58 @@
 
 
 
-  <h2 class="section" id="properties">Properties
-</h2>
 
-
-  <a id="BDeshi_BTSM_FallbackNode_GetActiveChildren_" data-uid="BDeshi.BTSM.FallbackNode.GetActiveChildren*"></a>
-
-  <h3 id="BDeshi_BTSM_FallbackNode_GetActiveChildren" data-uid="BDeshi.BTSM.FallbackNode.GetActiveChildren">
-  GetActiveChildren
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_MaintainConditionNode_successState" data-uid="BDeshi.BTSM.MaintainConditionNode.successState">
+  successState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;IBtNode&gt; GetActiveChildren { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public BTStatus successState</code></pre>
   </div>
 
 
 
 
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a>&gt;</dt>
+    <dt><a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="BDeshi_BTSM_MaintainConditionNode_waitState" data-uid="BDeshi.BTSM.MaintainConditionNode.waitState">
+  waitState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BTStatus waitState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
+    <dd></dd>
+  </dl>
+
 
 
 
@@ -320,11 +346,11 @@
 </h2>
 
 
-  <a id="BDeshi_BTSM_FallbackNode_Enter_" data-uid="BDeshi.BTSM.FallbackNode.Enter*"></a>
+  <a id="BDeshi_BTSM_MaintainConditionNode_Enter_" data-uid="BDeshi.BTSM.MaintainConditionNode.Enter*"></a>
 
-  <h3 id="BDeshi_BTSM_FallbackNode_Enter" data-uid="BDeshi.BTSM.FallbackNode.Enter">
+  <h3 id="BDeshi_BTSM_MaintainConditionNode_Enter" data-uid="BDeshi.BTSM.MaintainConditionNode.Enter">
   Enter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -346,11 +372,11 @@
 
 
 
-  <a id="BDeshi_BTSM_FallbackNode_Exit_" data-uid="BDeshi.BTSM.FallbackNode.Exit*"></a>
+  <a id="BDeshi_BTSM_MaintainConditionNode_Exit_" data-uid="BDeshi.BTSM.MaintainConditionNode.Exit*"></a>
 
-  <h3 id="BDeshi_BTSM_FallbackNode_Exit" data-uid="BDeshi.BTSM.FallbackNode.Exit">
+  <h3 id="BDeshi_BTSM_MaintainConditionNode_Exit" data-uid="BDeshi.BTSM.MaintainConditionNode.Exit">
   Exit()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -372,11 +398,11 @@
 
 
 
-  <a id="BDeshi_BTSM_FallbackNode_InternalTick_" data-uid="BDeshi.BTSM.FallbackNode.InternalTick*"></a>
+  <a id="BDeshi_BTSM_MaintainConditionNode_InternalTick_" data-uid="BDeshi.BTSM.MaintainConditionNode.InternalTick*"></a>
 
-  <h3 id="BDeshi_BTSM_FallbackNode_InternalTick" data-uid="BDeshi.BTSM.FallbackNode.InternalTick">
+  <h3 id="BDeshi_BTSM_MaintainConditionNode_InternalTick" data-uid="BDeshi.BTSM.MaintainConditionNode.InternalTick">
   InternalTick()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>To allow caching status onto lastStatus</p>
@@ -393,37 +419,6 @@
     <dt><a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BDeshi_BTSM_FallbackNode_addChild_" data-uid="BDeshi.BTSM.FallbackNode.addChild*"></a>
-
-  <h3 id="BDeshi_BTSM_FallbackNode_addChild_BDeshi_BTSM_IBtNode_" data-uid="BDeshi.BTSM.FallbackNode.addChild(BDeshi.BTSM.IBtNode)">
-  addChild(IBtNode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L15"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void addChild(IBtNode child)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>child</code> <a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a></dt>
-    <dd></dd>
-  </dl>
-
 
 
 

@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IBtNode
+      <title>Interface IState
  |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IBtNode
+      <meta name="title" content="Interface IState
  |  |  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_IBtNode.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.IBtNode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_IState.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.IState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,13 +85,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BDeshi.BTSM.IBtNode">
+        <article data-uid="BDeshi.BTSM.IState">
 
 
 
-  <h1 id="BDeshi_BTSM_IBtNode" data-uid="BDeshi.BTSM.IBtNode" class="text-break">
-    Interface IBtNode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BDeshi_BTSM_IState" data-uid="BDeshi.BTSM.IState" class="text-break">
+    Interface IState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -103,7 +103,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IBtNode</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IState</code></pre>
   </div>
 
 
@@ -122,18 +122,18 @@
 </h2>
 
 
-  <a id="BDeshi_BTSM_IBtNode_EditorName_" data-uid="BDeshi.BTSM.IBtNode.EditorName*"></a>
+  <a id="BDeshi_BTSM_IState_FullStateName_" data-uid="BDeshi.BTSM.IState.FullStateName*"></a>
 
-  <h3 id="BDeshi_BTSM_IBtNode_EditorName" data-uid="BDeshi.BTSM.IBtNode.EditorName">
-  EditorName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_IState_FullStateName" data-uid="BDeshi.BTSM.IState.FullStateName">
+  FullStateName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string EditorName { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">string FullStateName { get; }</code></pre>
   </div>
 
 
@@ -153,18 +153,18 @@
 
 
 
-  <a id="BDeshi_BTSM_IBtNode_LastStatus_" data-uid="BDeshi.BTSM.IBtNode.LastStatus*"></a>
+  <a id="BDeshi_BTSM_IState_Name_" data-uid="BDeshi.BTSM.IState.Name*"></a>
 
-  <h3 id="BDeshi_BTSM_IBtNode_LastStatus" data-uid="BDeshi.BTSM.IBtNode.LastStatus">
-  LastStatus
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_IState_Name" data-uid="BDeshi.BTSM.IState.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">BTStatus LastStatus { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
   </div>
 
 
@@ -173,7 +173,7 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -184,11 +184,42 @@
 
 
 
-  <a id="BDeshi_BTSM_IBtNode_Prefix_" data-uid="BDeshi.BTSM.IBtNode.Prefix*"></a>
+  <a id="BDeshi_BTSM_IState_Parent_" data-uid="BDeshi.BTSM.IState.Parent*"></a>
 
-  <h3 id="BDeshi_BTSM_IBtNode_Prefix" data-uid="BDeshi.BTSM.IBtNode.Prefix">
+  <h3 id="BDeshi_BTSM_IState_Parent" data-uid="BDeshi.BTSM.IState.Parent">
+  Parent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IState Parent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BDeshi.BTSM.IState.html">IState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_IState_Prefix_" data-uid="BDeshi.BTSM.IState.Prefix*"></a>
+
+  <h3 id="BDeshi_BTSM_IState_Prefix" data-uid="BDeshi.BTSM.IState.Prefix">
   Prefix
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -215,53 +246,22 @@
 
 
 
-  <a id="BDeshi_BTSM_IBtNode_Typename_" data-uid="BDeshi.BTSM.IBtNode.Typename*"></a>
-
-  <h3 id="BDeshi_BTSM_IBtNode_Typename" data-uid="BDeshi.BTSM.IBtNode.Typename">
-  Typename
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L158"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Typename { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="BDeshi_BTSM_IBtNode_Enter_" data-uid="BDeshi.BTSM.IBtNode.Enter*"></a>
+  <a id="BDeshi_BTSM_IState_EnterState_" data-uid="BDeshi.BTSM.IState.EnterState*"></a>
 
-  <h3 id="BDeshi_BTSM_IBtNode_Enter" data-uid="BDeshi.BTSM.IBtNode.Enter">
-  Enter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_IState_EnterState" data-uid="BDeshi.BTSM.IState.EnterState">
+  EnterState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Enter()</code></pre>
+    <pre><code class="lang-csharp hljs">void EnterState()</code></pre>
   </div>
 
 
@@ -276,18 +276,18 @@
 
 
 
-  <a id="BDeshi_BTSM_IBtNode_Exit_" data-uid="BDeshi.BTSM.IBtNode.Exit*"></a>
+  <a id="BDeshi_BTSM_IState_ExitState_" data-uid="BDeshi.BTSM.IState.ExitState*"></a>
 
-  <h3 id="BDeshi_BTSM_IBtNode_Exit" data-uid="BDeshi.BTSM.IBtNode.Exit">
-  Exit()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_IState_ExitState" data-uid="BDeshi.BTSM.IState.ExitState">
+  ExitState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Exit()</code></pre>
+    <pre><code class="lang-csharp hljs">void ExitState()</code></pre>
   </div>
 
 
@@ -302,26 +302,21 @@
 
 
 
-  <a id="BDeshi_BTSM_IBtNode_Tick_" data-uid="BDeshi.BTSM.IBtNode.Tick*"></a>
+  <a id="BDeshi_BTSM_IState_Tick_" data-uid="BDeshi.BTSM.IState.Tick*"></a>
 
-  <h3 id="BDeshi_BTSM_IBtNode_Tick" data-uid="BDeshi.BTSM.IBtNode.Tick">
+  <h3 id="BDeshi_BTSM_IState_Tick" data-uid="BDeshi.BTSM.IState.Tick">
   Tick()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">BTStatus Tick()</code></pre>
+    <pre><code class="lang-csharp hljs">void Tick()</code></pre>
   </div>
 
 
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
-    <dd></dd>
-  </dl>
 
 
 

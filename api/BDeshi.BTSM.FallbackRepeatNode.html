@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class BTMultiDecorator
+      <title>Class FallbackRepeatNode
  |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class BTMultiDecorator
+      <meta name="title" content="Class FallbackRepeatNode
  |  |  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_BTMultiDecorator.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.BTMultiDecorator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_FallbackRepeatNode.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.FallbackRepeatNode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,13 +85,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BDeshi.BTSM.BTMultiDecorator">
+        <article data-uid="BDeshi.BTSM.FallbackRepeatNode">
 
 
 
-  <h1 id="BDeshi_BTSM_BTMultiDecorator" data-uid="BDeshi.BTSM.BTMultiDecorator" class="text-break">
-    Class BTMultiDecorator
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BDeshi_BTSM_FallbackRepeatNode" data-uid="BDeshi.BTSM.FallbackRepeatNode" class="text-break">
+    Class FallbackRepeatNode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -103,7 +103,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BTMultiDecorator : BTDecorator, IBtNode</code></pre>
+    <pre><code class="lang-csharp hljs">public class FallbackRepeatNode : BTMultiDecorator, IBtNode</code></pre>
   </div>
 
 
@@ -115,7 +115,8 @@
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="BDeshi.BTSM.BtNodeBase.html">BtNodeBase</a></div>
       <div><a class="xref" href="BDeshi.BTSM.BTDecorator.html">BTDecorator</a></div>
-      <div><span class="xref">BTMultiDecorator</span></div>
+      <div><a class="xref" href="BDeshi.BTSM.BTMultiDecorator.html">BTMultiDecorator</a></div>
+      <div><span class="xref">FallbackRepeatNode</span></div>
     </dd>
   </dl>
 
@@ -126,39 +127,18 @@
     </dd>
   </dl>
 
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="BDeshi.BTSM.FallbackNode.html">FallbackNode</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.FallbackRepeatNode.html">FallbackRepeatNode</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.Parallel.html">Parallel</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.ParallelRepeat.html">ParallelRepeat</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.PriorityFallbackNode.html">PriorityFallbackNode</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.Randomizer.html">Randomizer</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.SequenceNode.html">SequenceNode</a></div>
-    </dd>
-  </dl>
 
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="BDeshi.BTSM.BTDecorator.html#BDeshi_BTSM_BTDecorator_GetActiveChildren">BTDecorator.GetActiveChildren</a>
-    </div>
-    <div>
-      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_Enter">BtNodeBase.Enter()</a>
+      <a class="xref" href="BDeshi.BTSM.BTMultiDecorator.html#BDeshi_BTSM_BTMultiDecorator_appendChild_BDeshi_BTSM_IBtNode_">BTMultiDecorator.appendChild(IBtNode)</a>
     </div>
     <div>
       <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_Tick">BtNodeBase.Tick()</a>
     </div>
     <div>
-      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_InternalTick">BtNodeBase.InternalTick()</a>
-    </div>
-    <div>
       <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_LastStatus">BtNodeBase.LastStatus</a>
-    </div>
-    <div>
-      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_Exit">BtNodeBase.Exit()</a>
     </div>
     <div>
       <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_Prefix">BtNodeBase.Prefix</a>
@@ -200,29 +180,120 @@
 
 
 
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="BDeshi_BTSM_FallbackRepeatNode__ctor_" data-uid="BDeshi.BTSM.FallbackRepeatNode.#ctor*"></a>
+
+  <h3 id="BDeshi_BTSM_FallbackRepeatNode__ctor" data-uid="BDeshi.BTSM.FallbackRepeatNode.#ctor">
+  FallbackRepeatNode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FallbackRepeatNode()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_FallbackRepeatNode__ctor_" data-uid="BDeshi.BTSM.FallbackRepeatNode.#ctor*"></a>
+
+  <h3 id="BDeshi_BTSM_FallbackRepeatNode__ctor_System_Collections_Generic_List_BDeshi_BTSM_IBtNode__" data-uid="BDeshi.BTSM.FallbackRepeatNode.#ctor(System.Collections.Generic.List{BDeshi.BTSM.IBtNode})">
+  FallbackRepeatNode(List&lt;IBtNode&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FallbackRepeatNode(List&lt;IBtNode&gt; children)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>children</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BDeshi_BTSM_FallbackRepeatNode_GetActiveChildren_" data-uid="BDeshi.BTSM.FallbackRepeatNode.GetActiveChildren*"></a>
+
+  <h3 id="BDeshi_BTSM_FallbackRepeatNode_GetActiveChildren" data-uid="BDeshi.BTSM.FallbackRepeatNode.GetActiveChildren">
+  GetActiveChildren
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;IBtNode&gt; GetActiveChildren { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="BDeshi_BTSM_BTMultiDecorator_addChild_" data-uid="BDeshi.BTSM.BTMultiDecorator.addChild*"></a>
+  <a id="BDeshi_BTSM_FallbackRepeatNode_Enter_" data-uid="BDeshi.BTSM.FallbackRepeatNode.Enter*"></a>
 
-  <h3 id="BDeshi_BTSM_BTMultiDecorator_addChild_BDeshi_BTSM_IBtNode_" data-uid="BDeshi.BTSM.BTMultiDecorator.addChild(BDeshi.BTSM.IBtNode)">
-  addChild(IBtNode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_FallbackRepeatNode_Enter" data-uid="BDeshi.BTSM.FallbackRepeatNode.Enter">
+  Enter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void addChild(IBtNode child)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Enter()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>child</code> <a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -235,31 +306,84 @@
 
 
 
-  <a id="BDeshi_BTSM_BTMultiDecorator_appendChild_" data-uid="BDeshi.BTSM.BTMultiDecorator.appendChild*"></a>
+  <a id="BDeshi_BTSM_FallbackRepeatNode_Exit_" data-uid="BDeshi.BTSM.FallbackRepeatNode.Exit*"></a>
 
-  <h3 id="BDeshi_BTSM_BTMultiDecorator_appendChild_BDeshi_BTSM_IBtNode_" data-uid="BDeshi.BTSM.BTMultiDecorator.appendChild(BDeshi.BTSM.IBtNode)">
-  appendChild(IBtNode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_FallbackRepeatNode_Exit" data-uid="BDeshi.BTSM.FallbackRepeatNode.Exit">
+  Exit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BTMultiDecorator appendChild(IBtNode child)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Exit()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>child</code> <a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a></dt>
-    <dd></dd>
-  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_FallbackRepeatNode_InternalTick_" data-uid="BDeshi.BTSM.FallbackRepeatNode.InternalTick*"></a>
+
+  <h3 id="BDeshi_BTSM_FallbackRepeatNode_InternalTick" data-uid="BDeshi.BTSM.FallbackRepeatNode.InternalTick">
+  InternalTick()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>To allow caching status onto lastStatus</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override BTStatus InternalTick()</code></pre>
+  </div>
+
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.BTMultiDecorator.html">BTMultiDecorator</a></dt>
+    <dt><a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_FallbackRepeatNode_addChild_" data-uid="BDeshi.BTSM.FallbackRepeatNode.addChild*"></a>
+
+  <h3 id="BDeshi_BTSM_FallbackRepeatNode_addChild_BDeshi_BTSM_IBtNode_" data-uid="BDeshi.BTSM.FallbackRepeatNode.addChild(BDeshi.BTSM.IBtNode)">
+  addChild(IBtNode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FallbackNode.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void addChild(IBtNode child)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>child</code> <a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a></dt>
+    <dd></dd>
+  </dl>
+
 
 
 

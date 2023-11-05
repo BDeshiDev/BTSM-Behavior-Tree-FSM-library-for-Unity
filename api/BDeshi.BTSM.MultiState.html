@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Enum BTStatus
+      <title>Interface MultiState
  |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum BTStatus
+      <meta name="title" content="Interface MultiState
  |  |  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_BTStatus.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.BTStatus%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_MultiState.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.MultiState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,14 +85,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BDeshi.BTSM.BTStatus">
+        <article data-uid="BDeshi.BTSM.MultiState">
 
 
 
-
-  <h1 id="BDeshi_BTSM_BTStatus" data-uid="BDeshi.BTSM.BTStatus" class="text-break">
-    Enum BTStatus
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BDeshi_BTSM_MultiState" data-uid="BDeshi.BTSM.MultiState" class="text-break">
+    Interface MultiState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -104,7 +103,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum BTStatus</code></pre>
+    <pre><code class="lang-csharp hljs">public interface MultiState : IState</code></pre>
   </div>
 
 
@@ -113,25 +112,105 @@
 
 
 
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_EnterState">IState.EnterState()</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Tick">IState.Tick()</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_ExitState">IState.ExitState()</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Prefix">IState.Prefix</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_FullStateName">IState.FullStateName</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Name">IState.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Parent">IState.Parent</a>
+    </div>
+  </dd></dl>
 
 
-  <h2 id="fields">Fields
+
+
+
+
+  <h2 class="section" id="properties">Properties
 </h2>
+
+
+  <a id="BDeshi_BTSM_MultiState_getActiveState_" data-uid="BDeshi.BTSM.MultiState.getActiveState*"></a>
+
+  <h3 id="BDeshi_BTSM_MultiState_getActiveState" data-uid="BDeshi.BTSM.MultiState.getActiveState">
+  getActiveState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IState getActiveState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt id="BDeshi_BTSM_BTStatus_Failure"><code>Failure = 3</code></dt>
-    <dd></dd>
-    <dt id="BDeshi_BTSM_BTStatus_Ignore"><code>Ignore = 4</code></dt>
-    <dd><p>Neither success nor failure, non blocking running
-Ex Use case: Parallel node where you want to keep running child regardless of what others do</p>
-</dd>
-    <dt id="BDeshi_BTSM_BTStatus_NotRunYet"><code>NotRunYet = 0</code></dt>
-    <dd></dd>
-    <dt id="BDeshi_BTSM_BTStatus_Running"><code>Running = 1</code></dt>
-    <dd><p>Is actively running, will block sequence nodes</p>
-</dd>
-    <dt id="BDeshi_BTSM_BTStatus_Success"><code>Success = 2</code></dt>
+    <dt><a class="xref" href="BDeshi.BTSM.IState.html">IState</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BDeshi_BTSM_MultiState_getChildStates_" data-uid="BDeshi.BTSM.MultiState.getChildStates*"></a>
+
+  <h3 id="BDeshi_BTSM_MultiState_getChildStates" data-uid="BDeshi.BTSM.MultiState.getChildStates">
+  getChildStates()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IState&gt; getChildStates()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="BDeshi.BTSM.IState.html">IState</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
 

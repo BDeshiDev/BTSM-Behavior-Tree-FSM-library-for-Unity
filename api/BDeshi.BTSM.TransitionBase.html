@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Enum BTStatus
+      <title>Interface TransitionBase
  |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum BTStatus
+      <meta name="title" content="Interface TransitionBase
  |  |  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_BTStatus.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.BTStatus%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_TransitionBase.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.TransitionBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,14 +85,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BDeshi.BTSM.BTStatus">
+        <article data-uid="BDeshi.BTSM.TransitionBase">
 
 
 
-
-  <h1 id="BDeshi_BTSM_BTStatus" data-uid="BDeshi.BTSM.BTStatus" class="text-break">
-    Enum BTStatus
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BDeshi_BTSM_TransitionBase" data-uid="BDeshi.BTSM.TransitionBase" class="text-break">
+    Interface TransitionBase
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Transition.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -104,7 +103,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum BTStatus</code></pre>
+    <pre><code class="lang-csharp hljs">public interface TransitionBase</code></pre>
   </div>
 
 
@@ -115,23 +114,141 @@
 
 
 
-  <h2 id="fields">Fields
+
+
+
+
+  <h2 class="section" id="properties">Properties
 </h2>
+
+
+  <a id="BDeshi_BTSM_TransitionBase_SuccessState_" data-uid="BDeshi.BTSM.TransitionBase.SuccessState*"></a>
+
+  <h3 id="BDeshi_BTSM_TransitionBase_SuccessState" data-uid="BDeshi.BTSM.TransitionBase.SuccessState">
+  SuccessState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Transition.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IState SuccessState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt id="BDeshi_BTSM_BTStatus_Failure"><code>Failure = 3</code></dt>
-    <dd></dd>
-    <dt id="BDeshi_BTSM_BTStatus_Ignore"><code>Ignore = 4</code></dt>
-    <dd><p>Neither success nor failure, non blocking running
-Ex Use case: Parallel node where you want to keep running child regardless of what others do</p>
-</dd>
-    <dt id="BDeshi_BTSM_BTStatus_NotRunYet"><code>NotRunYet = 0</code></dt>
-    <dd></dd>
-    <dt id="BDeshi_BTSM_BTStatus_Running"><code>Running = 1</code></dt>
-    <dd><p>Is actively running, will block sequence nodes</p>
-</dd>
-    <dt id="BDeshi_BTSM_BTStatus_Success"><code>Success = 2</code></dt>
+    <dt><a class="xref" href="BDeshi.BTSM.IState.html">IState</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_TransitionBase_TakenLastTime_" data-uid="BDeshi.BTSM.TransitionBase.TakenLastTime*"></a>
+
+  <h3 id="BDeshi_BTSM_TransitionBase_TakenLastTime" data-uid="BDeshi.BTSM.TransitionBase.TakenLastTime">
+  TakenLastTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Transition.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TakenLastTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_TransitionBase_TransitionToSameState_" data-uid="BDeshi.BTSM.TransitionBase.TransitionToSameState*"></a>
+
+  <h3 id="BDeshi_BTSM_TransitionBase_TransitionToSameState" data-uid="BDeshi.BTSM.TransitionBase.TransitionToSameState">
+  TransitionToSameState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Transition.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TransitionToSameState { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BDeshi_BTSM_TransitionBase_Evaluate_" data-uid="BDeshi.BTSM.TransitionBase.Evaluate*"></a>
+
+  <h3 id="BDeshi_BTSM_TransitionBase_Evaluate" data-uid="BDeshi.BTSM.TransitionBase.Evaluate">
+  Evaluate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Transition.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if evaluation succeeds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Evaluate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
 
 
 

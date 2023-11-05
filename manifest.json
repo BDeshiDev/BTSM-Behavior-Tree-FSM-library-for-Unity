@@ -15,10 +15,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BDeshi.BTSM.BTCompleteTransition.yml",
+      "source_relative_path": "api/BDeshi.BTSM.BTCompleteTransition-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BDeshi.BTSM.BTCompleteTransition.html"
+          "relative_path": "api/BDeshi.BTSM.BTCompleteTransition-1.html"
         }
       },
       "version": ""
@@ -95,6 +95,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.ConditionNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.ConditionNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BDeshi.BTSM.ContainerState.yml",
       "output": {
         ".html": {
@@ -105,10 +115,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BDeshi.BTSM.CooldownNode.CoolDownType.yml",
+      "source_relative_path": "api/BDeshi.BTSM.CooldownNode.CoolDownResetType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BDeshi.BTSM.CooldownNode.CoolDownType.html"
+          "relative_path": "api/BDeshi.BTSM.CooldownNode.CoolDownResetType.html"
         }
       },
       "version": ""
@@ -125,40 +135,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BDeshi.BTSM.Editor.FSMEditorWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BDeshi.BTSM.Editor.FSMEditorWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BDeshi.BTSM.Editor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BDeshi.BTSM.Editor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BDeshi.BTSM.EnterExitDecorator.yml",
       "output": {
         ".html": {
           "relative_path": "api/BDeshi.BTSM.EnterExitDecorator.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BDeshi.BTSM.EventDrivenStateMachine-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BDeshi.BTSM.EventDrivenStateMachine-1.html"
         }
       },
       "version": ""
@@ -195,6 +175,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.FallbackRepeatNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.FallbackRepeatNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.IBTWrapperState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.IBTWrapperState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BDeshi.BTSM.IBtNode.yml",
       "output": {
         ".html": {
@@ -205,10 +205,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.IRunnableStateMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.IRunnableStateMachine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.IState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.IState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BDeshi.BTSM.IgnoreStatus.yml",
       "output": {
         ".html": {
           "relative_path": "api/BDeshi.BTSM.IgnoreStatus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.MaintainConditionNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.MaintainConditionNode.html"
         }
       },
       "version": ""
@@ -245,10 +275,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.MultiState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.MultiState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BDeshi.BTSM.Parallel.yml",
       "output": {
         ".html": {
           "relative_path": "api/BDeshi.BTSM.Parallel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.ParallelRepeat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.ParallelRepeat.html"
         }
       },
       "version": ""
@@ -295,10 +345,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BDeshi.BTSM.SimpleTransition.yml",
+      "source_relative_path": "api/BDeshi.BTSM.SimpleTransition-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BDeshi.BTSM.SimpleTransition.html"
+          "relative_path": "api/BDeshi.BTSM.SimpleTransition-1.html"
         }
       },
       "version": ""
@@ -325,20 +375,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BDeshi.BTSM.StateCondition.yml",
+      "source_relative_path": "api/BDeshi.BTSM.StateMachine-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BDeshi.BTSM.StateCondition.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BDeshi.BTSM.StateMachine.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BDeshi.BTSM.StateMachine.html"
+          "relative_path": "api/BDeshi.BTSM.StateMachine-1.html"
         }
       },
       "version": ""
@@ -355,10 +395,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BDeshi.BTSM.Transition.yml",
+      "source_relative_path": "api/BDeshi.BTSM.TimerNode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/BDeshi.BTSM.Transition.html"
+          "relative_path": "api/BDeshi.BTSM.TimerNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.Transition-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.Transition-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.TransitionBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.TransitionBase.html"
         }
       },
       "version": ""
@@ -379,6 +439,26 @@
       "output": {
         ".html": {
           "relative_path": "api/BDeshi.BTSM.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.FSMEditorWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.FSMEditorWindow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.html"
         }
       },
       "version": ""

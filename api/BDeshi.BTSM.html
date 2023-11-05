@@ -97,19 +97,16 @@
 Classes
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="BDeshi.BTSM.BTCompleteTransition.html">BTCompleteTransition</a></dt>
-      <dd><p>Transition that will be taken when a BTNode succeeeds</p>
-</dd>
+      <dt><a class="xref" href="BDeshi.BTSM.BTCompleteTransition-1.html">BTCompleteTransition&lt;TState&gt;</a></dt>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.BTDecorator.html">BTDecorator</a></dt>
-      <dd><p>Base class for decorator BT nodes that can have children</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.BTMultiDecorator.html">BTMultiDecorator</a></dt>
-      <dd><p>Base class for decorator BT nodes that can have multiple children</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.BTSingleDecorator.html">BTSingleDecorator</a></dt>
@@ -121,67 +118,68 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.BtNodeBase.html">BtNodeBase</a></dt>
-      <dd><p>Base POCO abstract class for BT Nodes
-Inherit from this if you don't want monobehavior BT nodes</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.BtNodeMonoBase.html">BtNodeMonoBase</a></dt>
-      <dd><p>Base abstract class for BT Nodes that are monobehaviors</p>
-</dd>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BDeshi.BTSM.ConditionNode.html">ConditionNode</a></dt>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.CooldownNode.html">CooldownNode</a></dt>
-      <dd><p>prevent running child for x secs after it has run or it started running</p>
+      <dd><p>prevent running child for x secs after it has run || it started running</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.EnterExitDecorator.html">EnterExitDecorator</a></dt>
-      <dd><p>Decorator that invokes callbacks when the child node is entered or exited</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="BDeshi.BTSM.EventDrivenStateMachine-1.html">EventDrivenStateMachine&lt;TEvent&gt;</a></dt>
-      <dd><p>Alternate type of FSM that can have a generic type of event and register handlers for them</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.FSMRunner.html">FSMRunner</a></dt>
-      <dd><p>Maintains a FSM
-Calls tick,enter etc on it
-The Custom Editor Script looks for this.
-While you can update the fsm with a different class, it won't show up in the editor without this</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.FailTillComplete.html">FailTillComplete</a></dt>
-      <dd><p>Decorator that returns failure until child succeeds</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.FallbackNode.html">FallbackNode</a></dt>
-      <dd><p>Decorator that keeps on trying children one by one until one succeeds</p>
+      <dd><p>keep on trying child    ren one by one until one succeeds</p>
 </dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BDeshi.BTSM.FallbackRepeatNode.html">FallbackRepeatNode</a></dt>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.IgnoreStatus.html">IgnoreStatus</a></dt>
-      <dd><p>Calls child but always returns a given BTStatus instead</p>
-</dd>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BDeshi.BTSM.MaintainConditionNode.html">MaintainConditionNode</a></dt>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.ModularState.html">ModularState</a></dt>
-      <dd><p>A state class with OnEnter tick callbacks</p>
-</dd>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.MonoBehaviourStateBase.html">MonoBehaviourStateBase</a></dt>
-      <dd><p>Inherit from this if you want a Monobehavior state
-C# interfaces are not easily visible in Editor.
-So this is a Implementation of statebase with monobehaviour</p>
+      <dd><p>C# default interface issues so this is a copy of statebase with monobehaviour inheritance</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.Parallel.html">Parallel</a></dt>
+      <dd><p>Run all children every tick
+Succeed on first on succeeding, or when all do.
+If the later, the children may or may not restart</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BDeshi.BTSM.ParallelRepeat.html">ParallelRepeat</a></dt>
       <dd><p>Run all children every tick
 Succeed on first on succeeding, or when all do.
 If the later, the children may or may not restart</p>
@@ -203,32 +201,29 @@ Earlier in list = higher priority</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.SequenceNode.html">SequenceNode</a></dt>
-      <dd><p>Continue running one by one until one fail, if no child succeeds, it fails.</p>
+      <dd><p>Continue running one by one until one fail, then it itself fails.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BDeshi.BTSM.SimpleTransition.html">SimpleTransition</a></dt>
-      <dd><p>Basic transition class</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="BDeshi.BTSM.StateBase.html">StateBase</a></dt>
-      <dd><p>Base POCO state class</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="BDeshi.BTSM.StateCondition.html">StateCondition</a></dt>
+      <dt><a class="xref" href="BDeshi.BTSM.SimpleTransition-1.html">SimpleTransition&lt;TState&gt;</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BDeshi.BTSM.StateMachine.html">StateMachine</a></dt>
-      <dd><p>basic Finite State machine class</p>
-</dd>
+      <dt><a class="xref" href="BDeshi.BTSM.StateBase.html">StateBase</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BDeshi.BTSM.StateMachine-1.html">StateMachine&lt;TState&gt;</a></dt>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.TimeoutNode.html">TimeoutNode</a></dt>
       <dd><p>Run child for x secs</p>
 </dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BDeshi.BTSM.TimerNode.html">TimerNode</a></dt>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.WaitNode.html">WaitNode</a></dt>
@@ -245,9 +240,20 @@ but implementing this is needed for them to be detected by the editor view</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="BDeshi.BTSM.IBTWrapperState.html">IBTWrapperState</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a></dt>
-      <dd><p>Base interface for BT nodes</p>
-</dd>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BDeshi.BTSM.IRunnableStateMachine.html">IRunnableStateMachine</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BDeshi.BTSM.IState.html">IState</a></dt>
+      <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.MonoBehaviorState.html">MonoBehaviorState</a></dt>
@@ -256,12 +262,20 @@ But still have editor state click -&gt; object select and other functionality</p
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="BDeshi.BTSM.MultiState.html">MultiState</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.State.html">State</a></dt>
       <dd><p>Interface for a state</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BDeshi.BTSM.Transition.html">Transition</a></dt>
+      <dt><a class="xref" href="BDeshi.BTSM.TransitionBase.html">TransitionBase</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BDeshi.BTSM.Transition-1.html">Transition&lt;TState&gt;</a></dt>
       <dd><p>General interface for Transitions</p>
 </dd>
     </dl>
@@ -273,7 +287,7 @@ Enums
       <dd></dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BDeshi.BTSM.CooldownNode.CoolDownType.html">CooldownNode.CoolDownType</a></dt>
+      <dt><a class="xref" href="BDeshi.BTSM.CooldownNode.CoolDownResetType.html">CooldownNode.CoolDownResetType</a></dt>
       <dd></dd>
     </dl>
 

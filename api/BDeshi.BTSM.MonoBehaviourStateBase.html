@@ -91,7 +91,7 @@
 
   <h1 id="BDeshi_BTSM_MonoBehaviourStateBase" data-uid="BDeshi.BTSM.MonoBehaviourStateBase" class="text-break">
     Class MonoBehaviourStateBase
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -99,14 +99,12 @@
   
   </div>
 
-  <div class="markdown summary"><p>Inherit from this if you want a Monobehavior state
-C# interfaces are not easily visible in Editor.
-So this is a Implementation of statebase with monobehaviour</p>
+  <div class="markdown summary"><p>C# default interface issues so this is a copy of statebase with monobehaviour inheritance</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class MonoBehaviourStateBase : MonoBehaviour, MonoBehaviorState, State</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class MonoBehaviourStateBase : MonoBehaviour, IState</code></pre>
   </div>
 
 
@@ -123,8 +121,7 @@ So this is a Implementation of statebase with monobehaviour</p>
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BDeshi.BTSM.MonoBehaviorState.html">MonoBehaviorState</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.State.html">State</a></div>
+      <div><a class="xref" href="BDeshi.BTSM.IState.html">IState</a></div>
     </dd>
   </dl>
 
@@ -143,11 +140,10 @@ So this is a Implementation of statebase with monobehaviour</p>
 
   <h3 id="BDeshi_BTSM_MonoBehaviourStateBase_FullStateName" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.FullStateName">
   FullStateName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The name that shows up in the editor</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,7 +171,7 @@ So this is a Implementation of statebase with monobehaviour</p>
 
   <h3 id="BDeshi_BTSM_MonoBehaviourStateBase_Name" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.Name">
   Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -206,14 +202,14 @@ So this is a Implementation of statebase with monobehaviour</p>
 
   <h3 id="BDeshi_BTSM_MonoBehaviourStateBase_Parent" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.Parent">
   Parent
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public State Parent { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IState Parent { get; set; }</code></pre>
   </div>
 
 
@@ -222,7 +218,7 @@ So this is a Implementation of statebase with monobehaviour</p>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.State.html">State</a></dt>
+    <dt><a class="xref" href="BDeshi.BTSM.IState.html">IState</a></dt>
     <dd></dd>
   </dl>
 
@@ -237,7 +233,7 @@ So this is a Implementation of statebase with monobehaviour</p>
 
   <h3 id="BDeshi_BTSM_MonoBehaviourStateBase_Prefix" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.Prefix">
   Prefix
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -270,27 +266,58 @@ So this is a Implementation of statebase with monobehaviour</p>
 
   <a id="BDeshi_BTSM_MonoBehaviourStateBase_AsChildOf_" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.AsChildOf*"></a>
 
-  <h3 id="BDeshi_BTSM_MonoBehaviourStateBase_AsChildOf_BDeshi_BTSM_State_" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.AsChildOf(BDeshi.BTSM.State)">
-  AsChildOf(State)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_MonoBehaviourStateBase_AsChildOf_BDeshi_BTSM_IState_" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.AsChildOf(BDeshi.BTSM.IState)">
+  AsChildOf(IState)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public State AsChildOf(State p)</code></pre>
+    <pre><code class="lang-csharp hljs">public IState AsChildOf(IState p)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>p</code> <a class="xref" href="BDeshi.BTSM.State.html">State</a></dt>
+    <dt><code>p</code> <a class="xref" href="BDeshi.BTSM.IState.html">IState</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.State.html">State</a></dt>
+    <dt><a class="xref" href="BDeshi.BTSM.IState.html">IState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_MonoBehaviourStateBase_Clone_" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.Clone*"></a>
+
+  <h3 id="BDeshi_BTSM_MonoBehaviourStateBase_Clone" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.Clone">
+  Clone()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
     <dd></dd>
   </dl>
 
@@ -308,11 +335,10 @@ So this is a Implementation of statebase with monobehaviour</p>
 
   <h3 id="BDeshi_BTSM_MonoBehaviourStateBase_EnterState" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.EnterState">
   EnterState()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Called when state is entered</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -335,11 +361,10 @@ So this is a Implementation of statebase with monobehaviour</p>
 
   <h3 id="BDeshi_BTSM_MonoBehaviourStateBase_ExitState" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.ExitState">
   ExitState()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Called when state is exited</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -362,7 +387,7 @@ So this is a Implementation of statebase with monobehaviour</p>
 
   <h3 id="BDeshi_BTSM_MonoBehaviourStateBase_GetParentChainName" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.GetParentChainName">
   GetParentChainName()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -393,11 +418,10 @@ So this is a Implementation of statebase with monobehaviour</p>
 
   <h3 id="BDeshi_BTSM_MonoBehaviourStateBase_Tick" data-uid="BDeshi.BTSM.MonoBehaviourStateBase.Tick">
   Tick()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/MonoBehaviourStateBase.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Called to update the state from fsm.tick()</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

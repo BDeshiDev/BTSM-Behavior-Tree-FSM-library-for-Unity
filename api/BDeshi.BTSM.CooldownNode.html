@@ -99,7 +99,7 @@
   
   </div>
 
-  <div class="markdown summary"><p>prevent running child for x secs after it has run or it started running</p>
+  <div class="markdown summary"><p>prevent running child for x secs after it has run || it started running</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -187,16 +187,16 @@
 
   <a id="BDeshi_BTSM_CooldownNode__ctor_" data-uid="BDeshi.BTSM.CooldownNode.#ctor*"></a>
 
-  <h3 id="BDeshi_BTSM_CooldownNode__ctor_BDeshi_BTSM_BtNodeBase_System_Single_BDeshi_BTSM_CooldownNode_CoolDownType_System_Boolean_" data-uid="BDeshi.BTSM.CooldownNode.#ctor(BDeshi.BTSM.BtNodeBase,System.Single,BDeshi.BTSM.CooldownNode.CoolDownType,System.Boolean)">
-  CooldownNode(BtNodeBase, float, CoolDownType, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_CooldownNode__ctor_BDeshi_BTSM_BtNodeBase_System_Single_BDeshi_BTSM_BTStatus_BDeshi_BTSM_CooldownNode_CoolDownResetType_System_Boolean_" data-uid="BDeshi.BTSM.CooldownNode.#ctor(BDeshi.BTSM.BtNodeBase,System.Single,BDeshi.BTSM.BTStatus,BDeshi.BTSM.CooldownNode.CoolDownResetType,System.Boolean)">
+  CooldownNode(BtNodeBase, float, BTStatus, CoolDownResetType, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CooldownNode(BtNodeBase child, float waitDuration, CooldownNode.CoolDownType type = CoolDownType.ResetOnExit, bool shouldWaitAtStart = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public CooldownNode(BtNodeBase child, float waitDuration, BTStatus cooldownFailStatus = BTStatus.Failure, CooldownNode.CoolDownResetType resetType = CoolDownResetType.ResetOnExit, bool shouldWaitAtStart = false)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -205,7 +205,9 @@
     <dd></dd>
     <dt><code>waitDuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
-    <dt><code>type</code> <a class="xref" href="BDeshi.BTSM.CooldownNode.html">CooldownNode</a>.<a class="xref" href="BDeshi.BTSM.CooldownNode.CoolDownType.html">CoolDownType</a></dt>
+    <dt><code>cooldownFailStatus</code> <a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
+    <dd></dd>
+    <dt><code>resetType</code> <a class="xref" href="BDeshi.BTSM.CooldownNode.html">CooldownNode</a>.<a class="xref" href="BDeshi.BTSM.CooldownNode.CoolDownResetType.html">CoolDownResetType</a></dt>
     <dd></dd>
     <dt><code>shouldWaitAtStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
@@ -224,6 +226,36 @@
 
   <h2 class="section" id="fields">Fields
 </h2>
+
+
+
+  <h3 id="BDeshi_BTSM_CooldownNode_cooldownFailStatus" data-uid="BDeshi.BTSM.CooldownNode.cooldownFailStatus">
+  cooldownFailStatus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BTStatus cooldownFailStatus</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 
@@ -294,7 +326,7 @@
 
   <h3 id="BDeshi_BTSM_CooldownNode_EditorName" data-uid="BDeshi.BTSM.CooldownNode.EditorName">
   EditorName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -329,11 +361,10 @@
 
   <h3 id="BDeshi_BTSM_CooldownNode_Enter" data-uid="BDeshi.BTSM.CooldownNode.Enter">
   Enter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Called to initialize the  BTNode before the first tick()</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -356,11 +387,10 @@
 
   <h3 id="BDeshi_BTSM_CooldownNode_Exit" data-uid="BDeshi.BTSM.CooldownNode.Exit">
   Exit()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Called when the BTNode is being exited</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -383,11 +413,10 @@
 
   <h3 id="BDeshi_BTSM_CooldownNode_InternalTick" data-uid="BDeshi.BTSM.CooldownNode.InternalTick">
   InternalTick()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The tick() method that should be overwritten
-To allow caching status onto lastStatus</p>
+  <div class="markdown level1 summary"><p>To allow caching status onto lastStatus</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -416,7 +445,7 @@ To allow caching status onto lastStatus</p>
 
   <h3 id="BDeshi_BTSM_CooldownNode_startRunning" data-uid="BDeshi.BTSM.CooldownNode.startRunning">
   startRunning()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/CooldownNode.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

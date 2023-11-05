@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class StateCondition
+      <title>Class TimerNode
  |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class StateCondition
+      <meta name="title" content="Class TimerNode
  |  |  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_StateCondition.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.StateCondition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_TimerNode.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.TimerNode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,13 +85,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BDeshi.BTSM.StateCondition">
+        <article data-uid="BDeshi.BTSM.TimerNode">
 
 
 
-  <h1 id="BDeshi_BTSM_StateCondition" data-uid="BDeshi.BTSM.StateCondition" class="text-break">
-    Class StateCondition
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Transition.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BDeshi_BTSM_TimerNode" data-uid="BDeshi.BTSM.TimerNode" class="text-break">
+    Class TimerNode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -103,7 +103,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class StateCondition</code></pre>
+    <pre><code class="lang-csharp hljs">public class TimerNode : BTSingleDecorator, IBtNode</code></pre>
   </div>
 
 
@@ -113,15 +113,45 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">StateCondition</span></div>
+      <div><a class="xref" href="BDeshi.BTSM.BtNodeBase.html">BtNodeBase</a></div>
+      <div><a class="xref" href="BDeshi.BTSM.BTDecorator.html">BTDecorator</a></div>
+      <div><a class="xref" href="BDeshi.BTSM.BTSingleDecorator.html">BTSingleDecorator</a></div>
+      <div><span class="xref">TimerNode</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.BTSingleDecorator.html#BDeshi_BTSM_BTSingleDecorator_child">BTSingleDecorator.child</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.BTSingleDecorator.html#BDeshi_BTSM_BTSingleDecorator_GetActiveChildren">BTSingleDecorator.GetActiveChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_Tick">BtNodeBase.Tick()</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_LastStatus">BtNodeBase.LastStatus</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_Prefix">BtNodeBase.Prefix</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_lastStatus">BtNodeBase.lastStatus</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_Typename">BtNodeBase.Typename</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -154,25 +184,25 @@
 </h2>
 
 
-  <a id="BDeshi_BTSM_StateCondition__ctor_" data-uid="BDeshi.BTSM.StateCondition.#ctor*"></a>
+  <a id="BDeshi_BTSM_TimerNode__ctor_" data-uid="BDeshi.BTSM.TimerNode.#ctor*"></a>
 
-  <h3 id="BDeshi_BTSM_StateCondition__ctor_BDeshi_BTSM_StateMachine_System_Boolean_" data-uid="BDeshi.BTSM.StateCondition.#ctor(BDeshi.BTSM.StateMachine,System.Boolean)">
-  StateCondition(StateMachine, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Transition.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_TimerNode__ctor_BDeshi_BTSM_IBtNode_System_Single_" data-uid="BDeshi.BTSM.TimerNode.#ctor(BDeshi.BTSM.IBtNode,System.Single)">
+  TimerNode(IBtNode, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StateCondition(StateMachine fsm, bool defaultValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public TimerNode(IBtNode child, float timeDuration)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fsm</code> <a class="xref" href="BDeshi.BTSM.StateMachine.html">StateMachine</a></dt>
+    <dt><code>child</code> <a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a></dt>
     <dd></dd>
-    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><code>timeDuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
   </dl>
 
@@ -192,16 +222,16 @@
 
 
 
-  <h3 id="BDeshi_BTSM_StateCondition_defaultValue" data-uid="BDeshi.BTSM.StateCondition.defaultValue">
-  defaultValue
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Transition.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_TimerNode_duration" data-uid="BDeshi.BTSM.TimerNode.duration">
+  duration
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool defaultValue</code></pre>
+    <pre><code class="lang-csharp hljs">public FiniteTimer duration</code></pre>
   </div>
 
 
@@ -209,10 +239,75 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><span class="xref">FiniteTimer</span></dt>
     <dd></dd>
   </dl>
 
+
+
+
+
+
+
+
+
+
+  <h3 id="BDeshi_BTSM_TimerNode_timeoutStatus" data-uid="BDeshi.BTSM.TimerNode.timeoutStatus">
+  timeoutStatus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BTStatus timeoutStatus</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BDeshi_BTSM_TimerNode_EditorName_" data-uid="BDeshi.BTSM.TimerNode.EditorName*"></a>
+
+  <h3 id="BDeshi_BTSM_TimerNode_EditorName" data-uid="BDeshi.BTSM.TimerNode.EditorName">
+  EditorName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string EditorName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -225,31 +320,20 @@
 </h2>
 
 
-  <a id="BDeshi_BTSM_StateCondition_addStateConditionFalse_" data-uid="BDeshi.BTSM.StateCondition.addStateConditionFalse*"></a>
+  <a id="BDeshi_BTSM_TimerNode_Enter_" data-uid="BDeshi.BTSM.TimerNode.Enter*"></a>
 
-  <h3 id="BDeshi_BTSM_StateCondition_addStateConditionFalse_BDeshi_BTSM_State_" data-uid="BDeshi.BTSM.StateCondition.addStateConditionFalse(BDeshi.BTSM.State)">
-  addStateConditionFalse(State)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Transition.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_TimerNode_Enter" data-uid="BDeshi.BTSM.TimerNode.Enter">
+  Enter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StateCondition addStateConditionFalse(State state)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Enter()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>state</code> <a class="xref" href="BDeshi.BTSM.State.html">State</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.StateCondition.html">StateCondition</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -261,33 +345,21 @@
 
 
 
-  <a id="BDeshi_BTSM_StateCondition_addStateConditionFunc_" data-uid="BDeshi.BTSM.StateCondition.addStateConditionFunc*"></a>
 
-  <h3 id="BDeshi_BTSM_StateCondition_addStateConditionFunc_BDeshi_BTSM_State_System_Func_System_Boolean__" data-uid="BDeshi.BTSM.StateCondition.addStateConditionFunc(BDeshi.BTSM.State,System.Func{System.Boolean})">
-  addStateConditionFunc(State, Func&lt;bool&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Transition.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a id="BDeshi_BTSM_TimerNode_Exit_" data-uid="BDeshi.BTSM.TimerNode.Exit*"></a>
+
+  <h3 id="BDeshi_BTSM_TimerNode_Exit" data-uid="BDeshi.BTSM.TimerNode.Exit">
+  Exit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StateCondition addStateConditionFunc(State state, Func&lt;bool&gt; conditionFunc)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Exit()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>state</code> <a class="xref" href="BDeshi.BTSM.State.html">State</a></dt>
-    <dd></dd>
-    <dt><code>conditionFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.StateCondition.html">StateCondition</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -299,60 +371,26 @@
 
 
 
-  <a id="BDeshi_BTSM_StateCondition_addStateConditionTrue_" data-uid="BDeshi.BTSM.StateCondition.addStateConditionTrue*"></a>
 
-  <h3 id="BDeshi_BTSM_StateCondition_addStateConditionTrue_BDeshi_BTSM_State_" data-uid="BDeshi.BTSM.StateCondition.addStateConditionTrue(BDeshi.BTSM.State)">
-  addStateConditionTrue(State)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Transition.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a id="BDeshi_BTSM_TimerNode_InternalTick_" data-uid="BDeshi.BTSM.TimerNode.InternalTick*"></a>
+
+  <h3 id="BDeshi_BTSM_TimerNode_InternalTick" data-uid="BDeshi.BTSM.TimerNode.InternalTick">
+  InternalTick()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>To allow caching status onto lastStatus</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StateCondition addStateConditionTrue(State state)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>state</code> <a class="xref" href="BDeshi.BTSM.State.html">State</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.StateCondition.html">StateCondition</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BDeshi_BTSM_StateCondition_evaluate_" data-uid="BDeshi.BTSM.StateCondition.evaluate*"></a>
-
-  <h3 id="BDeshi_BTSM_StateCondition_evaluate" data-uid="BDeshi.BTSM.StateCondition.evaluate">
-  evaluate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Transition.cs/#L61"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool evaluate()</code></pre>
+    <pre><code class="lang-csharp hljs">public override BTStatus InternalTick()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
     <dd></dd>
   </dl>
 

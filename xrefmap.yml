@@ -7,115 +7,153 @@ references:
   commentId: N:BDeshi.BTSM
   fullName: BDeshi.BTSM
   nameWithType: BDeshi.BTSM
-- uid: BDeshi.BTSM.BTCompleteTransition
+- uid: BDeshi.BTSM.BTCompleteTransition`1
+  name: BTCompleteTransition<TState>
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html
+  commentId: T:BDeshi.BTSM.BTCompleteTransition`1
+  name.vb: BTCompleteTransition(Of TState)
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState)
+  nameWithType: BTCompleteTransition<TState>
+  nameWithType.vb: BTCompleteTransition(Of TState)
+- uid: BDeshi.BTSM.BTCompleteTransition`1.#ctor(BDeshi.BTSM.IBtNode,`0)
+  name: BTCompleteTransition(IBtNode, TState)
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1__ctor_BDeshi_BTSM_IBtNode__0_
+  commentId: M:BDeshi.BTSM.BTCompleteTransition`1.#ctor(BDeshi.BTSM.IBtNode,`0)
+  name.vb: New(IBtNode, TState)
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.BTCompleteTransition(BDeshi.BTSM.IBtNode, TState)
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).New(BDeshi.BTSM.IBtNode, TState)
+  nameWithType: BTCompleteTransition<TState>.BTCompleteTransition(IBtNode, TState)
+  nameWithType.vb: BTCompleteTransition(Of TState).New(IBtNode, TState)
+- uid: BDeshi.BTSM.BTCompleteTransition`1.#ctor*
   name: BTCompleteTransition
-  href: api/BDeshi.BTSM.BTCompleteTransition.html
-  commentId: T:BDeshi.BTSM.BTCompleteTransition
-  fullName: BDeshi.BTSM.BTCompleteTransition
-  nameWithType: BTCompleteTransition
-- uid: BDeshi.BTSM.BTCompleteTransition.#ctor(BDeshi.BTSM.IBtNode,BDeshi.BTSM.State)
-  name: BTCompleteTransition(IBtNode, State)
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition__ctor_BDeshi_BTSM_IBtNode_BDeshi_BTSM_State_
-  commentId: M:BDeshi.BTSM.BTCompleteTransition.#ctor(BDeshi.BTSM.IBtNode,BDeshi.BTSM.State)
-  name.vb: New(IBtNode, State)
-  fullName: BDeshi.BTSM.BTCompleteTransition.BTCompleteTransition(BDeshi.BTSM.IBtNode, BDeshi.BTSM.State)
-  fullName.vb: BDeshi.BTSM.BTCompleteTransition.New(BDeshi.BTSM.IBtNode, BDeshi.BTSM.State)
-  nameWithType: BTCompleteTransition.BTCompleteTransition(IBtNode, State)
-  nameWithType.vb: BTCompleteTransition.New(IBtNode, State)
-- uid: BDeshi.BTSM.BTCompleteTransition.#ctor*
-  name: BTCompleteTransition
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition__ctor_
-  commentId: Overload:BDeshi.BTSM.BTCompleteTransition.#ctor
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1__ctor_
+  commentId: Overload:BDeshi.BTSM.BTCompleteTransition`1.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: BDeshi.BTSM.BTCompleteTransition.BTCompleteTransition
-  fullName.vb: BDeshi.BTSM.BTCompleteTransition.New
-  nameWithType: BTCompleteTransition.BTCompleteTransition
-  nameWithType.vb: BTCompleteTransition.New
-- uid: BDeshi.BTSM.BTCompleteTransition.Evaluate
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.BTCompleteTransition
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).New
+  nameWithType: BTCompleteTransition<TState>.BTCompleteTransition
+  nameWithType.vb: BTCompleteTransition(Of TState).New
+- uid: BDeshi.BTSM.BTCompleteTransition`1.Evaluate
   name: Evaluate()
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_Evaluate
-  commentId: M:BDeshi.BTSM.BTCompleteTransition.Evaluate
-  fullName: BDeshi.BTSM.BTCompleteTransition.Evaluate()
-  nameWithType: BTCompleteTransition.Evaluate()
-- uid: BDeshi.BTSM.BTCompleteTransition.Evaluate*
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_Evaluate
+  commentId: M:BDeshi.BTSM.BTCompleteTransition`1.Evaluate
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.Evaluate()
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).Evaluate()
+  nameWithType: BTCompleteTransition<TState>.Evaluate()
+  nameWithType.vb: BTCompleteTransition(Of TState).Evaluate()
+- uid: BDeshi.BTSM.BTCompleteTransition`1.Evaluate*
   name: Evaluate
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_Evaluate_
-  commentId: Overload:BDeshi.BTSM.BTCompleteTransition.Evaluate
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_Evaluate_
+  commentId: Overload:BDeshi.BTSM.BTCompleteTransition`1.Evaluate
   isSpec: "True"
-  fullName: BDeshi.BTSM.BTCompleteTransition.Evaluate
-  nameWithType: BTCompleteTransition.Evaluate
-- uid: BDeshi.BTSM.BTCompleteTransition.OnTaken
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.Evaluate
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).Evaluate
+  nameWithType: BTCompleteTransition<TState>.Evaluate
+  nameWithType.vb: BTCompleteTransition(Of TState).Evaluate
+- uid: BDeshi.BTSM.BTCompleteTransition`1.OnTaken
   name: OnTaken
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_OnTaken
-  commentId: P:BDeshi.BTSM.BTCompleteTransition.OnTaken
-  fullName: BDeshi.BTSM.BTCompleteTransition.OnTaken
-  nameWithType: BTCompleteTransition.OnTaken
-- uid: BDeshi.BTSM.BTCompleteTransition.OnTaken*
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_OnTaken
+  commentId: P:BDeshi.BTSM.BTCompleteTransition`1.OnTaken
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.OnTaken
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).OnTaken
+  nameWithType: BTCompleteTransition<TState>.OnTaken
+  nameWithType.vb: BTCompleteTransition(Of TState).OnTaken
+- uid: BDeshi.BTSM.BTCompleteTransition`1.OnTaken*
   name: OnTaken
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_OnTaken_
-  commentId: Overload:BDeshi.BTSM.BTCompleteTransition.OnTaken
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_OnTaken_
+  commentId: Overload:BDeshi.BTSM.BTCompleteTransition`1.OnTaken
   isSpec: "True"
-  fullName: BDeshi.BTSM.BTCompleteTransition.OnTaken
-  nameWithType: BTCompleteTransition.OnTaken
-- uid: BDeshi.BTSM.BTCompleteTransition.SuccessState
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.OnTaken
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).OnTaken
+  nameWithType: BTCompleteTransition<TState>.OnTaken
+  nameWithType.vb: BTCompleteTransition(Of TState).OnTaken
+- uid: BDeshi.BTSM.BTCompleteTransition`1.SuccessState
   name: SuccessState
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_SuccessState
-  commentId: P:BDeshi.BTSM.BTCompleteTransition.SuccessState
-  fullName: BDeshi.BTSM.BTCompleteTransition.SuccessState
-  nameWithType: BTCompleteTransition.SuccessState
-- uid: BDeshi.BTSM.BTCompleteTransition.SuccessState*
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_SuccessState
+  commentId: P:BDeshi.BTSM.BTCompleteTransition`1.SuccessState
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.SuccessState
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).SuccessState
+  nameWithType: BTCompleteTransition<TState>.SuccessState
+  nameWithType.vb: BTCompleteTransition(Of TState).SuccessState
+- uid: BDeshi.BTSM.BTCompleteTransition`1.SuccessState*
   name: SuccessState
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_SuccessState_
-  commentId: Overload:BDeshi.BTSM.BTCompleteTransition.SuccessState
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_SuccessState_
+  commentId: Overload:BDeshi.BTSM.BTCompleteTransition`1.SuccessState
   isSpec: "True"
-  fullName: BDeshi.BTSM.BTCompleteTransition.SuccessState
-  nameWithType: BTCompleteTransition.SuccessState
-- uid: BDeshi.BTSM.BTCompleteTransition.TakenLastTime
-  name: TakenLastTime
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_TakenLastTime
-  commentId: P:BDeshi.BTSM.BTCompleteTransition.TakenLastTime
-  fullName: BDeshi.BTSM.BTCompleteTransition.TakenLastTime
-  nameWithType: BTCompleteTransition.TakenLastTime
-- uid: BDeshi.BTSM.BTCompleteTransition.TakenLastTime*
-  name: TakenLastTime
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_TakenLastTime_
-  commentId: Overload:BDeshi.BTSM.BTCompleteTransition.TakenLastTime
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.SuccessState
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).SuccessState
+  nameWithType: BTCompleteTransition<TState>.SuccessState
+  nameWithType.vb: BTCompleteTransition(Of TState).SuccessState
+- uid: BDeshi.BTSM.BTCompleteTransition`1.SuccessTypedState
+  name: SuccessTypedState
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_SuccessTypedState
+  commentId: P:BDeshi.BTSM.BTCompleteTransition`1.SuccessTypedState
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.SuccessTypedState
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).SuccessTypedState
+  nameWithType: BTCompleteTransition<TState>.SuccessTypedState
+  nameWithType.vb: BTCompleteTransition(Of TState).SuccessTypedState
+- uid: BDeshi.BTSM.BTCompleteTransition`1.SuccessTypedState*
+  name: SuccessTypedState
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_SuccessTypedState_
+  commentId: Overload:BDeshi.BTSM.BTCompleteTransition`1.SuccessTypedState
   isSpec: "True"
-  fullName: BDeshi.BTSM.BTCompleteTransition.TakenLastTime
-  nameWithType: BTCompleteTransition.TakenLastTime
-- uid: BDeshi.BTSM.BTCompleteTransition.ToString
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.SuccessTypedState
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).SuccessTypedState
+  nameWithType: BTCompleteTransition<TState>.SuccessTypedState
+  nameWithType.vb: BTCompleteTransition(Of TState).SuccessTypedState
+- uid: BDeshi.BTSM.BTCompleteTransition`1.TakenLastTime
+  name: TakenLastTime
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_TakenLastTime
+  commentId: P:BDeshi.BTSM.BTCompleteTransition`1.TakenLastTime
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.TakenLastTime
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).TakenLastTime
+  nameWithType: BTCompleteTransition<TState>.TakenLastTime
+  nameWithType.vb: BTCompleteTransition(Of TState).TakenLastTime
+- uid: BDeshi.BTSM.BTCompleteTransition`1.TakenLastTime*
+  name: TakenLastTime
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_TakenLastTime_
+  commentId: Overload:BDeshi.BTSM.BTCompleteTransition`1.TakenLastTime
+  isSpec: "True"
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.TakenLastTime
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).TakenLastTime
+  nameWithType: BTCompleteTransition<TState>.TakenLastTime
+  nameWithType.vb: BTCompleteTransition(Of TState).TakenLastTime
+- uid: BDeshi.BTSM.BTCompleteTransition`1.ToString
   name: ToString()
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_ToString
-  commentId: M:BDeshi.BTSM.BTCompleteTransition.ToString
-  fullName: BDeshi.BTSM.BTCompleteTransition.ToString()
-  nameWithType: BTCompleteTransition.ToString()
-- uid: BDeshi.BTSM.BTCompleteTransition.ToString*
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_ToString
+  commentId: M:BDeshi.BTSM.BTCompleteTransition`1.ToString
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.ToString()
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).ToString()
+  nameWithType: BTCompleteTransition<TState>.ToString()
+  nameWithType.vb: BTCompleteTransition(Of TState).ToString()
+- uid: BDeshi.BTSM.BTCompleteTransition`1.ToString*
   name: ToString
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_ToString_
-  commentId: Overload:BDeshi.BTSM.BTCompleteTransition.ToString
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_ToString_
+  commentId: Overload:BDeshi.BTSM.BTCompleteTransition`1.ToString
   isSpec: "True"
-  fullName: BDeshi.BTSM.BTCompleteTransition.ToString
-  nameWithType: BTCompleteTransition.ToString
-- uid: BDeshi.BTSM.BTCompleteTransition.TransitionToSameState
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.ToString
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).ToString
+  nameWithType: BTCompleteTransition<TState>.ToString
+  nameWithType.vb: BTCompleteTransition(Of TState).ToString
+- uid: BDeshi.BTSM.BTCompleteTransition`1.TransitionToSameState
   name: TransitionToSameState
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_TransitionToSameState
-  commentId: P:BDeshi.BTSM.BTCompleteTransition.TransitionToSameState
-  fullName: BDeshi.BTSM.BTCompleteTransition.TransitionToSameState
-  nameWithType: BTCompleteTransition.TransitionToSameState
-- uid: BDeshi.BTSM.BTCompleteTransition.TransitionToSameState*
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_TransitionToSameState
+  commentId: P:BDeshi.BTSM.BTCompleteTransition`1.TransitionToSameState
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.TransitionToSameState
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).TransitionToSameState
+  nameWithType: BTCompleteTransition<TState>.TransitionToSameState
+  nameWithType.vb: BTCompleteTransition(Of TState).TransitionToSameState
+- uid: BDeshi.BTSM.BTCompleteTransition`1.TransitionToSameState*
   name: TransitionToSameState
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_TransitionToSameState_
-  commentId: Overload:BDeshi.BTSM.BTCompleteTransition.TransitionToSameState
+  href: api/BDeshi.BTSM.BTCompleteTransition-1.html#BDeshi_BTSM_BTCompleteTransition_1_TransitionToSameState_
+  commentId: Overload:BDeshi.BTSM.BTCompleteTransition`1.TransitionToSameState
   isSpec: "True"
-  fullName: BDeshi.BTSM.BTCompleteTransition.TransitionToSameState
-  nameWithType: BTCompleteTransition.TransitionToSameState
-- uid: BDeshi.BTSM.BTCompleteTransition.successState
-  name: successState
-  href: api/BDeshi.BTSM.BTCompleteTransition.html#BDeshi_BTSM_BTCompleteTransition_successState
-  commentId: F:BDeshi.BTSM.BTCompleteTransition.successState
-  fullName: BDeshi.BTSM.BTCompleteTransition.successState
-  nameWithType: BTCompleteTransition.successState
+  fullName: BDeshi.BTSM.BTCompleteTransition<TState>.TransitionToSameState
+  fullName.vb: BDeshi.BTSM.BTCompleteTransition(Of TState).TransitionToSameState
+  nameWithType: BTCompleteTransition<TState>.TransitionToSameState
+  nameWithType.vb: BTCompleteTransition(Of TState).TransitionToSameState
 - uid: BDeshi.BTSM.BTDecorator
   name: BTDecorator
   href: api/BDeshi.BTSM.BTDecorator.html
@@ -337,12 +375,6 @@ references:
   isSpec: "True"
   fullName: BDeshi.BTSM.BTWrapperState.Tick
   nameWithType: BTWrapperState.Tick
-- uid: BDeshi.BTSM.BTWrapperState.createRootSuccessTransition(BDeshi.BTSM.State)
-  name: createRootSuccessTransition(State)
-  href: api/BDeshi.BTSM.BTWrapperState.html#BDeshi_BTSM_BTWrapperState_createRootSuccessTransition_BDeshi_BTSM_State_
-  commentId: M:BDeshi.BTSM.BTWrapperState.createRootSuccessTransition(BDeshi.BTSM.State)
-  fullName: BDeshi.BTSM.BTWrapperState.createRootSuccessTransition(BDeshi.BTSM.State)
-  nameWithType: BTWrapperState.createRootSuccessTransition(State)
 - uid: BDeshi.BTSM.BTWrapperState.createRootSuccessTransition*
   name: createRootSuccessTransition
   href: api/BDeshi.BTSM.BTWrapperState.html#BDeshi_BTSM_BTWrapperState_createRootSuccessTransition_
@@ -350,6 +382,15 @@ references:
   isSpec: "True"
   fullName: BDeshi.BTSM.BTWrapperState.createRootSuccessTransition
   nameWithType: BTWrapperState.createRootSuccessTransition
+- uid: BDeshi.BTSM.BTWrapperState.createRootSuccessTransition``1(``0)
+  name: createRootSuccessTransition<TState>(TState)
+  href: api/BDeshi.BTSM.BTWrapperState.html#BDeshi_BTSM_BTWrapperState_createRootSuccessTransition__1___0_
+  commentId: M:BDeshi.BTSM.BTWrapperState.createRootSuccessTransition``1(``0)
+  name.vb: createRootSuccessTransition(Of TState)(TState)
+  fullName: BDeshi.BTSM.BTWrapperState.createRootSuccessTransition<TState>(TState)
+  fullName.vb: BDeshi.BTSM.BTWrapperState.createRootSuccessTransition(Of TState)(TState)
+  nameWithType: BTWrapperState.createRootSuccessTransition<TState>(TState)
+  nameWithType.vb: BTWrapperState.createRootSuccessTransition(Of TState)(TState)
 - uid: BDeshi.BTSM.BtNodeBase
   name: BtNodeBase
   href: api/BDeshi.BTSM.BtNodeBase.html
@@ -582,6 +623,82 @@ references:
   commentId: F:BDeshi.BTSM.BtNodeMonoBase.lastStatus
   fullName: BDeshi.BTSM.BtNodeMonoBase.lastStatus
   nameWithType: BtNodeMonoBase.lastStatus
+- uid: BDeshi.BTSM.ConditionNode
+  name: ConditionNode
+  href: api/BDeshi.BTSM.ConditionNode.html
+  commentId: T:BDeshi.BTSM.ConditionNode
+  fullName: BDeshi.BTSM.ConditionNode
+  nameWithType: ConditionNode
+- uid: BDeshi.BTSM.ConditionNode.#ctor(System.Func{System.Boolean},BDeshi.BTSM.BTStatus,BDeshi.BTSM.BTStatus)
+  name: ConditionNode(Func<bool>, BTStatus, BTStatus)
+  href: api/BDeshi.BTSM.ConditionNode.html#BDeshi_BTSM_ConditionNode__ctor_System_Func_System_Boolean__BDeshi_BTSM_BTStatus_BDeshi_BTSM_BTStatus_
+  commentId: M:BDeshi.BTSM.ConditionNode.#ctor(System.Func{System.Boolean},BDeshi.BTSM.BTStatus,BDeshi.BTSM.BTStatus)
+  name.vb: New(Func(Of Boolean), BTStatus, BTStatus)
+  fullName: BDeshi.BTSM.ConditionNode.ConditionNode(System.Func<bool>, BDeshi.BTSM.BTStatus, BDeshi.BTSM.BTStatus)
+  fullName.vb: BDeshi.BTSM.ConditionNode.New(System.Func(Of Boolean), BDeshi.BTSM.BTStatus, BDeshi.BTSM.BTStatus)
+  nameWithType: ConditionNode.ConditionNode(Func<bool>, BTStatus, BTStatus)
+  nameWithType.vb: ConditionNode.New(Func(Of Boolean), BTStatus, BTStatus)
+- uid: BDeshi.BTSM.ConditionNode.#ctor*
+  name: ConditionNode
+  href: api/BDeshi.BTSM.ConditionNode.html#BDeshi_BTSM_ConditionNode__ctor_
+  commentId: Overload:BDeshi.BTSM.ConditionNode.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BDeshi.BTSM.ConditionNode.ConditionNode
+  fullName.vb: BDeshi.BTSM.ConditionNode.New
+  nameWithType: ConditionNode.ConditionNode
+  nameWithType.vb: ConditionNode.New
+- uid: BDeshi.BTSM.ConditionNode.Enter
+  name: Enter()
+  href: api/BDeshi.BTSM.ConditionNode.html#BDeshi_BTSM_ConditionNode_Enter
+  commentId: M:BDeshi.BTSM.ConditionNode.Enter
+  fullName: BDeshi.BTSM.ConditionNode.Enter()
+  nameWithType: ConditionNode.Enter()
+- uid: BDeshi.BTSM.ConditionNode.Enter*
+  name: Enter
+  href: api/BDeshi.BTSM.ConditionNode.html#BDeshi_BTSM_ConditionNode_Enter_
+  commentId: Overload:BDeshi.BTSM.ConditionNode.Enter
+  isSpec: "True"
+  fullName: BDeshi.BTSM.ConditionNode.Enter
+  nameWithType: ConditionNode.Enter
+- uid: BDeshi.BTSM.ConditionNode.Exit
+  name: Exit()
+  href: api/BDeshi.BTSM.ConditionNode.html#BDeshi_BTSM_ConditionNode_Exit
+  commentId: M:BDeshi.BTSM.ConditionNode.Exit
+  fullName: BDeshi.BTSM.ConditionNode.Exit()
+  nameWithType: ConditionNode.Exit()
+- uid: BDeshi.BTSM.ConditionNode.Exit*
+  name: Exit
+  href: api/BDeshi.BTSM.ConditionNode.html#BDeshi_BTSM_ConditionNode_Exit_
+  commentId: Overload:BDeshi.BTSM.ConditionNode.Exit
+  isSpec: "True"
+  fullName: BDeshi.BTSM.ConditionNode.Exit
+  nameWithType: ConditionNode.Exit
+- uid: BDeshi.BTSM.ConditionNode.InternalTick
+  name: InternalTick()
+  href: api/BDeshi.BTSM.ConditionNode.html#BDeshi_BTSM_ConditionNode_InternalTick
+  commentId: M:BDeshi.BTSM.ConditionNode.InternalTick
+  fullName: BDeshi.BTSM.ConditionNode.InternalTick()
+  nameWithType: ConditionNode.InternalTick()
+- uid: BDeshi.BTSM.ConditionNode.InternalTick*
+  name: InternalTick
+  href: api/BDeshi.BTSM.ConditionNode.html#BDeshi_BTSM_ConditionNode_InternalTick_
+  commentId: Overload:BDeshi.BTSM.ConditionNode.InternalTick
+  isSpec: "True"
+  fullName: BDeshi.BTSM.ConditionNode.InternalTick
+  nameWithType: ConditionNode.InternalTick
+- uid: BDeshi.BTSM.ConditionNode.failState
+  name: failState
+  href: api/BDeshi.BTSM.ConditionNode.html#BDeshi_BTSM_ConditionNode_failState
+  commentId: F:BDeshi.BTSM.ConditionNode.failState
+  fullName: BDeshi.BTSM.ConditionNode.failState
+  nameWithType: ConditionNode.failState
+- uid: BDeshi.BTSM.ConditionNode.successState
+  name: successState
+  href: api/BDeshi.BTSM.ConditionNode.html#BDeshi_BTSM_ConditionNode_successState
+  commentId: F:BDeshi.BTSM.ConditionNode.successState
+  fullName: BDeshi.BTSM.ConditionNode.successState
+  nameWithType: ConditionNode.successState
 - uid: BDeshi.BTSM.ContainerState
   name: ContainerState
   href: api/BDeshi.BTSM.ContainerState.html
@@ -607,15 +724,15 @@ references:
   commentId: T:BDeshi.BTSM.CooldownNode
   fullName: BDeshi.BTSM.CooldownNode
   nameWithType: CooldownNode
-- uid: BDeshi.BTSM.CooldownNode.#ctor(BDeshi.BTSM.BtNodeBase,System.Single,BDeshi.BTSM.CooldownNode.CoolDownType,System.Boolean)
-  name: CooldownNode(BtNodeBase, float, CoolDownType, bool)
-  href: api/BDeshi.BTSM.CooldownNode.html#BDeshi_BTSM_CooldownNode__ctor_BDeshi_BTSM_BtNodeBase_System_Single_BDeshi_BTSM_CooldownNode_CoolDownType_System_Boolean_
-  commentId: M:BDeshi.BTSM.CooldownNode.#ctor(BDeshi.BTSM.BtNodeBase,System.Single,BDeshi.BTSM.CooldownNode.CoolDownType,System.Boolean)
-  name.vb: New(BtNodeBase, Single, CoolDownType, Boolean)
-  fullName: BDeshi.BTSM.CooldownNode.CooldownNode(BDeshi.BTSM.BtNodeBase, float, BDeshi.BTSM.CooldownNode.CoolDownType, bool)
-  fullName.vb: BDeshi.BTSM.CooldownNode.New(BDeshi.BTSM.BtNodeBase, Single, BDeshi.BTSM.CooldownNode.CoolDownType, Boolean)
-  nameWithType: CooldownNode.CooldownNode(BtNodeBase, float, CooldownNode.CoolDownType, bool)
-  nameWithType.vb: CooldownNode.New(BtNodeBase, Single, CooldownNode.CoolDownType, Boolean)
+- uid: BDeshi.BTSM.CooldownNode.#ctor(BDeshi.BTSM.BtNodeBase,System.Single,BDeshi.BTSM.BTStatus,BDeshi.BTSM.CooldownNode.CoolDownResetType,System.Boolean)
+  name: CooldownNode(BtNodeBase, float, BTStatus, CoolDownResetType, bool)
+  href: api/BDeshi.BTSM.CooldownNode.html#BDeshi_BTSM_CooldownNode__ctor_BDeshi_BTSM_BtNodeBase_System_Single_BDeshi_BTSM_BTStatus_BDeshi_BTSM_CooldownNode_CoolDownResetType_System_Boolean_
+  commentId: M:BDeshi.BTSM.CooldownNode.#ctor(BDeshi.BTSM.BtNodeBase,System.Single,BDeshi.BTSM.BTStatus,BDeshi.BTSM.CooldownNode.CoolDownResetType,System.Boolean)
+  name.vb: New(BtNodeBase, Single, BTStatus, CoolDownResetType, Boolean)
+  fullName: BDeshi.BTSM.CooldownNode.CooldownNode(BDeshi.BTSM.BtNodeBase, float, BDeshi.BTSM.BTStatus, BDeshi.BTSM.CooldownNode.CoolDownResetType, bool)
+  fullName.vb: BDeshi.BTSM.CooldownNode.New(BDeshi.BTSM.BtNodeBase, Single, BDeshi.BTSM.BTStatus, BDeshi.BTSM.CooldownNode.CoolDownResetType, Boolean)
+  nameWithType: CooldownNode.CooldownNode(BtNodeBase, float, BTStatus, CooldownNode.CoolDownResetType, bool)
+  nameWithType.vb: CooldownNode.New(BtNodeBase, Single, BTStatus, CooldownNode.CoolDownResetType, Boolean)
 - uid: BDeshi.BTSM.CooldownNode.#ctor*
   name: CooldownNode
   href: api/BDeshi.BTSM.CooldownNode.html#BDeshi_BTSM_CooldownNode__ctor_
@@ -626,24 +743,24 @@ references:
   fullName.vb: BDeshi.BTSM.CooldownNode.New
   nameWithType: CooldownNode.CooldownNode
   nameWithType.vb: CooldownNode.New
-- uid: BDeshi.BTSM.CooldownNode.CoolDownType
-  name: CooldownNode.CoolDownType
-  href: api/BDeshi.BTSM.CooldownNode.CoolDownType.html
-  commentId: T:BDeshi.BTSM.CooldownNode.CoolDownType
-  fullName: BDeshi.BTSM.CooldownNode.CoolDownType
-  nameWithType: CooldownNode.CoolDownType
-- uid: BDeshi.BTSM.CooldownNode.CoolDownType.ResetOnExit
+- uid: BDeshi.BTSM.CooldownNode.CoolDownResetType
+  name: CooldownNode.CoolDownResetType
+  href: api/BDeshi.BTSM.CooldownNode.CoolDownResetType.html
+  commentId: T:BDeshi.BTSM.CooldownNode.CoolDownResetType
+  fullName: BDeshi.BTSM.CooldownNode.CoolDownResetType
+  nameWithType: CooldownNode.CoolDownResetType
+- uid: BDeshi.BTSM.CooldownNode.CoolDownResetType.ResetOnExit
   name: ResetOnExit
-  href: api/BDeshi.BTSM.CooldownNode.CoolDownType.html#BDeshi_BTSM_CooldownNode_CoolDownType_ResetOnExit
-  commentId: F:BDeshi.BTSM.CooldownNode.CoolDownType.ResetOnExit
-  fullName: BDeshi.BTSM.CooldownNode.CoolDownType.ResetOnExit
-  nameWithType: CooldownNode.CoolDownType.ResetOnExit
-- uid: BDeshi.BTSM.CooldownNode.CoolDownType.ResetOnStart
+  href: api/BDeshi.BTSM.CooldownNode.CoolDownResetType.html#BDeshi_BTSM_CooldownNode_CoolDownResetType_ResetOnExit
+  commentId: F:BDeshi.BTSM.CooldownNode.CoolDownResetType.ResetOnExit
+  fullName: BDeshi.BTSM.CooldownNode.CoolDownResetType.ResetOnExit
+  nameWithType: CooldownNode.CoolDownResetType.ResetOnExit
+- uid: BDeshi.BTSM.CooldownNode.CoolDownResetType.ResetOnStart
   name: ResetOnStart
-  href: api/BDeshi.BTSM.CooldownNode.CoolDownType.html#BDeshi_BTSM_CooldownNode_CoolDownType_ResetOnStart
-  commentId: F:BDeshi.BTSM.CooldownNode.CoolDownType.ResetOnStart
-  fullName: BDeshi.BTSM.CooldownNode.CoolDownType.ResetOnStart
-  nameWithType: CooldownNode.CoolDownType.ResetOnStart
+  href: api/BDeshi.BTSM.CooldownNode.CoolDownResetType.html#BDeshi_BTSM_CooldownNode_CoolDownResetType_ResetOnStart
+  commentId: F:BDeshi.BTSM.CooldownNode.CoolDownResetType.ResetOnStart
+  fullName: BDeshi.BTSM.CooldownNode.CoolDownResetType.ResetOnStart
+  nameWithType: CooldownNode.CoolDownResetType.ResetOnStart
 - uid: BDeshi.BTSM.CooldownNode.EditorName
   name: EditorName
   href: api/BDeshi.BTSM.CooldownNode.html#BDeshi_BTSM_CooldownNode_EditorName
@@ -696,6 +813,12 @@ references:
   isSpec: "True"
   fullName: BDeshi.BTSM.CooldownNode.InternalTick
   nameWithType: CooldownNode.InternalTick
+- uid: BDeshi.BTSM.CooldownNode.cooldownFailStatus
+  name: cooldownFailStatus
+  href: api/BDeshi.BTSM.CooldownNode.html#BDeshi_BTSM_CooldownNode_cooldownFailStatus
+  commentId: F:BDeshi.BTSM.CooldownNode.cooldownFailStatus
+  fullName: BDeshi.BTSM.CooldownNode.cooldownFailStatus
+  nameWithType: CooldownNode.cooldownFailStatus
 - uid: BDeshi.BTSM.CooldownNode.startRunning
   name: startRunning()
   href: api/BDeshi.BTSM.CooldownNode.html#BDeshi_BTSM_CooldownNode_startRunning
@@ -721,30 +844,6 @@ references:
   commentId: F:BDeshi.BTSM.CooldownNode.waitStart
   fullName: BDeshi.BTSM.CooldownNode.waitStart
   nameWithType: CooldownNode.waitStart
-- uid: BDeshi.BTSM.Editor
-  name: BDeshi.BTSM.Editor
-  href: api/BDeshi.BTSM.Editor.html
-  commentId: N:BDeshi.BTSM.Editor
-  fullName: BDeshi.BTSM.Editor
-  nameWithType: BDeshi.BTSM.Editor
-- uid: BDeshi.BTSM.Editor.FSMEditorWindow
-  name: FSMEditorWindow
-  href: api/BDeshi.BTSM.Editor.FSMEditorWindow.html
-  commentId: T:BDeshi.BTSM.Editor.FSMEditorWindow
-  fullName: BDeshi.BTSM.Editor.FSMEditorWindow
-  nameWithType: FSMEditorWindow
-- uid: BDeshi.BTSM.Editor.FSMEditorWindow.runner
-  name: runner
-  href: api/BDeshi.BTSM.Editor.FSMEditorWindow.html#BDeshi_BTSM_Editor_FSMEditorWindow_runner
-  commentId: F:BDeshi.BTSM.Editor.FSMEditorWindow.runner
-  fullName: BDeshi.BTSM.Editor.FSMEditorWindow.runner
-  nameWithType: FSMEditorWindow.runner
-- uid: BDeshi.BTSM.Editor.FSMEditorWindow.selectedState
-  name: selectedState
-  href: api/BDeshi.BTSM.Editor.FSMEditorWindow.html#BDeshi_BTSM_Editor_FSMEditorWindow_selectedState
-  commentId: F:BDeshi.BTSM.Editor.FSMEditorWindow.selectedState
-  fullName: BDeshi.BTSM.Editor.FSMEditorWindow.selectedState
-  nameWithType: FSMEditorWindow.selectedState
 - uid: BDeshi.BTSM.EnterExitDecorator
   name: EnterExitDecorator
   href: api/BDeshi.BTSM.EnterExitDecorator.html
@@ -821,159 +920,21 @@ references:
   commentId: F:BDeshi.BTSM.EnterExitDecorator.OnExit
   fullName: BDeshi.BTSM.EnterExitDecorator.OnExit
   nameWithType: EnterExitDecorator.OnExit
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1
-  name: EventDrivenStateMachine<TEvent>
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html
-  commentId: T:BDeshi.BTSM.EventDrivenStateMachine`1
-  name.vb: EventDrivenStateMachine(Of TEvent)
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent)
-  nameWithType: EventDrivenStateMachine<TEvent>
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent)
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.#ctor(BDeshi.BTSM.State)
-  name: EventDrivenStateMachine(State)
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1__ctor_BDeshi_BTSM_State_
-  commentId: M:BDeshi.BTSM.EventDrivenStateMachine`1.#ctor(BDeshi.BTSM.State)
-  name.vb: New(State)
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.EventDrivenStateMachine(BDeshi.BTSM.State)
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).New(BDeshi.BTSM.State)
-  nameWithType: EventDrivenStateMachine<TEvent>.EventDrivenStateMachine(State)
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).New(State)
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.#ctor*
-  name: EventDrivenStateMachine
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1__ctor_
-  commentId: Overload:BDeshi.BTSM.EventDrivenStateMachine`1.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.EventDrivenStateMachine
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).New
-  nameWithType: EventDrivenStateMachine<TEvent>.EventDrivenStateMachine
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).New
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.HandleTransitioned
-  name: HandleTransitioned()
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_HandleTransitioned
-  commentId: M:BDeshi.BTSM.EventDrivenStateMachine`1.HandleTransitioned
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.HandleTransitioned()
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).HandleTransitioned()
-  nameWithType: EventDrivenStateMachine<TEvent>.HandleTransitioned()
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).HandleTransitioned()
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.HandleTransitioned*
-  name: HandleTransitioned
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_HandleTransitioned_
-  commentId: Overload:BDeshi.BTSM.EventDrivenStateMachine`1.HandleTransitioned
-  isSpec: "True"
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.HandleTransitioned
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).HandleTransitioned
-  nameWithType: EventDrivenStateMachine<TEvent>.HandleTransitioned
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).HandleTransitioned
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.addEventHandler(BDeshi.BTSM.State,`0,System.Action)
-  name: addEventHandler(State, TEvent, Action)
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_addEventHandler_BDeshi_BTSM_State__0_System_Action_
-  commentId: M:BDeshi.BTSM.EventDrivenStateMachine`1.addEventHandler(BDeshi.BTSM.State,`0,System.Action)
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.addEventHandler(BDeshi.BTSM.State, TEvent, System.Action)
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).addEventHandler(BDeshi.BTSM.State, TEvent, System.Action)
-  nameWithType: EventDrivenStateMachine<TEvent>.addEventHandler(State, TEvent, Action)
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).addEventHandler(State, TEvent, Action)
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.addEventHandler*
-  name: addEventHandler
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_addEventHandler_
-  commentId: Overload:BDeshi.BTSM.EventDrivenStateMachine`1.addEventHandler
-  isSpec: "True"
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.addEventHandler
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).addEventHandler
-  nameWithType: EventDrivenStateMachine<TEvent>.addEventHandler
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).addEventHandler
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.addEventTransition(BDeshi.BTSM.State,`0,BDeshi.BTSM.State)
-  name: addEventTransition(State, TEvent, State)
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_addEventTransition_BDeshi_BTSM_State__0_BDeshi_BTSM_State_
-  commentId: M:BDeshi.BTSM.EventDrivenStateMachine`1.addEventTransition(BDeshi.BTSM.State,`0,BDeshi.BTSM.State)
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.addEventTransition(BDeshi.BTSM.State, TEvent, BDeshi.BTSM.State)
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).addEventTransition(BDeshi.BTSM.State, TEvent, BDeshi.BTSM.State)
-  nameWithType: EventDrivenStateMachine<TEvent>.addEventTransition(State, TEvent, State)
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).addEventTransition(State, TEvent, State)
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.addEventTransition*
-  name: addEventTransition
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_addEventTransition_
-  commentId: Overload:BDeshi.BTSM.EventDrivenStateMachine`1.addEventTransition
-  isSpec: "True"
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.addEventTransition
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).addEventTransition
-  nameWithType: EventDrivenStateMachine<TEvent>.addEventTransition
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).addEventTransition
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.addGlobalEventHandler(`0,System.Action)
-  name: addGlobalEventHandler(TEvent, Action)
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_addGlobalEventHandler__0_System_Action_
-  commentId: M:BDeshi.BTSM.EventDrivenStateMachine`1.addGlobalEventHandler(`0,System.Action)
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.addGlobalEventHandler(TEvent, System.Action)
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).addGlobalEventHandler(TEvent, System.Action)
-  nameWithType: EventDrivenStateMachine<TEvent>.addGlobalEventHandler(TEvent, Action)
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).addGlobalEventHandler(TEvent, Action)
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.addGlobalEventHandler*
-  name: addGlobalEventHandler
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_addGlobalEventHandler_
-  commentId: Overload:BDeshi.BTSM.EventDrivenStateMachine`1.addGlobalEventHandler
-  isSpec: "True"
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.addGlobalEventHandler
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).addGlobalEventHandler
-  nameWithType: EventDrivenStateMachine<TEvent>.addGlobalEventHandler
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).addGlobalEventHandler
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.addGlobalEventTransition(`0,BDeshi.BTSM.State)
-  name: addGlobalEventTransition(TEvent, State)
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_addGlobalEventTransition__0_BDeshi_BTSM_State_
-  commentId: M:BDeshi.BTSM.EventDrivenStateMachine`1.addGlobalEventTransition(`0,BDeshi.BTSM.State)
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.addGlobalEventTransition(TEvent, BDeshi.BTSM.State)
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).addGlobalEventTransition(TEvent, BDeshi.BTSM.State)
-  nameWithType: EventDrivenStateMachine<TEvent>.addGlobalEventTransition(TEvent, State)
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).addGlobalEventTransition(TEvent, State)
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.addGlobalEventTransition*
-  name: addGlobalEventTransition
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_addGlobalEventTransition_
-  commentId: Overload:BDeshi.BTSM.EventDrivenStateMachine`1.addGlobalEventTransition
-  isSpec: "True"
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.addGlobalEventTransition
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).addGlobalEventTransition
-  nameWithType: EventDrivenStateMachine<TEvent>.addGlobalEventTransition
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).addGlobalEventTransition
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.emptyEventHandlers
-  name: emptyEventHandlers
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_emptyEventHandlers
-  commentId: F:BDeshi.BTSM.EventDrivenStateMachine`1.emptyEventHandlers
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.emptyEventHandlers
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).emptyEventHandlers
-  nameWithType: EventDrivenStateMachine<TEvent>.emptyEventHandlers
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).emptyEventHandlers
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.handleEvent(`0)
-  name: handleEvent(TEvent)
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_handleEvent__0_
-  commentId: M:BDeshi.BTSM.EventDrivenStateMachine`1.handleEvent(`0)
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.handleEvent(TEvent)
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).handleEvent(TEvent)
-  nameWithType: EventDrivenStateMachine<TEvent>.handleEvent(TEvent)
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).handleEvent(TEvent)
-- uid: BDeshi.BTSM.EventDrivenStateMachine`1.handleEvent*
-  name: handleEvent
-  href: api/BDeshi.BTSM.EventDrivenStateMachine-1.html#BDeshi_BTSM_EventDrivenStateMachine_1_handleEvent_
-  commentId: Overload:BDeshi.BTSM.EventDrivenStateMachine`1.handleEvent
-  isSpec: "True"
-  fullName: BDeshi.BTSM.EventDrivenStateMachine<TEvent>.handleEvent
-  fullName.vb: BDeshi.BTSM.EventDrivenStateMachine(Of TEvent).handleEvent
-  nameWithType: EventDrivenStateMachine<TEvent>.handleEvent
-  nameWithType.vb: EventDrivenStateMachine(Of TEvent).handleEvent
 - uid: BDeshi.BTSM.FSMRunner
   name: FSMRunner
   href: api/BDeshi.BTSM.FSMRunner.html
   commentId: T:BDeshi.BTSM.FSMRunner
   fullName: BDeshi.BTSM.FSMRunner
   nameWithType: FSMRunner
-- uid: BDeshi.BTSM.FSMRunner.Initialize(BDeshi.BTSM.StateMachine,System.Boolean)
-  name: Initialize(StateMachine, bool)
-  href: api/BDeshi.BTSM.FSMRunner.html#BDeshi_BTSM_FSMRunner_Initialize_BDeshi_BTSM_StateMachine_System_Boolean_
-  commentId: M:BDeshi.BTSM.FSMRunner.Initialize(BDeshi.BTSM.StateMachine,System.Boolean)
-  name.vb: Initialize(StateMachine, Boolean)
-  fullName: BDeshi.BTSM.FSMRunner.Initialize(BDeshi.BTSM.StateMachine, bool)
-  fullName.vb: BDeshi.BTSM.FSMRunner.Initialize(BDeshi.BTSM.StateMachine, Boolean)
-  nameWithType: FSMRunner.Initialize(StateMachine, bool)
-  nameWithType.vb: FSMRunner.Initialize(StateMachine, Boolean)
+- uid: BDeshi.BTSM.FSMRunner.Initialize(BDeshi.BTSM.IRunnableStateMachine,System.Boolean)
+  name: Initialize(IRunnableStateMachine, bool)
+  href: api/BDeshi.BTSM.FSMRunner.html#BDeshi_BTSM_FSMRunner_Initialize_BDeshi_BTSM_IRunnableStateMachine_System_Boolean_
+  commentId: M:BDeshi.BTSM.FSMRunner.Initialize(BDeshi.BTSM.IRunnableStateMachine,System.Boolean)
+  name.vb: Initialize(IRunnableStateMachine, Boolean)
+  fullName: BDeshi.BTSM.FSMRunner.Initialize(BDeshi.BTSM.IRunnableStateMachine, bool)
+  fullName.vb: BDeshi.BTSM.FSMRunner.Initialize(BDeshi.BTSM.IRunnableStateMachine, Boolean)
+  nameWithType: FSMRunner.Initialize(IRunnableStateMachine, bool)
+  nameWithType.vb: FSMRunner.Initialize(IRunnableStateMachine, Boolean)
 - uid: BDeshi.BTSM.FSMRunner.Initialize*
   name: Initialize
   href: api/BDeshi.BTSM.FSMRunner.html#BDeshi_BTSM_FSMRunner_Initialize_
@@ -1000,6 +961,25 @@ references:
   commentId: F:BDeshi.BTSM.FSMRunner.fsm
   fullName: BDeshi.BTSM.FSMRunner.fsm
   nameWithType: FSMRunner.fsm
+- uid: BDeshi.BTSM.FSMRunner.manualTick
+  name: manualTick()
+  href: api/BDeshi.BTSM.FSMRunner.html#BDeshi_BTSM_FSMRunner_manualTick
+  commentId: M:BDeshi.BTSM.FSMRunner.manualTick
+  fullName: BDeshi.BTSM.FSMRunner.manualTick()
+  nameWithType: FSMRunner.manualTick()
+- uid: BDeshi.BTSM.FSMRunner.manualTick*
+  name: manualTick
+  href: api/BDeshi.BTSM.FSMRunner.html#BDeshi_BTSM_FSMRunner_manualTick_
+  commentId: Overload:BDeshi.BTSM.FSMRunner.manualTick
+  isSpec: "True"
+  fullName: BDeshi.BTSM.FSMRunner.manualTick
+  nameWithType: FSMRunner.manualTick
+- uid: BDeshi.BTSM.FSMRunner.shouldTickAutomatically
+  name: shouldTickAutomatically
+  href: api/BDeshi.BTSM.FSMRunner.html#BDeshi_BTSM_FSMRunner_shouldTickAutomatically
+  commentId: F:BDeshi.BTSM.FSMRunner.shouldTickAutomatically
+  fullName: BDeshi.BTSM.FSMRunner.shouldTickAutomatically
+  nameWithType: FSMRunner.shouldTickAutomatically
 - uid: BDeshi.BTSM.FailTillComplete
   name: FailTillComplete
   href: api/BDeshi.BTSM.FailTillComplete.html
@@ -1169,6 +1149,137 @@ references:
   commentId: F:BDeshi.BTSM.FallbackNode.retry
   fullName: BDeshi.BTSM.FallbackNode.retry
   nameWithType: FallbackNode.retry
+- uid: BDeshi.BTSM.FallbackRepeatNode
+  name: FallbackRepeatNode
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html
+  commentId: T:BDeshi.BTSM.FallbackRepeatNode
+  fullName: BDeshi.BTSM.FallbackRepeatNode
+  nameWithType: FallbackRepeatNode
+- uid: BDeshi.BTSM.FallbackRepeatNode.#ctor
+  name: FallbackRepeatNode()
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode__ctor
+  commentId: M:BDeshi.BTSM.FallbackRepeatNode.#ctor
+  name.vb: New()
+  fullName: BDeshi.BTSM.FallbackRepeatNode.FallbackRepeatNode()
+  fullName.vb: BDeshi.BTSM.FallbackRepeatNode.New()
+  nameWithType: FallbackRepeatNode.FallbackRepeatNode()
+  nameWithType.vb: FallbackRepeatNode.New()
+- uid: BDeshi.BTSM.FallbackRepeatNode.#ctor(System.Collections.Generic.List{BDeshi.BTSM.IBtNode})
+  name: FallbackRepeatNode(List<IBtNode>)
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode__ctor_System_Collections_Generic_List_BDeshi_BTSM_IBtNode__
+  commentId: M:BDeshi.BTSM.FallbackRepeatNode.#ctor(System.Collections.Generic.List{BDeshi.BTSM.IBtNode})
+  name.vb: New(List(Of IBtNode))
+  fullName: BDeshi.BTSM.FallbackRepeatNode.FallbackRepeatNode(System.Collections.Generic.List<BDeshi.BTSM.IBtNode>)
+  fullName.vb: BDeshi.BTSM.FallbackRepeatNode.New(System.Collections.Generic.List(Of BDeshi.BTSM.IBtNode))
+  nameWithType: FallbackRepeatNode.FallbackRepeatNode(List<IBtNode>)
+  nameWithType.vb: FallbackRepeatNode.New(List(Of IBtNode))
+- uid: BDeshi.BTSM.FallbackRepeatNode.#ctor*
+  name: FallbackRepeatNode
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode__ctor_
+  commentId: Overload:BDeshi.BTSM.FallbackRepeatNode.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BDeshi.BTSM.FallbackRepeatNode.FallbackRepeatNode
+  fullName.vb: BDeshi.BTSM.FallbackRepeatNode.New
+  nameWithType: FallbackRepeatNode.FallbackRepeatNode
+  nameWithType.vb: FallbackRepeatNode.New
+- uid: BDeshi.BTSM.FallbackRepeatNode.Enter
+  name: Enter()
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode_Enter
+  commentId: M:BDeshi.BTSM.FallbackRepeatNode.Enter
+  fullName: BDeshi.BTSM.FallbackRepeatNode.Enter()
+  nameWithType: FallbackRepeatNode.Enter()
+- uid: BDeshi.BTSM.FallbackRepeatNode.Enter*
+  name: Enter
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode_Enter_
+  commentId: Overload:BDeshi.BTSM.FallbackRepeatNode.Enter
+  isSpec: "True"
+  fullName: BDeshi.BTSM.FallbackRepeatNode.Enter
+  nameWithType: FallbackRepeatNode.Enter
+- uid: BDeshi.BTSM.FallbackRepeatNode.Exit
+  name: Exit()
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode_Exit
+  commentId: M:BDeshi.BTSM.FallbackRepeatNode.Exit
+  fullName: BDeshi.BTSM.FallbackRepeatNode.Exit()
+  nameWithType: FallbackRepeatNode.Exit()
+- uid: BDeshi.BTSM.FallbackRepeatNode.Exit*
+  name: Exit
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode_Exit_
+  commentId: Overload:BDeshi.BTSM.FallbackRepeatNode.Exit
+  isSpec: "True"
+  fullName: BDeshi.BTSM.FallbackRepeatNode.Exit
+  nameWithType: FallbackRepeatNode.Exit
+- uid: BDeshi.BTSM.FallbackRepeatNode.GetActiveChildren
+  name: GetActiveChildren
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode_GetActiveChildren
+  commentId: P:BDeshi.BTSM.FallbackRepeatNode.GetActiveChildren
+  fullName: BDeshi.BTSM.FallbackRepeatNode.GetActiveChildren
+  nameWithType: FallbackRepeatNode.GetActiveChildren
+- uid: BDeshi.BTSM.FallbackRepeatNode.GetActiveChildren*
+  name: GetActiveChildren
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode_GetActiveChildren_
+  commentId: Overload:BDeshi.BTSM.FallbackRepeatNode.GetActiveChildren
+  isSpec: "True"
+  fullName: BDeshi.BTSM.FallbackRepeatNode.GetActiveChildren
+  nameWithType: FallbackRepeatNode.GetActiveChildren
+- uid: BDeshi.BTSM.FallbackRepeatNode.InternalTick
+  name: InternalTick()
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode_InternalTick
+  commentId: M:BDeshi.BTSM.FallbackRepeatNode.InternalTick
+  fullName: BDeshi.BTSM.FallbackRepeatNode.InternalTick()
+  nameWithType: FallbackRepeatNode.InternalTick()
+- uid: BDeshi.BTSM.FallbackRepeatNode.InternalTick*
+  name: InternalTick
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode_InternalTick_
+  commentId: Overload:BDeshi.BTSM.FallbackRepeatNode.InternalTick
+  isSpec: "True"
+  fullName: BDeshi.BTSM.FallbackRepeatNode.InternalTick
+  nameWithType: FallbackRepeatNode.InternalTick
+- uid: BDeshi.BTSM.FallbackRepeatNode.addChild(BDeshi.BTSM.IBtNode)
+  name: addChild(IBtNode)
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode_addChild_BDeshi_BTSM_IBtNode_
+  commentId: M:BDeshi.BTSM.FallbackRepeatNode.addChild(BDeshi.BTSM.IBtNode)
+  fullName: BDeshi.BTSM.FallbackRepeatNode.addChild(BDeshi.BTSM.IBtNode)
+  nameWithType: FallbackRepeatNode.addChild(IBtNode)
+- uid: BDeshi.BTSM.FallbackRepeatNode.addChild*
+  name: addChild
+  href: api/BDeshi.BTSM.FallbackRepeatNode.html#BDeshi_BTSM_FallbackRepeatNode_addChild_
+  commentId: Overload:BDeshi.BTSM.FallbackRepeatNode.addChild
+  isSpec: "True"
+  fullName: BDeshi.BTSM.FallbackRepeatNode.addChild
+  nameWithType: FallbackRepeatNode.addChild
+- uid: BDeshi.BTSM.IBTWrapperState
+  name: IBTWrapperState
+  href: api/BDeshi.BTSM.IBTWrapperState.html
+  commentId: T:BDeshi.BTSM.IBTWrapperState
+  fullName: BDeshi.BTSM.IBTWrapperState
+  nameWithType: IBTWrapperState
+- uid: BDeshi.BTSM.IBTWrapperState.BTRoot
+  name: BTRoot
+  href: api/BDeshi.BTSM.IBTWrapperState.html#BDeshi_BTSM_IBTWrapperState_BTRoot
+  commentId: P:BDeshi.BTSM.IBTWrapperState.BTRoot
+  fullName: BDeshi.BTSM.IBTWrapperState.BTRoot
+  nameWithType: IBTWrapperState.BTRoot
+- uid: BDeshi.BTSM.IBTWrapperState.BTRoot*
+  name: BTRoot
+  href: api/BDeshi.BTSM.IBTWrapperState.html#BDeshi_BTSM_IBTWrapperState_BTRoot_
+  commentId: Overload:BDeshi.BTSM.IBTWrapperState.BTRoot
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IBTWrapperState.BTRoot
+  nameWithType: IBTWrapperState.BTRoot
+- uid: BDeshi.BTSM.IBTWrapperState.LastStatus
+  name: LastStatus
+  href: api/BDeshi.BTSM.IBTWrapperState.html#BDeshi_BTSM_IBTWrapperState_LastStatus
+  commentId: P:BDeshi.BTSM.IBTWrapperState.LastStatus
+  fullName: BDeshi.BTSM.IBTWrapperState.LastStatus
+  nameWithType: IBTWrapperState.LastStatus
+- uid: BDeshi.BTSM.IBTWrapperState.LastStatus*
+  name: LastStatus
+  href: api/BDeshi.BTSM.IBTWrapperState.html#BDeshi_BTSM_IBTWrapperState_LastStatus_
+  commentId: Overload:BDeshi.BTSM.IBTWrapperState.LastStatus
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IBTWrapperState.LastStatus
+  nameWithType: IBTWrapperState.LastStatus
 - uid: BDeshi.BTSM.IBtNode
   name: IBtNode
   href: api/BDeshi.BTSM.IBtNode.html
@@ -1266,6 +1377,245 @@ references:
   isSpec: "True"
   fullName: BDeshi.BTSM.IBtNode.Typename
   nameWithType: IBtNode.Typename
+- uid: BDeshi.BTSM.IRunnableStateMachine
+  name: IRunnableStateMachine
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html
+  commentId: T:BDeshi.BTSM.IRunnableStateMachine
+  fullName: BDeshi.BTSM.IRunnableStateMachine
+  nameWithType: IRunnableStateMachine
+- uid: BDeshi.BTSM.IRunnableStateMachine.ActiveTransitions
+  name: ActiveTransitions
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_ActiveTransitions
+  commentId: P:BDeshi.BTSM.IRunnableStateMachine.ActiveTransitions
+  fullName: BDeshi.BTSM.IRunnableStateMachine.ActiveTransitions
+  nameWithType: IRunnableStateMachine.ActiveTransitions
+- uid: BDeshi.BTSM.IRunnableStateMachine.ActiveTransitions*
+  name: ActiveTransitions
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_ActiveTransitions_
+  commentId: Overload:BDeshi.BTSM.IRunnableStateMachine.ActiveTransitions
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IRunnableStateMachine.ActiveTransitions
+  nameWithType: IRunnableStateMachine.ActiveTransitions
+- uid: BDeshi.BTSM.IRunnableStateMachine.CurState
+  name: CurState
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_CurState
+  commentId: P:BDeshi.BTSM.IRunnableStateMachine.CurState
+  fullName: BDeshi.BTSM.IRunnableStateMachine.CurState
+  nameWithType: IRunnableStateMachine.CurState
+- uid: BDeshi.BTSM.IRunnableStateMachine.CurState*
+  name: CurState
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_CurState_
+  commentId: Overload:BDeshi.BTSM.IRunnableStateMachine.CurState
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IRunnableStateMachine.CurState
+  nameWithType: IRunnableStateMachine.CurState
+- uid: BDeshi.BTSM.IRunnableStateMachine.DebugContext
+  name: DebugContext
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_DebugContext
+  commentId: P:BDeshi.BTSM.IRunnableStateMachine.DebugContext
+  fullName: BDeshi.BTSM.IRunnableStateMachine.DebugContext
+  nameWithType: IRunnableStateMachine.DebugContext
+- uid: BDeshi.BTSM.IRunnableStateMachine.DebugContext*
+  name: DebugContext
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_DebugContext_
+  commentId: Overload:BDeshi.BTSM.IRunnableStateMachine.DebugContext
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IRunnableStateMachine.DebugContext
+  nameWithType: IRunnableStateMachine.DebugContext
+- uid: BDeshi.BTSM.IRunnableStateMachine.GlobalTransitions
+  name: GlobalTransitions
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_GlobalTransitions
+  commentId: P:BDeshi.BTSM.IRunnableStateMachine.GlobalTransitions
+  fullName: BDeshi.BTSM.IRunnableStateMachine.GlobalTransitions
+  nameWithType: IRunnableStateMachine.GlobalTransitions
+- uid: BDeshi.BTSM.IRunnableStateMachine.GlobalTransitions*
+  name: GlobalTransitions
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_GlobalTransitions_
+  commentId: Overload:BDeshi.BTSM.IRunnableStateMachine.GlobalTransitions
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IRunnableStateMachine.GlobalTransitions
+  nameWithType: IRunnableStateMachine.GlobalTransitions
+- uid: BDeshi.BTSM.IRunnableStateMachine.ManualTransition
+  name: ManualTransition
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_ManualTransition
+  commentId: P:BDeshi.BTSM.IRunnableStateMachine.ManualTransition
+  fullName: BDeshi.BTSM.IRunnableStateMachine.ManualTransition
+  nameWithType: IRunnableStateMachine.ManualTransition
+- uid: BDeshi.BTSM.IRunnableStateMachine.ManualTransition*
+  name: ManualTransition
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_ManualTransition_
+  commentId: Overload:BDeshi.BTSM.IRunnableStateMachine.ManualTransition
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IRunnableStateMachine.ManualTransition
+  nameWithType: IRunnableStateMachine.ManualTransition
+- uid: BDeshi.BTSM.IRunnableStateMachine.Tick
+  name: Tick()
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_Tick
+  commentId: M:BDeshi.BTSM.IRunnableStateMachine.Tick
+  fullName: BDeshi.BTSM.IRunnableStateMachine.Tick()
+  nameWithType: IRunnableStateMachine.Tick()
+- uid: BDeshi.BTSM.IRunnableStateMachine.Tick*
+  name: Tick
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_Tick_
+  commentId: Overload:BDeshi.BTSM.IRunnableStateMachine.Tick
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IRunnableStateMachine.Tick
+  nameWithType: IRunnableStateMachine.Tick
+- uid: BDeshi.BTSM.IRunnableStateMachine.cleanup
+  name: cleanup()
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_cleanup
+  commentId: M:BDeshi.BTSM.IRunnableStateMachine.cleanup
+  fullName: BDeshi.BTSM.IRunnableStateMachine.cleanup()
+  nameWithType: IRunnableStateMachine.cleanup()
+- uid: BDeshi.BTSM.IRunnableStateMachine.cleanup*
+  name: cleanup
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_cleanup_
+  commentId: Overload:BDeshi.BTSM.IRunnableStateMachine.cleanup
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IRunnableStateMachine.cleanup
+  nameWithType: IRunnableStateMachine.cleanup
+- uid: BDeshi.BTSM.IRunnableStateMachine.enter(System.Boolean)
+  name: enter(bool)
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_enter_System_Boolean_
+  commentId: M:BDeshi.BTSM.IRunnableStateMachine.enter(System.Boolean)
+  name.vb: enter(Boolean)
+  fullName: BDeshi.BTSM.IRunnableStateMachine.enter(bool)
+  fullName.vb: BDeshi.BTSM.IRunnableStateMachine.enter(Boolean)
+  nameWithType: IRunnableStateMachine.enter(bool)
+  nameWithType.vb: IRunnableStateMachine.enter(Boolean)
+- uid: BDeshi.BTSM.IRunnableStateMachine.enter*
+  name: enter
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_enter_
+  commentId: Overload:BDeshi.BTSM.IRunnableStateMachine.enter
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IRunnableStateMachine.enter
+  nameWithType: IRunnableStateMachine.enter
+- uid: BDeshi.BTSM.IRunnableStateMachine.getAllStates
+  name: getAllStates()
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_getAllStates
+  commentId: M:BDeshi.BTSM.IRunnableStateMachine.getAllStates
+  fullName: BDeshi.BTSM.IRunnableStateMachine.getAllStates()
+  nameWithType: IRunnableStateMachine.getAllStates()
+- uid: BDeshi.BTSM.IRunnableStateMachine.getAllStates*
+  name: getAllStates
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_getAllStates_
+  commentId: Overload:BDeshi.BTSM.IRunnableStateMachine.getAllStates
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IRunnableStateMachine.getAllStates
+  nameWithType: IRunnableStateMachine.getAllStates
+- uid: BDeshi.BTSM.IRunnableStateMachine.tryGetTransitionsForState(BDeshi.BTSM.IState,System.Collections.Generic.IEnumerable{BDeshi.BTSM.TransitionBase}@)
+  name: tryGetTransitionsForState(IState, out IEnumerable<TransitionBase>)
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_tryGetTransitionsForState_BDeshi_BTSM_IState_System_Collections_Generic_IEnumerable_BDeshi_BTSM_TransitionBase___
+  commentId: M:BDeshi.BTSM.IRunnableStateMachine.tryGetTransitionsForState(BDeshi.BTSM.IState,System.Collections.Generic.IEnumerable{BDeshi.BTSM.TransitionBase}@)
+  name.vb: tryGetTransitionsForState(IState, IEnumerable(Of TransitionBase))
+  fullName: BDeshi.BTSM.IRunnableStateMachine.tryGetTransitionsForState(BDeshi.BTSM.IState, out System.Collections.Generic.IEnumerable<BDeshi.BTSM.TransitionBase>)
+  fullName.vb: BDeshi.BTSM.IRunnableStateMachine.tryGetTransitionsForState(BDeshi.BTSM.IState, System.Collections.Generic.IEnumerable(Of BDeshi.BTSM.TransitionBase))
+  nameWithType: IRunnableStateMachine.tryGetTransitionsForState(IState, out IEnumerable<TransitionBase>)
+  nameWithType.vb: IRunnableStateMachine.tryGetTransitionsForState(IState, IEnumerable(Of TransitionBase))
+- uid: BDeshi.BTSM.IRunnableStateMachine.tryGetTransitionsForState*
+  name: tryGetTransitionsForState
+  href: api/BDeshi.BTSM.IRunnableStateMachine.html#BDeshi_BTSM_IRunnableStateMachine_tryGetTransitionsForState_
+  commentId: Overload:BDeshi.BTSM.IRunnableStateMachine.tryGetTransitionsForState
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IRunnableStateMachine.tryGetTransitionsForState
+  nameWithType: IRunnableStateMachine.tryGetTransitionsForState
+- uid: BDeshi.BTSM.IState
+  name: IState
+  href: api/BDeshi.BTSM.IState.html
+  commentId: T:BDeshi.BTSM.IState
+  fullName: BDeshi.BTSM.IState
+  nameWithType: IState
+- uid: BDeshi.BTSM.IState.EnterState
+  name: EnterState()
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_EnterState
+  commentId: M:BDeshi.BTSM.IState.EnterState
+  fullName: BDeshi.BTSM.IState.EnterState()
+  nameWithType: IState.EnterState()
+- uid: BDeshi.BTSM.IState.EnterState*
+  name: EnterState
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_EnterState_
+  commentId: Overload:BDeshi.BTSM.IState.EnterState
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IState.EnterState
+  nameWithType: IState.EnterState
+- uid: BDeshi.BTSM.IState.ExitState
+  name: ExitState()
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_ExitState
+  commentId: M:BDeshi.BTSM.IState.ExitState
+  fullName: BDeshi.BTSM.IState.ExitState()
+  nameWithType: IState.ExitState()
+- uid: BDeshi.BTSM.IState.ExitState*
+  name: ExitState
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_ExitState_
+  commentId: Overload:BDeshi.BTSM.IState.ExitState
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IState.ExitState
+  nameWithType: IState.ExitState
+- uid: BDeshi.BTSM.IState.FullStateName
+  name: FullStateName
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_FullStateName
+  commentId: P:BDeshi.BTSM.IState.FullStateName
+  fullName: BDeshi.BTSM.IState.FullStateName
+  nameWithType: IState.FullStateName
+- uid: BDeshi.BTSM.IState.FullStateName*
+  name: FullStateName
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_FullStateName_
+  commentId: Overload:BDeshi.BTSM.IState.FullStateName
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IState.FullStateName
+  nameWithType: IState.FullStateName
+- uid: BDeshi.BTSM.IState.Name
+  name: Name
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Name
+  commentId: P:BDeshi.BTSM.IState.Name
+  fullName: BDeshi.BTSM.IState.Name
+  nameWithType: IState.Name
+- uid: BDeshi.BTSM.IState.Name*
+  name: Name
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Name_
+  commentId: Overload:BDeshi.BTSM.IState.Name
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IState.Name
+  nameWithType: IState.Name
+- uid: BDeshi.BTSM.IState.Parent
+  name: Parent
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Parent
+  commentId: P:BDeshi.BTSM.IState.Parent
+  fullName: BDeshi.BTSM.IState.Parent
+  nameWithType: IState.Parent
+- uid: BDeshi.BTSM.IState.Parent*
+  name: Parent
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Parent_
+  commentId: Overload:BDeshi.BTSM.IState.Parent
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IState.Parent
+  nameWithType: IState.Parent
+- uid: BDeshi.BTSM.IState.Prefix
+  name: Prefix
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Prefix
+  commentId: P:BDeshi.BTSM.IState.Prefix
+  fullName: BDeshi.BTSM.IState.Prefix
+  nameWithType: IState.Prefix
+- uid: BDeshi.BTSM.IState.Prefix*
+  name: Prefix
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Prefix_
+  commentId: Overload:BDeshi.BTSM.IState.Prefix
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IState.Prefix
+  nameWithType: IState.Prefix
+- uid: BDeshi.BTSM.IState.Tick
+  name: Tick()
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Tick
+  commentId: M:BDeshi.BTSM.IState.Tick
+  fullName: BDeshi.BTSM.IState.Tick()
+  nameWithType: IState.Tick()
+- uid: BDeshi.BTSM.IState.Tick*
+  name: Tick
+  href: api/BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Tick_
+  commentId: Overload:BDeshi.BTSM.IState.Tick
+  isSpec: "True"
+  fullName: BDeshi.BTSM.IState.Tick
+  nameWithType: IState.Tick
 - uid: BDeshi.BTSM.IgnoreStatus
   name: IgnoreStatus
   href: api/BDeshi.BTSM.IgnoreStatus.html
@@ -1330,6 +1680,94 @@ references:
   isSpec: "True"
   fullName: BDeshi.BTSM.IgnoreStatus.InternalTick
   nameWithType: IgnoreStatus.InternalTick
+- uid: BDeshi.BTSM.MaintainConditionNode
+  name: MaintainConditionNode
+  href: api/BDeshi.BTSM.MaintainConditionNode.html
+  commentId: T:BDeshi.BTSM.MaintainConditionNode
+  fullName: BDeshi.BTSM.MaintainConditionNode
+  nameWithType: MaintainConditionNode
+- uid: BDeshi.BTSM.MaintainConditionNode.#ctor(System.Func{System.Boolean},System.Single,System.Boolean,BDeshi.BTSM.BTStatus,BDeshi.BTSM.BTStatus)
+  name: MaintainConditionNode(Func<bool>, float, bool, BTStatus, BTStatus)
+  href: api/BDeshi.BTSM.MaintainConditionNode.html#BDeshi_BTSM_MaintainConditionNode__ctor_System_Func_System_Boolean__System_Single_System_Boolean_BDeshi_BTSM_BTStatus_BDeshi_BTSM_BTStatus_
+  commentId: M:BDeshi.BTSM.MaintainConditionNode.#ctor(System.Func{System.Boolean},System.Single,System.Boolean,BDeshi.BTSM.BTStatus,BDeshi.BTSM.BTStatus)
+  name.vb: New(Func(Of Boolean), Single, Boolean, BTStatus, BTStatus)
+  fullName: BDeshi.BTSM.MaintainConditionNode.MaintainConditionNode(System.Func<bool>, float, bool, BDeshi.BTSM.BTStatus, BDeshi.BTSM.BTStatus)
+  fullName.vb: BDeshi.BTSM.MaintainConditionNode.New(System.Func(Of Boolean), Single, Boolean, BDeshi.BTSM.BTStatus, BDeshi.BTSM.BTStatus)
+  nameWithType: MaintainConditionNode.MaintainConditionNode(Func<bool>, float, bool, BTStatus, BTStatus)
+  nameWithType.vb: MaintainConditionNode.New(Func(Of Boolean), Single, Boolean, BTStatus, BTStatus)
+- uid: BDeshi.BTSM.MaintainConditionNode.#ctor*
+  name: MaintainConditionNode
+  href: api/BDeshi.BTSM.MaintainConditionNode.html#BDeshi_BTSM_MaintainConditionNode__ctor_
+  commentId: Overload:BDeshi.BTSM.MaintainConditionNode.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BDeshi.BTSM.MaintainConditionNode.MaintainConditionNode
+  fullName.vb: BDeshi.BTSM.MaintainConditionNode.New
+  nameWithType: MaintainConditionNode.MaintainConditionNode
+  nameWithType.vb: MaintainConditionNode.New
+- uid: BDeshi.BTSM.MaintainConditionNode.Enter
+  name: Enter()
+  href: api/BDeshi.BTSM.MaintainConditionNode.html#BDeshi_BTSM_MaintainConditionNode_Enter
+  commentId: M:BDeshi.BTSM.MaintainConditionNode.Enter
+  fullName: BDeshi.BTSM.MaintainConditionNode.Enter()
+  nameWithType: MaintainConditionNode.Enter()
+- uid: BDeshi.BTSM.MaintainConditionNode.Enter*
+  name: Enter
+  href: api/BDeshi.BTSM.MaintainConditionNode.html#BDeshi_BTSM_MaintainConditionNode_Enter_
+  commentId: Overload:BDeshi.BTSM.MaintainConditionNode.Enter
+  isSpec: "True"
+  fullName: BDeshi.BTSM.MaintainConditionNode.Enter
+  nameWithType: MaintainConditionNode.Enter
+- uid: BDeshi.BTSM.MaintainConditionNode.Exit
+  name: Exit()
+  href: api/BDeshi.BTSM.MaintainConditionNode.html#BDeshi_BTSM_MaintainConditionNode_Exit
+  commentId: M:BDeshi.BTSM.MaintainConditionNode.Exit
+  fullName: BDeshi.BTSM.MaintainConditionNode.Exit()
+  nameWithType: MaintainConditionNode.Exit()
+- uid: BDeshi.BTSM.MaintainConditionNode.Exit*
+  name: Exit
+  href: api/BDeshi.BTSM.MaintainConditionNode.html#BDeshi_BTSM_MaintainConditionNode_Exit_
+  commentId: Overload:BDeshi.BTSM.MaintainConditionNode.Exit
+  isSpec: "True"
+  fullName: BDeshi.BTSM.MaintainConditionNode.Exit
+  nameWithType: MaintainConditionNode.Exit
+- uid: BDeshi.BTSM.MaintainConditionNode.InternalTick
+  name: InternalTick()
+  href: api/BDeshi.BTSM.MaintainConditionNode.html#BDeshi_BTSM_MaintainConditionNode_InternalTick
+  commentId: M:BDeshi.BTSM.MaintainConditionNode.InternalTick
+  fullName: BDeshi.BTSM.MaintainConditionNode.InternalTick()
+  nameWithType: MaintainConditionNode.InternalTick()
+- uid: BDeshi.BTSM.MaintainConditionNode.InternalTick*
+  name: InternalTick
+  href: api/BDeshi.BTSM.MaintainConditionNode.html#BDeshi_BTSM_MaintainConditionNode_InternalTick_
+  commentId: Overload:BDeshi.BTSM.MaintainConditionNode.InternalTick
+  isSpec: "True"
+  fullName: BDeshi.BTSM.MaintainConditionNode.InternalTick
+  nameWithType: MaintainConditionNode.InternalTick
+- uid: BDeshi.BTSM.MaintainConditionNode.maintainTimer
+  name: maintainTimer
+  href: api/BDeshi.BTSM.MaintainConditionNode.html#BDeshi_BTSM_MaintainConditionNode_maintainTimer
+  commentId: F:BDeshi.BTSM.MaintainConditionNode.maintainTimer
+  fullName: BDeshi.BTSM.MaintainConditionNode.maintainTimer
+  nameWithType: MaintainConditionNode.maintainTimer
+- uid: BDeshi.BTSM.MaintainConditionNode.resetOnFail
+  name: resetOnFail
+  href: api/BDeshi.BTSM.MaintainConditionNode.html#BDeshi_BTSM_MaintainConditionNode_resetOnFail
+  commentId: F:BDeshi.BTSM.MaintainConditionNode.resetOnFail
+  fullName: BDeshi.BTSM.MaintainConditionNode.resetOnFail
+  nameWithType: MaintainConditionNode.resetOnFail
+- uid: BDeshi.BTSM.MaintainConditionNode.successState
+  name: successState
+  href: api/BDeshi.BTSM.MaintainConditionNode.html#BDeshi_BTSM_MaintainConditionNode_successState
+  commentId: F:BDeshi.BTSM.MaintainConditionNode.successState
+  fullName: BDeshi.BTSM.MaintainConditionNode.successState
+  nameWithType: MaintainConditionNode.successState
+- uid: BDeshi.BTSM.MaintainConditionNode.waitState
+  name: waitState
+  href: api/BDeshi.BTSM.MaintainConditionNode.html#BDeshi_BTSM_MaintainConditionNode_waitState
+  commentId: F:BDeshi.BTSM.MaintainConditionNode.waitState
+  fullName: BDeshi.BTSM.MaintainConditionNode.waitState
+  nameWithType: MaintainConditionNode.waitState
 - uid: BDeshi.BTSM.ModularState
   name: ModularState
   href: api/BDeshi.BTSM.ModularState.html
@@ -1419,12 +1857,12 @@ references:
   commentId: T:BDeshi.BTSM.MonoBehaviourStateBase
   fullName: BDeshi.BTSM.MonoBehaviourStateBase
   nameWithType: MonoBehaviourStateBase
-- uid: BDeshi.BTSM.MonoBehaviourStateBase.AsChildOf(BDeshi.BTSM.State)
-  name: AsChildOf(State)
-  href: api/BDeshi.BTSM.MonoBehaviourStateBase.html#BDeshi_BTSM_MonoBehaviourStateBase_AsChildOf_BDeshi_BTSM_State_
-  commentId: M:BDeshi.BTSM.MonoBehaviourStateBase.AsChildOf(BDeshi.BTSM.State)
-  fullName: BDeshi.BTSM.MonoBehaviourStateBase.AsChildOf(BDeshi.BTSM.State)
-  nameWithType: MonoBehaviourStateBase.AsChildOf(State)
+- uid: BDeshi.BTSM.MonoBehaviourStateBase.AsChildOf(BDeshi.BTSM.IState)
+  name: AsChildOf(IState)
+  href: api/BDeshi.BTSM.MonoBehaviourStateBase.html#BDeshi_BTSM_MonoBehaviourStateBase_AsChildOf_BDeshi_BTSM_IState_
+  commentId: M:BDeshi.BTSM.MonoBehaviourStateBase.AsChildOf(BDeshi.BTSM.IState)
+  fullName: BDeshi.BTSM.MonoBehaviourStateBase.AsChildOf(BDeshi.BTSM.IState)
+  nameWithType: MonoBehaviourStateBase.AsChildOf(IState)
 - uid: BDeshi.BTSM.MonoBehaviourStateBase.AsChildOf*
   name: AsChildOf
   href: api/BDeshi.BTSM.MonoBehaviourStateBase.html#BDeshi_BTSM_MonoBehaviourStateBase_AsChildOf_
@@ -1432,6 +1870,19 @@ references:
   isSpec: "True"
   fullName: BDeshi.BTSM.MonoBehaviourStateBase.AsChildOf
   nameWithType: MonoBehaviourStateBase.AsChildOf
+- uid: BDeshi.BTSM.MonoBehaviourStateBase.Clone
+  name: Clone()
+  href: api/BDeshi.BTSM.MonoBehaviourStateBase.html#BDeshi_BTSM_MonoBehaviourStateBase_Clone
+  commentId: M:BDeshi.BTSM.MonoBehaviourStateBase.Clone
+  fullName: BDeshi.BTSM.MonoBehaviourStateBase.Clone()
+  nameWithType: MonoBehaviourStateBase.Clone()
+- uid: BDeshi.BTSM.MonoBehaviourStateBase.Clone*
+  name: Clone
+  href: api/BDeshi.BTSM.MonoBehaviourStateBase.html#BDeshi_BTSM_MonoBehaviourStateBase_Clone_
+  commentId: Overload:BDeshi.BTSM.MonoBehaviourStateBase.Clone
+  isSpec: "True"
+  fullName: BDeshi.BTSM.MonoBehaviourStateBase.Clone
+  nameWithType: MonoBehaviourStateBase.Clone
 - uid: BDeshi.BTSM.MonoBehaviourStateBase.EnterState
   name: EnterState()
   href: api/BDeshi.BTSM.MonoBehaviourStateBase.html#BDeshi_BTSM_MonoBehaviourStateBase_EnterState
@@ -1536,6 +1987,38 @@ references:
   isSpec: "True"
   fullName: BDeshi.BTSM.MonoBehaviourStateBase.Tick
   nameWithType: MonoBehaviourStateBase.Tick
+- uid: BDeshi.BTSM.MultiState
+  name: MultiState
+  href: api/BDeshi.BTSM.MultiState.html
+  commentId: T:BDeshi.BTSM.MultiState
+  fullName: BDeshi.BTSM.MultiState
+  nameWithType: MultiState
+- uid: BDeshi.BTSM.MultiState.getActiveState
+  name: getActiveState
+  href: api/BDeshi.BTSM.MultiState.html#BDeshi_BTSM_MultiState_getActiveState
+  commentId: P:BDeshi.BTSM.MultiState.getActiveState
+  fullName: BDeshi.BTSM.MultiState.getActiveState
+  nameWithType: MultiState.getActiveState
+- uid: BDeshi.BTSM.MultiState.getActiveState*
+  name: getActiveState
+  href: api/BDeshi.BTSM.MultiState.html#BDeshi_BTSM_MultiState_getActiveState_
+  commentId: Overload:BDeshi.BTSM.MultiState.getActiveState
+  isSpec: "True"
+  fullName: BDeshi.BTSM.MultiState.getActiveState
+  nameWithType: MultiState.getActiveState
+- uid: BDeshi.BTSM.MultiState.getChildStates
+  name: getChildStates()
+  href: api/BDeshi.BTSM.MultiState.html#BDeshi_BTSM_MultiState_getChildStates
+  commentId: M:BDeshi.BTSM.MultiState.getChildStates
+  fullName: BDeshi.BTSM.MultiState.getChildStates()
+  nameWithType: MultiState.getChildStates()
+- uid: BDeshi.BTSM.MultiState.getChildStates*
+  name: getChildStates
+  href: api/BDeshi.BTSM.MultiState.html#BDeshi_BTSM_MultiState_getChildStates_
+  commentId: Overload:BDeshi.BTSM.MultiState.getChildStates
+  isSpec: "True"
+  fullName: BDeshi.BTSM.MultiState.getChildStates
+  nameWithType: MultiState.getChildStates
 - uid: BDeshi.BTSM.Parallel
   name: Parallel
   href: api/BDeshi.BTSM.Parallel.html
@@ -1635,6 +2118,102 @@ references:
   isSpec: "True"
   fullName: BDeshi.BTSM.Parallel.addChild
   nameWithType: Parallel.addChild
+- uid: BDeshi.BTSM.ParallelRepeat
+  name: ParallelRepeat
+  href: api/BDeshi.BTSM.ParallelRepeat.html
+  commentId: T:BDeshi.BTSM.ParallelRepeat
+  fullName: BDeshi.BTSM.ParallelRepeat
+  nameWithType: ParallelRepeat
+- uid: BDeshi.BTSM.ParallelRepeat.#ctor(System.Collections.Generic.List{BDeshi.BTSM.IBtNode})
+  name: ParallelRepeat(List<IBtNode>)
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat__ctor_System_Collections_Generic_List_BDeshi_BTSM_IBtNode__
+  commentId: M:BDeshi.BTSM.ParallelRepeat.#ctor(System.Collections.Generic.List{BDeshi.BTSM.IBtNode})
+  name.vb: New(List(Of IBtNode))
+  fullName: BDeshi.BTSM.ParallelRepeat.ParallelRepeat(System.Collections.Generic.List<BDeshi.BTSM.IBtNode>)
+  fullName.vb: BDeshi.BTSM.ParallelRepeat.New(System.Collections.Generic.List(Of BDeshi.BTSM.IBtNode))
+  nameWithType: ParallelRepeat.ParallelRepeat(List<IBtNode>)
+  nameWithType.vb: ParallelRepeat.New(List(Of IBtNode))
+- uid: BDeshi.BTSM.ParallelRepeat.#ctor*
+  name: ParallelRepeat
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat__ctor_
+  commentId: Overload:BDeshi.BTSM.ParallelRepeat.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BDeshi.BTSM.ParallelRepeat.ParallelRepeat
+  fullName.vb: BDeshi.BTSM.ParallelRepeat.New
+  nameWithType: ParallelRepeat.ParallelRepeat
+  nameWithType.vb: ParallelRepeat.New
+- uid: BDeshi.BTSM.ParallelRepeat.Enter
+  name: Enter()
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat_Enter
+  commentId: M:BDeshi.BTSM.ParallelRepeat.Enter
+  fullName: BDeshi.BTSM.ParallelRepeat.Enter()
+  nameWithType: ParallelRepeat.Enter()
+- uid: BDeshi.BTSM.ParallelRepeat.Enter*
+  name: Enter
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat_Enter_
+  commentId: Overload:BDeshi.BTSM.ParallelRepeat.Enter
+  isSpec: "True"
+  fullName: BDeshi.BTSM.ParallelRepeat.Enter
+  nameWithType: ParallelRepeat.Enter
+- uid: BDeshi.BTSM.ParallelRepeat.Exit
+  name: Exit()
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat_Exit
+  commentId: M:BDeshi.BTSM.ParallelRepeat.Exit
+  fullName: BDeshi.BTSM.ParallelRepeat.Exit()
+  nameWithType: ParallelRepeat.Exit()
+- uid: BDeshi.BTSM.ParallelRepeat.Exit*
+  name: Exit
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat_Exit_
+  commentId: Overload:BDeshi.BTSM.ParallelRepeat.Exit
+  isSpec: "True"
+  fullName: BDeshi.BTSM.ParallelRepeat.Exit
+  nameWithType: ParallelRepeat.Exit
+- uid: BDeshi.BTSM.ParallelRepeat.GetActiveChildren
+  name: GetActiveChildren
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat_GetActiveChildren
+  commentId: P:BDeshi.BTSM.ParallelRepeat.GetActiveChildren
+  fullName: BDeshi.BTSM.ParallelRepeat.GetActiveChildren
+  nameWithType: ParallelRepeat.GetActiveChildren
+- uid: BDeshi.BTSM.ParallelRepeat.GetActiveChildren*
+  name: GetActiveChildren
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat_GetActiveChildren_
+  commentId: Overload:BDeshi.BTSM.ParallelRepeat.GetActiveChildren
+  isSpec: "True"
+  fullName: BDeshi.BTSM.ParallelRepeat.GetActiveChildren
+  nameWithType: ParallelRepeat.GetActiveChildren
+- uid: BDeshi.BTSM.ParallelRepeat.InternalTick
+  name: InternalTick()
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat_InternalTick
+  commentId: M:BDeshi.BTSM.ParallelRepeat.InternalTick
+  fullName: BDeshi.BTSM.ParallelRepeat.InternalTick()
+  nameWithType: ParallelRepeat.InternalTick()
+- uid: BDeshi.BTSM.ParallelRepeat.InternalTick*
+  name: InternalTick
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat_InternalTick_
+  commentId: Overload:BDeshi.BTSM.ParallelRepeat.InternalTick
+  isSpec: "True"
+  fullName: BDeshi.BTSM.ParallelRepeat.InternalTick
+  nameWithType: ParallelRepeat.InternalTick
+- uid: BDeshi.BTSM.ParallelRepeat.addChild(BDeshi.BTSM.IBtNode)
+  name: addChild(IBtNode)
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat_addChild_BDeshi_BTSM_IBtNode_
+  commentId: M:BDeshi.BTSM.ParallelRepeat.addChild(BDeshi.BTSM.IBtNode)
+  fullName: BDeshi.BTSM.ParallelRepeat.addChild(BDeshi.BTSM.IBtNode)
+  nameWithType: ParallelRepeat.addChild(IBtNode)
+- uid: BDeshi.BTSM.ParallelRepeat.addChild*
+  name: addChild
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat_addChild_
+  commentId: Overload:BDeshi.BTSM.ParallelRepeat.addChild
+  isSpec: "True"
+  fullName: BDeshi.BTSM.ParallelRepeat.addChild
+  nameWithType: ParallelRepeat.addChild
+- uid: BDeshi.BTSM.ParallelRepeat.runninStatus
+  name: runninStatus
+  href: api/BDeshi.BTSM.ParallelRepeat.html#BDeshi_BTSM_ParallelRepeat_runninStatus
+  commentId: F:BDeshi.BTSM.ParallelRepeat.runninStatus
+  fullName: BDeshi.BTSM.ParallelRepeat.runninStatus
+  nameWithType: ParallelRepeat.runninStatus
 - uid: BDeshi.BTSM.PriorityFallbackNode
   name: PriorityFallbackNode
   href: api/BDeshi.BTSM.PriorityFallbackNode.html
@@ -2019,83 +2598,142 @@ references:
   isSpec: "True"
   fullName: BDeshi.BTSM.SequenceNode.addChild
   nameWithType: SequenceNode.addChild
-- uid: BDeshi.BTSM.SimpleTransition
+- uid: BDeshi.BTSM.SequenceNode.children
+  name: children
+  href: api/BDeshi.BTSM.SequenceNode.html#BDeshi_BTSM_SequenceNode_children
+  commentId: F:BDeshi.BTSM.SequenceNode.children
+  fullName: BDeshi.BTSM.SequenceNode.children
+  nameWithType: SequenceNode.children
+- uid: BDeshi.BTSM.SimpleTransition`1
+  name: SimpleTransition<TState>
+  href: api/BDeshi.BTSM.SimpleTransition-1.html
+  commentId: T:BDeshi.BTSM.SimpleTransition`1
+  name.vb: SimpleTransition(Of TState)
+  fullName: BDeshi.BTSM.SimpleTransition<TState>
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState)
+  nameWithType: SimpleTransition<TState>
+  nameWithType.vb: SimpleTransition(Of TState)
+- uid: BDeshi.BTSM.SimpleTransition`1.#ctor(`0,System.Func{System.Boolean},System.Action)
+  name: SimpleTransition(TState, Func<bool>, Action)
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1__ctor__0_System_Func_System_Boolean__System_Action_
+  commentId: M:BDeshi.BTSM.SimpleTransition`1.#ctor(`0,System.Func{System.Boolean},System.Action)
+  name.vb: New(TState, Func(Of Boolean), Action)
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.SimpleTransition(TState, System.Func<bool>, System.Action)
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).New(TState, System.Func(Of Boolean), System.Action)
+  nameWithType: SimpleTransition<TState>.SimpleTransition(TState, Func<bool>, Action)
+  nameWithType.vb: SimpleTransition(Of TState).New(TState, Func(Of Boolean), Action)
+- uid: BDeshi.BTSM.SimpleTransition`1.#ctor*
   name: SimpleTransition
-  href: api/BDeshi.BTSM.SimpleTransition.html
-  commentId: T:BDeshi.BTSM.SimpleTransition
-  fullName: BDeshi.BTSM.SimpleTransition
-  nameWithType: SimpleTransition
-- uid: BDeshi.BTSM.SimpleTransition.#ctor(BDeshi.BTSM.State,System.Func{System.Boolean},System.Action)
-  name: SimpleTransition(State, Func<bool>, Action)
-  href: api/BDeshi.BTSM.SimpleTransition.html#BDeshi_BTSM_SimpleTransition__ctor_BDeshi_BTSM_State_System_Func_System_Boolean__System_Action_
-  commentId: M:BDeshi.BTSM.SimpleTransition.#ctor(BDeshi.BTSM.State,System.Func{System.Boolean},System.Action)
-  name.vb: New(State, Func(Of Boolean), Action)
-  fullName: BDeshi.BTSM.SimpleTransition.SimpleTransition(BDeshi.BTSM.State, System.Func<bool>, System.Action)
-  fullName.vb: BDeshi.BTSM.SimpleTransition.New(BDeshi.BTSM.State, System.Func(Of Boolean), System.Action)
-  nameWithType: SimpleTransition.SimpleTransition(State, Func<bool>, Action)
-  nameWithType.vb: SimpleTransition.New(State, Func(Of Boolean), Action)
-- uid: BDeshi.BTSM.SimpleTransition.#ctor*
-  name: SimpleTransition
-  href: api/BDeshi.BTSM.SimpleTransition.html#BDeshi_BTSM_SimpleTransition__ctor_
-  commentId: Overload:BDeshi.BTSM.SimpleTransition.#ctor
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1__ctor_
+  commentId: Overload:BDeshi.BTSM.SimpleTransition`1.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: BDeshi.BTSM.SimpleTransition.SimpleTransition
-  fullName.vb: BDeshi.BTSM.SimpleTransition.New
-  nameWithType: SimpleTransition.SimpleTransition
-  nameWithType.vb: SimpleTransition.New
-- uid: BDeshi.BTSM.SimpleTransition.OnTaken
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.SimpleTransition
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).New
+  nameWithType: SimpleTransition<TState>.SimpleTransition
+  nameWithType.vb: SimpleTransition(Of TState).New
+- uid: BDeshi.BTSM.SimpleTransition`1.Evaluate
+  name: Evaluate()
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1_Evaluate
+  commentId: M:BDeshi.BTSM.SimpleTransition`1.Evaluate
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.Evaluate()
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).Evaluate()
+  nameWithType: SimpleTransition<TState>.Evaluate()
+  nameWithType.vb: SimpleTransition(Of TState).Evaluate()
+- uid: BDeshi.BTSM.SimpleTransition`1.Evaluate*
+  name: Evaluate
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1_Evaluate_
+  commentId: Overload:BDeshi.BTSM.SimpleTransition`1.Evaluate
+  isSpec: "True"
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.Evaluate
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).Evaluate
+  nameWithType: SimpleTransition<TState>.Evaluate
+  nameWithType.vb: SimpleTransition(Of TState).Evaluate
+- uid: BDeshi.BTSM.SimpleTransition`1.OnTaken
   name: OnTaken
-  href: api/BDeshi.BTSM.SimpleTransition.html#BDeshi_BTSM_SimpleTransition_OnTaken
-  commentId: P:BDeshi.BTSM.SimpleTransition.OnTaken
-  fullName: BDeshi.BTSM.SimpleTransition.OnTaken
-  nameWithType: SimpleTransition.OnTaken
-- uid: BDeshi.BTSM.SimpleTransition.OnTaken*
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1_OnTaken
+  commentId: P:BDeshi.BTSM.SimpleTransition`1.OnTaken
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.OnTaken
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).OnTaken
+  nameWithType: SimpleTransition<TState>.OnTaken
+  nameWithType.vb: SimpleTransition(Of TState).OnTaken
+- uid: BDeshi.BTSM.SimpleTransition`1.OnTaken*
   name: OnTaken
-  href: api/BDeshi.BTSM.SimpleTransition.html#BDeshi_BTSM_SimpleTransition_OnTaken_
-  commentId: Overload:BDeshi.BTSM.SimpleTransition.OnTaken
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1_OnTaken_
+  commentId: Overload:BDeshi.BTSM.SimpleTransition`1.OnTaken
   isSpec: "True"
-  fullName: BDeshi.BTSM.SimpleTransition.OnTaken
-  nameWithType: SimpleTransition.OnTaken
-- uid: BDeshi.BTSM.SimpleTransition.SuccessState
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.OnTaken
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).OnTaken
+  nameWithType: SimpleTransition<TState>.OnTaken
+  nameWithType.vb: SimpleTransition(Of TState).OnTaken
+- uid: BDeshi.BTSM.SimpleTransition`1.SuccessState
   name: SuccessState
-  href: api/BDeshi.BTSM.SimpleTransition.html#BDeshi_BTSM_SimpleTransition_SuccessState
-  commentId: P:BDeshi.BTSM.SimpleTransition.SuccessState
-  fullName: BDeshi.BTSM.SimpleTransition.SuccessState
-  nameWithType: SimpleTransition.SuccessState
-- uid: BDeshi.BTSM.SimpleTransition.SuccessState*
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1_SuccessState
+  commentId: P:BDeshi.BTSM.SimpleTransition`1.SuccessState
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.SuccessState
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).SuccessState
+  nameWithType: SimpleTransition<TState>.SuccessState
+  nameWithType.vb: SimpleTransition(Of TState).SuccessState
+- uid: BDeshi.BTSM.SimpleTransition`1.SuccessState*
   name: SuccessState
-  href: api/BDeshi.BTSM.SimpleTransition.html#BDeshi_BTSM_SimpleTransition_SuccessState_
-  commentId: Overload:BDeshi.BTSM.SimpleTransition.SuccessState
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1_SuccessState_
+  commentId: Overload:BDeshi.BTSM.SimpleTransition`1.SuccessState
   isSpec: "True"
-  fullName: BDeshi.BTSM.SimpleTransition.SuccessState
-  nameWithType: SimpleTransition.SuccessState
-- uid: BDeshi.BTSM.SimpleTransition.TakenLastTime
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.SuccessState
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).SuccessState
+  nameWithType: SimpleTransition<TState>.SuccessState
+  nameWithType.vb: SimpleTransition(Of TState).SuccessState
+- uid: BDeshi.BTSM.SimpleTransition`1.SuccessTypedState
+  name: SuccessTypedState
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1_SuccessTypedState
+  commentId: P:BDeshi.BTSM.SimpleTransition`1.SuccessTypedState
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.SuccessTypedState
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).SuccessTypedState
+  nameWithType: SimpleTransition<TState>.SuccessTypedState
+  nameWithType.vb: SimpleTransition(Of TState).SuccessTypedState
+- uid: BDeshi.BTSM.SimpleTransition`1.SuccessTypedState*
+  name: SuccessTypedState
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1_SuccessTypedState_
+  commentId: Overload:BDeshi.BTSM.SimpleTransition`1.SuccessTypedState
+  isSpec: "True"
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.SuccessTypedState
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).SuccessTypedState
+  nameWithType: SimpleTransition<TState>.SuccessTypedState
+  nameWithType.vb: SimpleTransition(Of TState).SuccessTypedState
+- uid: BDeshi.BTSM.SimpleTransition`1.TakenLastTime
   name: TakenLastTime
-  href: api/BDeshi.BTSM.SimpleTransition.html#BDeshi_BTSM_SimpleTransition_TakenLastTime
-  commentId: P:BDeshi.BTSM.SimpleTransition.TakenLastTime
-  fullName: BDeshi.BTSM.SimpleTransition.TakenLastTime
-  nameWithType: SimpleTransition.TakenLastTime
-- uid: BDeshi.BTSM.SimpleTransition.TakenLastTime*
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1_TakenLastTime
+  commentId: P:BDeshi.BTSM.SimpleTransition`1.TakenLastTime
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.TakenLastTime
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).TakenLastTime
+  nameWithType: SimpleTransition<TState>.TakenLastTime
+  nameWithType.vb: SimpleTransition(Of TState).TakenLastTime
+- uid: BDeshi.BTSM.SimpleTransition`1.TakenLastTime*
   name: TakenLastTime
-  href: api/BDeshi.BTSM.SimpleTransition.html#BDeshi_BTSM_SimpleTransition_TakenLastTime_
-  commentId: Overload:BDeshi.BTSM.SimpleTransition.TakenLastTime
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1_TakenLastTime_
+  commentId: Overload:BDeshi.BTSM.SimpleTransition`1.TakenLastTime
   isSpec: "True"
-  fullName: BDeshi.BTSM.SimpleTransition.TakenLastTime
-  nameWithType: SimpleTransition.TakenLastTime
-- uid: BDeshi.BTSM.SimpleTransition.TransitionToSameState
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.TakenLastTime
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).TakenLastTime
+  nameWithType: SimpleTransition<TState>.TakenLastTime
+  nameWithType.vb: SimpleTransition(Of TState).TakenLastTime
+- uid: BDeshi.BTSM.SimpleTransition`1.TransitionToSameState
   name: TransitionToSameState
-  href: api/BDeshi.BTSM.SimpleTransition.html#BDeshi_BTSM_SimpleTransition_TransitionToSameState
-  commentId: P:BDeshi.BTSM.SimpleTransition.TransitionToSameState
-  fullName: BDeshi.BTSM.SimpleTransition.TransitionToSameState
-  nameWithType: SimpleTransition.TransitionToSameState
-- uid: BDeshi.BTSM.SimpleTransition.TransitionToSameState*
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1_TransitionToSameState
+  commentId: P:BDeshi.BTSM.SimpleTransition`1.TransitionToSameState
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.TransitionToSameState
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).TransitionToSameState
+  nameWithType: SimpleTransition<TState>.TransitionToSameState
+  nameWithType.vb: SimpleTransition(Of TState).TransitionToSameState
+- uid: BDeshi.BTSM.SimpleTransition`1.TransitionToSameState*
   name: TransitionToSameState
-  href: api/BDeshi.BTSM.SimpleTransition.html#BDeshi_BTSM_SimpleTransition_TransitionToSameState_
-  commentId: Overload:BDeshi.BTSM.SimpleTransition.TransitionToSameState
+  href: api/BDeshi.BTSM.SimpleTransition-1.html#BDeshi_BTSM_SimpleTransition_1_TransitionToSameState_
+  commentId: Overload:BDeshi.BTSM.SimpleTransition`1.TransitionToSameState
   isSpec: "True"
-  fullName: BDeshi.BTSM.SimpleTransition.TransitionToSameState
-  nameWithType: SimpleTransition.TransitionToSameState
+  fullName: BDeshi.BTSM.SimpleTransition<TState>.TransitionToSameState
+  fullName.vb: BDeshi.BTSM.SimpleTransition(Of TState).TransitionToSameState
+  nameWithType: SimpleTransition<TState>.TransitionToSameState
+  nameWithType.vb: SimpleTransition(Of TState).TransitionToSameState
 - uid: BDeshi.BTSM.State
   name: State
   href: api/BDeshi.BTSM.State.html
@@ -2199,12 +2837,12 @@ references:
   commentId: T:BDeshi.BTSM.StateBase
   fullName: BDeshi.BTSM.StateBase
   nameWithType: StateBase
-- uid: BDeshi.BTSM.StateBase.AsChildOf(BDeshi.BTSM.State)
-  name: AsChildOf(State)
-  href: api/BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_AsChildOf_BDeshi_BTSM_State_
-  commentId: M:BDeshi.BTSM.StateBase.AsChildOf(BDeshi.BTSM.State)
-  fullName: BDeshi.BTSM.StateBase.AsChildOf(BDeshi.BTSM.State)
-  nameWithType: StateBase.AsChildOf(State)
+- uid: BDeshi.BTSM.StateBase.AsChildOf(BDeshi.BTSM.IState)
+  name: AsChildOf(IState)
+  href: api/BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_AsChildOf_BDeshi_BTSM_IState_
+  commentId: M:BDeshi.BTSM.StateBase.AsChildOf(BDeshi.BTSM.IState)
+  fullName: BDeshi.BTSM.StateBase.AsChildOf(BDeshi.BTSM.IState)
+  nameWithType: StateBase.AsChildOf(IState)
 - uid: BDeshi.BTSM.StateBase.AsChildOf*
   name: AsChildOf
   href: api/BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_AsChildOf_
@@ -2329,382 +2967,429 @@ references:
   isSpec: "True"
   fullName: BDeshi.BTSM.StateBase.Tick
   nameWithType: StateBase.Tick
-- uid: BDeshi.BTSM.StateCondition
-  name: StateCondition
-  href: api/BDeshi.BTSM.StateCondition.html
-  commentId: T:BDeshi.BTSM.StateCondition
-  fullName: BDeshi.BTSM.StateCondition
-  nameWithType: StateCondition
-- uid: BDeshi.BTSM.StateCondition.#ctor(BDeshi.BTSM.StateMachine,System.Boolean)
-  name: StateCondition(StateMachine, bool)
-  href: api/BDeshi.BTSM.StateCondition.html#BDeshi_BTSM_StateCondition__ctor_BDeshi_BTSM_StateMachine_System_Boolean_
-  commentId: M:BDeshi.BTSM.StateCondition.#ctor(BDeshi.BTSM.StateMachine,System.Boolean)
-  name.vb: New(StateMachine, Boolean)
-  fullName: BDeshi.BTSM.StateCondition.StateCondition(BDeshi.BTSM.StateMachine, bool)
-  fullName.vb: BDeshi.BTSM.StateCondition.New(BDeshi.BTSM.StateMachine, Boolean)
-  nameWithType: StateCondition.StateCondition(StateMachine, bool)
-  nameWithType.vb: StateCondition.New(StateMachine, Boolean)
-- uid: BDeshi.BTSM.StateCondition.#ctor*
-  name: StateCondition
-  href: api/BDeshi.BTSM.StateCondition.html#BDeshi_BTSM_StateCondition__ctor_
-  commentId: Overload:BDeshi.BTSM.StateCondition.#ctor
+- uid: BDeshi.BTSM.StateMachine`1
+  name: StateMachine<TState>
+  href: api/BDeshi.BTSM.StateMachine-1.html
+  commentId: T:BDeshi.BTSM.StateMachine`1
+  name.vb: StateMachine(Of TState)
+  fullName: BDeshi.BTSM.StateMachine<TState>
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState)
+  nameWithType: StateMachine<TState>
+  nameWithType.vb: StateMachine(Of TState)
+- uid: BDeshi.BTSM.StateMachine`1.#ctor(`0)
+  name: StateMachine(TState)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1__ctor__0_
+  commentId: M:BDeshi.BTSM.StateMachine`1.#ctor(`0)
+  name.vb: New(TState)
+  fullName: BDeshi.BTSM.StateMachine<TState>.StateMachine(TState)
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).New(TState)
+  nameWithType: StateMachine<TState>.StateMachine(TState)
+  nameWithType.vb: StateMachine(Of TState).New(TState)
+- uid: BDeshi.BTSM.StateMachine`1.#ctor*
+  name: StateMachine
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1__ctor_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: BDeshi.BTSM.StateCondition.StateCondition
-  fullName.vb: BDeshi.BTSM.StateCondition.New
-  nameWithType: StateCondition.StateCondition
-  nameWithType.vb: StateCondition.New
-- uid: BDeshi.BTSM.StateCondition.addStateConditionFalse(BDeshi.BTSM.State)
-  name: addStateConditionFalse(State)
-  href: api/BDeshi.BTSM.StateCondition.html#BDeshi_BTSM_StateCondition_addStateConditionFalse_BDeshi_BTSM_State_
-  commentId: M:BDeshi.BTSM.StateCondition.addStateConditionFalse(BDeshi.BTSM.State)
-  fullName: BDeshi.BTSM.StateCondition.addStateConditionFalse(BDeshi.BTSM.State)
-  nameWithType: StateCondition.addStateConditionFalse(State)
-- uid: BDeshi.BTSM.StateCondition.addStateConditionFalse*
-  name: addStateConditionFalse
-  href: api/BDeshi.BTSM.StateCondition.html#BDeshi_BTSM_StateCondition_addStateConditionFalse_
-  commentId: Overload:BDeshi.BTSM.StateCondition.addStateConditionFalse
+  fullName: BDeshi.BTSM.StateMachine<TState>.StateMachine
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).New
+  nameWithType: StateMachine<TState>.StateMachine
+  nameWithType.vb: StateMachine(Of TState).New
+- uid: BDeshi.BTSM.StateMachine`1.ActiveTransitions
+  name: ActiveTransitions
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_ActiveTransitions
+  commentId: P:BDeshi.BTSM.StateMachine`1.ActiveTransitions
+  fullName: BDeshi.BTSM.StateMachine<TState>.ActiveTransitions
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).ActiveTransitions
+  nameWithType: StateMachine<TState>.ActiveTransitions
+  nameWithType.vb: StateMachine(Of TState).ActiveTransitions
+- uid: BDeshi.BTSM.StateMachine`1.ActiveTransitions*
+  name: ActiveTransitions
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_ActiveTransitions_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.ActiveTransitions
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateCondition.addStateConditionFalse
-  nameWithType: StateCondition.addStateConditionFalse
-- uid: BDeshi.BTSM.StateCondition.addStateConditionFunc(BDeshi.BTSM.State,System.Func{System.Boolean})
-  name: addStateConditionFunc(State, Func<bool>)
-  href: api/BDeshi.BTSM.StateCondition.html#BDeshi_BTSM_StateCondition_addStateConditionFunc_BDeshi_BTSM_State_System_Func_System_Boolean__
-  commentId: M:BDeshi.BTSM.StateCondition.addStateConditionFunc(BDeshi.BTSM.State,System.Func{System.Boolean})
-  name.vb: addStateConditionFunc(State, Func(Of Boolean))
-  fullName: BDeshi.BTSM.StateCondition.addStateConditionFunc(BDeshi.BTSM.State, System.Func<bool>)
-  fullName.vb: BDeshi.BTSM.StateCondition.addStateConditionFunc(BDeshi.BTSM.State, System.Func(Of Boolean))
-  nameWithType: StateCondition.addStateConditionFunc(State, Func<bool>)
-  nameWithType.vb: StateCondition.addStateConditionFunc(State, Func(Of Boolean))
-- uid: BDeshi.BTSM.StateCondition.addStateConditionFunc*
-  name: addStateConditionFunc
-  href: api/BDeshi.BTSM.StateCondition.html#BDeshi_BTSM_StateCondition_addStateConditionFunc_
-  commentId: Overload:BDeshi.BTSM.StateCondition.addStateConditionFunc
+  fullName: BDeshi.BTSM.StateMachine<TState>.ActiveTransitions
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).ActiveTransitions
+  nameWithType: StateMachine<TState>.ActiveTransitions
+  nameWithType.vb: StateMachine(Of TState).ActiveTransitions
+- uid: BDeshi.BTSM.StateMachine`1.CurState
+  name: CurState
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_CurState
+  commentId: P:BDeshi.BTSM.StateMachine`1.CurState
+  fullName: BDeshi.BTSM.StateMachine<TState>.CurState
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).CurState
+  nameWithType: StateMachine<TState>.CurState
+  nameWithType.vb: StateMachine(Of TState).CurState
+- uid: BDeshi.BTSM.StateMachine`1.CurState*
+  name: CurState
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_CurState_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.CurState
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateCondition.addStateConditionFunc
-  nameWithType: StateCondition.addStateConditionFunc
-- uid: BDeshi.BTSM.StateCondition.addStateConditionTrue(BDeshi.BTSM.State)
-  name: addStateConditionTrue(State)
-  href: api/BDeshi.BTSM.StateCondition.html#BDeshi_BTSM_StateCondition_addStateConditionTrue_BDeshi_BTSM_State_
-  commentId: M:BDeshi.BTSM.StateCondition.addStateConditionTrue(BDeshi.BTSM.State)
-  fullName: BDeshi.BTSM.StateCondition.addStateConditionTrue(BDeshi.BTSM.State)
-  nameWithType: StateCondition.addStateConditionTrue(State)
-- uid: BDeshi.BTSM.StateCondition.addStateConditionTrue*
-  name: addStateConditionTrue
-  href: api/BDeshi.BTSM.StateCondition.html#BDeshi_BTSM_StateCondition_addStateConditionTrue_
-  commentId: Overload:BDeshi.BTSM.StateCondition.addStateConditionTrue
+  fullName: BDeshi.BTSM.StateMachine<TState>.CurState
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).CurState
+  nameWithType: StateMachine<TState>.CurState
+  nameWithType.vb: StateMachine(Of TState).CurState
+- uid: BDeshi.BTSM.StateMachine`1.CurTypedState
+  name: CurTypedState
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_CurTypedState
+  commentId: P:BDeshi.BTSM.StateMachine`1.CurTypedState
+  fullName: BDeshi.BTSM.StateMachine<TState>.CurTypedState
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).CurTypedState
+  nameWithType: StateMachine<TState>.CurTypedState
+  nameWithType.vb: StateMachine(Of TState).CurTypedState
+- uid: BDeshi.BTSM.StateMachine`1.CurTypedState*
+  name: CurTypedState
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_CurTypedState_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.CurTypedState
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateCondition.addStateConditionTrue
-  nameWithType: StateCondition.addStateConditionTrue
-- uid: BDeshi.BTSM.StateCondition.defaultValue
-  name: defaultValue
-  href: api/BDeshi.BTSM.StateCondition.html#BDeshi_BTSM_StateCondition_defaultValue
-  commentId: F:BDeshi.BTSM.StateCondition.defaultValue
-  fullName: BDeshi.BTSM.StateCondition.defaultValue
-  nameWithType: StateCondition.defaultValue
-- uid: BDeshi.BTSM.StateCondition.evaluate
-  name: evaluate()
-  href: api/BDeshi.BTSM.StateCondition.html#BDeshi_BTSM_StateCondition_evaluate
-  commentId: M:BDeshi.BTSM.StateCondition.evaluate
-  fullName: BDeshi.BTSM.StateCondition.evaluate()
-  nameWithType: StateCondition.evaluate()
-- uid: BDeshi.BTSM.StateCondition.evaluate*
-  name: evaluate
-  href: api/BDeshi.BTSM.StateCondition.html#BDeshi_BTSM_StateCondition_evaluate_
-  commentId: Overload:BDeshi.BTSM.StateCondition.evaluate
-  isSpec: "True"
-  fullName: BDeshi.BTSM.StateCondition.evaluate
-  nameWithType: StateCondition.evaluate
-- uid: BDeshi.BTSM.StateMachine
-  name: StateMachine
-  href: api/BDeshi.BTSM.StateMachine.html
-  commentId: T:BDeshi.BTSM.StateMachine
-  fullName: BDeshi.BTSM.StateMachine
-  nameWithType: StateMachine
-- uid: BDeshi.BTSM.StateMachine.#ctor(BDeshi.BTSM.State)
-  name: StateMachine(State)
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine__ctor_BDeshi_BTSM_State_
-  commentId: M:BDeshi.BTSM.StateMachine.#ctor(BDeshi.BTSM.State)
-  name.vb: New(State)
-  fullName: BDeshi.BTSM.StateMachine.StateMachine(BDeshi.BTSM.State)
-  fullName.vb: BDeshi.BTSM.StateMachine.New(BDeshi.BTSM.State)
-  nameWithType: StateMachine.StateMachine(State)
-  nameWithType.vb: StateMachine.New(State)
-- uid: BDeshi.BTSM.StateMachine.#ctor*
-  name: StateMachine
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine__ctor_
-  commentId: Overload:BDeshi.BTSM.StateMachine.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: BDeshi.BTSM.StateMachine.StateMachine
-  fullName.vb: BDeshi.BTSM.StateMachine.New
-  nameWithType: StateMachine.StateMachine
-  nameWithType.vb: StateMachine.New
-- uid: BDeshi.BTSM.StateMachine.DebugContext
+  fullName: BDeshi.BTSM.StateMachine<TState>.CurTypedState
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).CurTypedState
+  nameWithType: StateMachine<TState>.CurTypedState
+  nameWithType.vb: StateMachine(Of TState).CurTypedState
+- uid: BDeshi.BTSM.StateMachine`1.DebugContext
   name: DebugContext
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_DebugContext
-  commentId: F:BDeshi.BTSM.StateMachine.DebugContext
-  fullName: BDeshi.BTSM.StateMachine.DebugContext
-  nameWithType: StateMachine.DebugContext
-- uid: BDeshi.BTSM.StateMachine.HandleTransitioned
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_DebugContext
+  commentId: P:BDeshi.BTSM.StateMachine`1.DebugContext
+  fullName: BDeshi.BTSM.StateMachine<TState>.DebugContext
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).DebugContext
+  nameWithType: StateMachine<TState>.DebugContext
+  nameWithType.vb: StateMachine(Of TState).DebugContext
+- uid: BDeshi.BTSM.StateMachine`1.DebugContext*
+  name: DebugContext
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_DebugContext_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.DebugContext
+  isSpec: "True"
+  fullName: BDeshi.BTSM.StateMachine<TState>.DebugContext
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).DebugContext
+  nameWithType: StateMachine<TState>.DebugContext
+  nameWithType.vb: StateMachine(Of TState).DebugContext
+- uid: BDeshi.BTSM.StateMachine`1.GlobalTransitions
+  name: GlobalTransitions
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_GlobalTransitions
+  commentId: P:BDeshi.BTSM.StateMachine`1.GlobalTransitions
+  fullName: BDeshi.BTSM.StateMachine<TState>.GlobalTransitions
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).GlobalTransitions
+  nameWithType: StateMachine<TState>.GlobalTransitions
+  nameWithType.vb: StateMachine(Of TState).GlobalTransitions
+- uid: BDeshi.BTSM.StateMachine`1.GlobalTransitions*
+  name: GlobalTransitions
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_GlobalTransitions_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.GlobalTransitions
+  isSpec: "True"
+  fullName: BDeshi.BTSM.StateMachine<TState>.GlobalTransitions
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).GlobalTransitions
+  nameWithType: StateMachine<TState>.GlobalTransitions
+  nameWithType.vb: StateMachine(Of TState).GlobalTransitions
+- uid: BDeshi.BTSM.StateMachine`1.HandleTransitioned
   name: HandleTransitioned()
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_HandleTransitioned
-  commentId: M:BDeshi.BTSM.StateMachine.HandleTransitioned
-  fullName: BDeshi.BTSM.StateMachine.HandleTransitioned()
-  nameWithType: StateMachine.HandleTransitioned()
-- uid: BDeshi.BTSM.StateMachine.HandleTransitioned*
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_HandleTransitioned
+  commentId: M:BDeshi.BTSM.StateMachine`1.HandleTransitioned
+  fullName: BDeshi.BTSM.StateMachine<TState>.HandleTransitioned()
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).HandleTransitioned()
+  nameWithType: StateMachine<TState>.HandleTransitioned()
+  nameWithType.vb: StateMachine(Of TState).HandleTransitioned()
+- uid: BDeshi.BTSM.StateMachine`1.HandleTransitioned*
   name: HandleTransitioned
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_HandleTransitioned_
-  commentId: Overload:BDeshi.BTSM.StateMachine.HandleTransitioned
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_HandleTransitioned_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.HandleTransitioned
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.HandleTransitioned
-  nameWithType: StateMachine.HandleTransitioned
-- uid: BDeshi.BTSM.StateMachine.Tick
+  fullName: BDeshi.BTSM.StateMachine<TState>.HandleTransitioned
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).HandleTransitioned
+  nameWithType: StateMachine<TState>.HandleTransitioned
+  nameWithType.vb: StateMachine(Of TState).HandleTransitioned
+- uid: BDeshi.BTSM.StateMachine`1.ManualTransition
+  name: ManualTransition
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_ManualTransition
+  commentId: P:BDeshi.BTSM.StateMachine`1.ManualTransition
+  fullName: BDeshi.BTSM.StateMachine<TState>.ManualTransition
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).ManualTransition
+  nameWithType: StateMachine<TState>.ManualTransition
+  nameWithType.vb: StateMachine(Of TState).ManualTransition
+- uid: BDeshi.BTSM.StateMachine`1.ManualTransition*
+  name: ManualTransition
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_ManualTransition_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.ManualTransition
+  isSpec: "True"
+  fullName: BDeshi.BTSM.StateMachine<TState>.ManualTransition
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).ManualTransition
+  nameWithType: StateMachine<TState>.ManualTransition
+  nameWithType.vb: StateMachine(Of TState).ManualTransition
+- uid: BDeshi.BTSM.StateMachine`1.ShouldLog
+  name: ShouldLog
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_ShouldLog
+  commentId: F:BDeshi.BTSM.StateMachine`1.ShouldLog
+  fullName: BDeshi.BTSM.StateMachine<TState>.ShouldLog
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).ShouldLog
+  nameWithType: StateMachine<TState>.ShouldLog
+  nameWithType.vb: StateMachine(Of TState).ShouldLog
+- uid: BDeshi.BTSM.StateMachine`1.Tick
   name: Tick()
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_Tick
-  commentId: M:BDeshi.BTSM.StateMachine.Tick
-  fullName: BDeshi.BTSM.StateMachine.Tick()
-  nameWithType: StateMachine.Tick()
-- uid: BDeshi.BTSM.StateMachine.Tick*
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_Tick
+  commentId: M:BDeshi.BTSM.StateMachine`1.Tick
+  fullName: BDeshi.BTSM.StateMachine<TState>.Tick()
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).Tick()
+  nameWithType: StateMachine<TState>.Tick()
+  nameWithType.vb: StateMachine(Of TState).Tick()
+- uid: BDeshi.BTSM.StateMachine`1.Tick*
   name: Tick
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_Tick_
-  commentId: Overload:BDeshi.BTSM.StateMachine.Tick
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_Tick_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.Tick
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.Tick
-  nameWithType: StateMachine.Tick
-- uid: BDeshi.BTSM.StateMachine.activeTransitions
+  fullName: BDeshi.BTSM.StateMachine<TState>.Tick
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).Tick
+  nameWithType: StateMachine<TState>.Tick
+  nameWithType.vb: StateMachine(Of TState).Tick
+- uid: BDeshi.BTSM.StateMachine`1.activeTransitions
   name: activeTransitions
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_activeTransitions
-  commentId: P:BDeshi.BTSM.StateMachine.activeTransitions
-  fullName: BDeshi.BTSM.StateMachine.activeTransitions
-  nameWithType: StateMachine.activeTransitions
-- uid: BDeshi.BTSM.StateMachine.activeTransitions*
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_activeTransitions
+  commentId: P:BDeshi.BTSM.StateMachine`1.activeTransitions
+  fullName: BDeshi.BTSM.StateMachine<TState>.activeTransitions
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).activeTransitions
+  nameWithType: StateMachine<TState>.activeTransitions
+  nameWithType.vb: StateMachine(Of TState).activeTransitions
+- uid: BDeshi.BTSM.StateMachine`1.activeTransitions*
   name: activeTransitions
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_activeTransitions_
-  commentId: Overload:BDeshi.BTSM.StateMachine.activeTransitions
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_activeTransitions_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.activeTransitions
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.activeTransitions
-  nameWithType: StateMachine.activeTransitions
-- uid: BDeshi.BTSM.StateMachine.addDummyTransitionTo(BDeshi.BTSM.State,System.Func{System.Boolean},System.Action)
-  name: addDummyTransitionTo(State, Func<bool>, Action)
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_addDummyTransitionTo_BDeshi_BTSM_State_System_Func_System_Boolean__System_Action_
-  commentId: M:BDeshi.BTSM.StateMachine.addDummyTransitionTo(BDeshi.BTSM.State,System.Func{System.Boolean},System.Action)
-  name.vb: addDummyTransitionTo(State, Func(Of Boolean), Action)
-  fullName: BDeshi.BTSM.StateMachine.addDummyTransitionTo(BDeshi.BTSM.State, System.Func<bool>, System.Action)
-  fullName.vb: BDeshi.BTSM.StateMachine.addDummyTransitionTo(BDeshi.BTSM.State, System.Func(Of Boolean), System.Action)
-  nameWithType: StateMachine.addDummyTransitionTo(State, Func<bool>, Action)
-  nameWithType.vb: StateMachine.addDummyTransitionTo(State, Func(Of Boolean), Action)
-- uid: BDeshi.BTSM.StateMachine.addDummyTransitionTo*
-  name: addDummyTransitionTo
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_addDummyTransitionTo_
-  commentId: Overload:BDeshi.BTSM.StateMachine.addDummyTransitionTo
-  isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.addDummyTransitionTo
-  nameWithType: StateMachine.addDummyTransitionTo
-- uid: BDeshi.BTSM.StateMachine.addGlobalTransition(BDeshi.BTSM.State,System.Func{System.Boolean},System.Action)
-  name: addGlobalTransition(State, Func<bool>, Action)
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_addGlobalTransition_BDeshi_BTSM_State_System_Func_System_Boolean__System_Action_
-  commentId: M:BDeshi.BTSM.StateMachine.addGlobalTransition(BDeshi.BTSM.State,System.Func{System.Boolean},System.Action)
-  name.vb: addGlobalTransition(State, Func(Of Boolean), Action)
-  fullName: BDeshi.BTSM.StateMachine.addGlobalTransition(BDeshi.BTSM.State, System.Func<bool>, System.Action)
-  fullName.vb: BDeshi.BTSM.StateMachine.addGlobalTransition(BDeshi.BTSM.State, System.Func(Of Boolean), System.Action)
-  nameWithType: StateMachine.addGlobalTransition(State, Func<bool>, Action)
-  nameWithType.vb: StateMachine.addGlobalTransition(State, Func(Of Boolean), Action)
-- uid: BDeshi.BTSM.StateMachine.addGlobalTransition(BDeshi.BTSM.Transition)
-  name: addGlobalTransition(Transition)
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_addGlobalTransition_BDeshi_BTSM_Transition_
-  commentId: M:BDeshi.BTSM.StateMachine.addGlobalTransition(BDeshi.BTSM.Transition)
-  fullName: BDeshi.BTSM.StateMachine.addGlobalTransition(BDeshi.BTSM.Transition)
-  nameWithType: StateMachine.addGlobalTransition(Transition)
-- uid: BDeshi.BTSM.StateMachine.addGlobalTransition*
+  fullName: BDeshi.BTSM.StateMachine<TState>.activeTransitions
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).activeTransitions
+  nameWithType: StateMachine<TState>.activeTransitions
+  nameWithType.vb: StateMachine(Of TState).activeTransitions
+- uid: BDeshi.BTSM.StateMachine`1.addGlobalTransition(BDeshi.BTSM.Transition{`0})
+  name: addGlobalTransition(Transition<TState>)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_addGlobalTransition_BDeshi_BTSM_Transition__0__
+  commentId: M:BDeshi.BTSM.StateMachine`1.addGlobalTransition(BDeshi.BTSM.Transition{`0})
+  name.vb: addGlobalTransition(Transition(Of TState))
+  fullName: BDeshi.BTSM.StateMachine<TState>.addGlobalTransition(BDeshi.BTSM.Transition<TState>)
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).addGlobalTransition(BDeshi.BTSM.Transition(Of TState))
+  nameWithType: StateMachine<TState>.addGlobalTransition(Transition<TState>)
+  nameWithType.vb: StateMachine(Of TState).addGlobalTransition(Transition(Of TState))
+- uid: BDeshi.BTSM.StateMachine`1.addGlobalTransition(`0,System.Func{System.Boolean},System.Action)
+  name: addGlobalTransition(TState, Func<bool>, Action)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_addGlobalTransition__0_System_Func_System_Boolean__System_Action_
+  commentId: M:BDeshi.BTSM.StateMachine`1.addGlobalTransition(`0,System.Func{System.Boolean},System.Action)
+  name.vb: addGlobalTransition(TState, Func(Of Boolean), Action)
+  fullName: BDeshi.BTSM.StateMachine<TState>.addGlobalTransition(TState, System.Func<bool>, System.Action)
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).addGlobalTransition(TState, System.Func(Of Boolean), System.Action)
+  nameWithType: StateMachine<TState>.addGlobalTransition(TState, Func<bool>, Action)
+  nameWithType.vb: StateMachine(Of TState).addGlobalTransition(TState, Func(Of Boolean), Action)
+- uid: BDeshi.BTSM.StateMachine`1.addGlobalTransition*
   name: addGlobalTransition
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_addGlobalTransition_
-  commentId: Overload:BDeshi.BTSM.StateMachine.addGlobalTransition
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_addGlobalTransition_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.addGlobalTransition
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.addGlobalTransition
-  nameWithType: StateMachine.addGlobalTransition
-- uid: BDeshi.BTSM.StateMachine.addStateCondition(System.Boolean)
-  name: addStateCondition(bool)
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_addStateCondition_System_Boolean_
-  commentId: M:BDeshi.BTSM.StateMachine.addStateCondition(System.Boolean)
-  name.vb: addStateCondition(Boolean)
-  fullName: BDeshi.BTSM.StateMachine.addStateCondition(bool)
-  fullName.vb: BDeshi.BTSM.StateMachine.addStateCondition(Boolean)
-  nameWithType: StateMachine.addStateCondition(bool)
-  nameWithType.vb: StateMachine.addStateCondition(Boolean)
-- uid: BDeshi.BTSM.StateMachine.addStateCondition*
-  name: addStateCondition
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_addStateCondition_
-  commentId: Overload:BDeshi.BTSM.StateMachine.addStateCondition
+  fullName: BDeshi.BTSM.StateMachine<TState>.addGlobalTransition
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).addGlobalTransition
+  nameWithType: StateMachine<TState>.addGlobalTransition
+  nameWithType.vb: StateMachine(Of TState).addGlobalTransition
+- uid: BDeshi.BTSM.StateMachine`1.addManualTransitionTo(`0,System.Action)
+  name: addManualTransitionTo(TState, Action)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_addManualTransitionTo__0_System_Action_
+  commentId: M:BDeshi.BTSM.StateMachine`1.addManualTransitionTo(`0,System.Action)
+  fullName: BDeshi.BTSM.StateMachine<TState>.addManualTransitionTo(TState, System.Action)
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).addManualTransitionTo(TState, System.Action)
+  nameWithType: StateMachine<TState>.addManualTransitionTo(TState, Action)
+  nameWithType.vb: StateMachine(Of TState).addManualTransitionTo(TState, Action)
+- uid: BDeshi.BTSM.StateMachine`1.addManualTransitionTo*
+  name: addManualTransitionTo
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_addManualTransitionTo_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.addManualTransitionTo
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.addStateCondition
-  nameWithType: StateMachine.addStateCondition
-- uid: BDeshi.BTSM.StateMachine.addTransition(BDeshi.BTSM.State,BDeshi.BTSM.State,System.Func{System.Boolean},System.Action)
-  name: addTransition(State, State, Func<bool>, Action)
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_addTransition_BDeshi_BTSM_State_BDeshi_BTSM_State_System_Func_System_Boolean__System_Action_
-  commentId: M:BDeshi.BTSM.StateMachine.addTransition(BDeshi.BTSM.State,BDeshi.BTSM.State,System.Func{System.Boolean},System.Action)
-  name.vb: addTransition(State, State, Func(Of Boolean), Action)
-  fullName: BDeshi.BTSM.StateMachine.addTransition(BDeshi.BTSM.State, BDeshi.BTSM.State, System.Func<bool>, System.Action)
-  fullName.vb: BDeshi.BTSM.StateMachine.addTransition(BDeshi.BTSM.State, BDeshi.BTSM.State, System.Func(Of Boolean), System.Action)
-  nameWithType: StateMachine.addTransition(State, State, Func<bool>, Action)
-  nameWithType.vb: StateMachine.addTransition(State, State, Func(Of Boolean), Action)
-- uid: BDeshi.BTSM.StateMachine.addTransition(BDeshi.BTSM.State,BDeshi.BTSM.Transition)
-  name: addTransition(State, Transition)
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_addTransition_BDeshi_BTSM_State_BDeshi_BTSM_Transition_
-  commentId: M:BDeshi.BTSM.StateMachine.addTransition(BDeshi.BTSM.State,BDeshi.BTSM.Transition)
-  fullName: BDeshi.BTSM.StateMachine.addTransition(BDeshi.BTSM.State, BDeshi.BTSM.Transition)
-  nameWithType: StateMachine.addTransition(State, Transition)
-- uid: BDeshi.BTSM.StateMachine.addTransition*
+  fullName: BDeshi.BTSM.StateMachine<TState>.addManualTransitionTo
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).addManualTransitionTo
+  nameWithType: StateMachine<TState>.addManualTransitionTo
+  nameWithType.vb: StateMachine(Of TState).addManualTransitionTo
+- uid: BDeshi.BTSM.StateMachine`1.addTransition(BDeshi.BTSM.IState,BDeshi.BTSM.Transition{`0})
+  name: addTransition(IState, Transition<TState>)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_addTransition_BDeshi_BTSM_IState_BDeshi_BTSM_Transition__0__
+  commentId: M:BDeshi.BTSM.StateMachine`1.addTransition(BDeshi.BTSM.IState,BDeshi.BTSM.Transition{`0})
+  name.vb: addTransition(IState, Transition(Of TState))
+  fullName: BDeshi.BTSM.StateMachine<TState>.addTransition(BDeshi.BTSM.IState, BDeshi.BTSM.Transition<TState>)
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).addTransition(BDeshi.BTSM.IState, BDeshi.BTSM.Transition(Of TState))
+  nameWithType: StateMachine<TState>.addTransition(IState, Transition<TState>)
+  nameWithType.vb: StateMachine(Of TState).addTransition(IState, Transition(Of TState))
+- uid: BDeshi.BTSM.StateMachine`1.addTransition(`0,`0,System.Func{System.Boolean},System.Action)
+  name: addTransition(TState, TState, Func<bool>, Action)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_addTransition__0__0_System_Func_System_Boolean__System_Action_
+  commentId: M:BDeshi.BTSM.StateMachine`1.addTransition(`0,`0,System.Func{System.Boolean},System.Action)
+  name.vb: addTransition(TState, TState, Func(Of Boolean), Action)
+  fullName: BDeshi.BTSM.StateMachine<TState>.addTransition(TState, TState, System.Func<bool>, System.Action)
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).addTransition(TState, TState, System.Func(Of Boolean), System.Action)
+  nameWithType: StateMachine<TState>.addTransition(TState, TState, Func<bool>, Action)
+  nameWithType.vb: StateMachine(Of TState).addTransition(TState, TState, Func(Of Boolean), Action)
+- uid: BDeshi.BTSM.StateMachine`1.addTransition*
   name: addTransition
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_addTransition_
-  commentId: Overload:BDeshi.BTSM.StateMachine.addTransition
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_addTransition_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.addTransition
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.addTransition
-  nameWithType: StateMachine.addTransition
-- uid: BDeshi.BTSM.StateMachine.cleanup
+  fullName: BDeshi.BTSM.StateMachine<TState>.addTransition
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).addTransition
+  nameWithType: StateMachine<TState>.addTransition
+  nameWithType.vb: StateMachine(Of TState).addTransition
+- uid: BDeshi.BTSM.StateMachine`1.cleanup
   name: cleanup()
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_cleanup
-  commentId: M:BDeshi.BTSM.StateMachine.cleanup
-  fullName: BDeshi.BTSM.StateMachine.cleanup()
-  nameWithType: StateMachine.cleanup()
-- uid: BDeshi.BTSM.StateMachine.cleanup*
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_cleanup
+  commentId: M:BDeshi.BTSM.StateMachine`1.cleanup
+  fullName: BDeshi.BTSM.StateMachine<TState>.cleanup()
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).cleanup()
+  nameWithType: StateMachine<TState>.cleanup()
+  nameWithType.vb: StateMachine(Of TState).cleanup()
+- uid: BDeshi.BTSM.StateMachine`1.cleanup*
   name: cleanup
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_cleanup_
-  commentId: Overload:BDeshi.BTSM.StateMachine.cleanup
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_cleanup_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.cleanup
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.cleanup
-  nameWithType: StateMachine.cleanup
-- uid: BDeshi.BTSM.StateMachine.curState
-  name: curState
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_curState
-  commentId: F:BDeshi.BTSM.StateMachine.curState
-  fullName: BDeshi.BTSM.StateMachine.curState
-  nameWithType: StateMachine.curState
-- uid: BDeshi.BTSM.StateMachine.dummyTransition
-  name: dummyTransition
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_dummyTransition
-  commentId: P:BDeshi.BTSM.StateMachine.dummyTransition
-  fullName: BDeshi.BTSM.StateMachine.dummyTransition
-  nameWithType: StateMachine.dummyTransition
-- uid: BDeshi.BTSM.StateMachine.dummyTransition*
-  name: dummyTransition
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_dummyTransition_
-  commentId: Overload:BDeshi.BTSM.StateMachine.dummyTransition
-  isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.dummyTransition
-  nameWithType: StateMachine.dummyTransition
-- uid: BDeshi.BTSM.StateMachine.emptyTransitions
+  fullName: BDeshi.BTSM.StateMachine<TState>.cleanup
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).cleanup
+  nameWithType: StateMachine<TState>.cleanup
+  nameWithType.vb: StateMachine(Of TState).cleanup
+- uid: BDeshi.BTSM.StateMachine`1.emptyTransitions
   name: emptyTransitions
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_emptyTransitions
-  commentId: F:BDeshi.BTSM.StateMachine.emptyTransitions
-  fullName: BDeshi.BTSM.StateMachine.emptyTransitions
-  nameWithType: StateMachine.emptyTransitions
-- uid: BDeshi.BTSM.StateMachine.enter(System.Boolean)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_emptyTransitions
+  commentId: F:BDeshi.BTSM.StateMachine`1.emptyTransitions
+  fullName: BDeshi.BTSM.StateMachine<TState>.emptyTransitions
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).emptyTransitions
+  nameWithType: StateMachine<TState>.emptyTransitions
+  nameWithType.vb: StateMachine(Of TState).emptyTransitions
+- uid: BDeshi.BTSM.StateMachine`1.enter(System.Boolean)
   name: enter(bool)
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_enter_System_Boolean_
-  commentId: M:BDeshi.BTSM.StateMachine.enter(System.Boolean)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_enter_System_Boolean_
+  commentId: M:BDeshi.BTSM.StateMachine`1.enter(System.Boolean)
   name.vb: enter(Boolean)
-  fullName: BDeshi.BTSM.StateMachine.enter(bool)
-  fullName.vb: BDeshi.BTSM.StateMachine.enter(Boolean)
-  nameWithType: StateMachine.enter(bool)
-  nameWithType.vb: StateMachine.enter(Boolean)
-- uid: BDeshi.BTSM.StateMachine.enter*
+  fullName: BDeshi.BTSM.StateMachine<TState>.enter(bool)
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).enter(Boolean)
+  nameWithType: StateMachine<TState>.enter(bool)
+  nameWithType.vb: StateMachine(Of TState).enter(Boolean)
+- uid: BDeshi.BTSM.StateMachine`1.enter*
   name: enter
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_enter_
-  commentId: Overload:BDeshi.BTSM.StateMachine.enter
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_enter_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.enter
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.enter
-  nameWithType: StateMachine.enter
-- uid: BDeshi.BTSM.StateMachine.exitCurState
+  fullName: BDeshi.BTSM.StateMachine<TState>.enter
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).enter
+  nameWithType: StateMachine<TState>.enter
+  nameWithType.vb: StateMachine(Of TState).enter
+- uid: BDeshi.BTSM.StateMachine`1.exitCurState
   name: exitCurState()
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_exitCurState
-  commentId: M:BDeshi.BTSM.StateMachine.exitCurState
-  fullName: BDeshi.BTSM.StateMachine.exitCurState()
-  nameWithType: StateMachine.exitCurState()
-- uid: BDeshi.BTSM.StateMachine.exitCurState*
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_exitCurState
+  commentId: M:BDeshi.BTSM.StateMachine`1.exitCurState
+  fullName: BDeshi.BTSM.StateMachine<TState>.exitCurState()
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).exitCurState()
+  nameWithType: StateMachine<TState>.exitCurState()
+  nameWithType.vb: StateMachine(Of TState).exitCurState()
+- uid: BDeshi.BTSM.StateMachine`1.exitCurState*
   name: exitCurState
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_exitCurState_
-  commentId: Overload:BDeshi.BTSM.StateMachine.exitCurState
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_exitCurState_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.exitCurState
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.exitCurState
-  nameWithType: StateMachine.exitCurState
-- uid: BDeshi.BTSM.StateMachine.forceTakeTransition(BDeshi.BTSM.Transition,System.Boolean)
-  name: forceTakeTransition(Transition, bool)
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_forceTakeTransition_BDeshi_BTSM_Transition_System_Boolean_
-  commentId: M:BDeshi.BTSM.StateMachine.forceTakeTransition(BDeshi.BTSM.Transition,System.Boolean)
-  name.vb: forceTakeTransition(Transition, Boolean)
-  fullName: BDeshi.BTSM.StateMachine.forceTakeTransition(BDeshi.BTSM.Transition, bool)
-  fullName.vb: BDeshi.BTSM.StateMachine.forceTakeTransition(BDeshi.BTSM.Transition, Boolean)
-  nameWithType: StateMachine.forceTakeTransition(Transition, bool)
-  nameWithType.vb: StateMachine.forceTakeTransition(Transition, Boolean)
-- uid: BDeshi.BTSM.StateMachine.forceTakeTransition*
+  fullName: BDeshi.BTSM.StateMachine<TState>.exitCurState
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).exitCurState
+  nameWithType: StateMachine<TState>.exitCurState
+  nameWithType.vb: StateMachine(Of TState).exitCurState
+- uid: BDeshi.BTSM.StateMachine`1.forceTakeTransition(BDeshi.BTSM.Transition{`0},System.Boolean)
+  name: forceTakeTransition(Transition<TState>, bool)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_forceTakeTransition_BDeshi_BTSM_Transition__0__System_Boolean_
+  commentId: M:BDeshi.BTSM.StateMachine`1.forceTakeTransition(BDeshi.BTSM.Transition{`0},System.Boolean)
+  name.vb: forceTakeTransition(Transition(Of TState), Boolean)
+  fullName: BDeshi.BTSM.StateMachine<TState>.forceTakeTransition(BDeshi.BTSM.Transition<TState>, bool)
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).forceTakeTransition(BDeshi.BTSM.Transition(Of TState), Boolean)
+  nameWithType: StateMachine<TState>.forceTakeTransition(Transition<TState>, bool)
+  nameWithType.vb: StateMachine(Of TState).forceTakeTransition(Transition(Of TState), Boolean)
+- uid: BDeshi.BTSM.StateMachine`1.forceTakeTransition*
   name: forceTakeTransition
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_forceTakeTransition_
-  commentId: Overload:BDeshi.BTSM.StateMachine.forceTakeTransition
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_forceTakeTransition_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.forceTakeTransition
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.forceTakeTransition
-  nameWithType: StateMachine.forceTakeTransition
-- uid: BDeshi.BTSM.StateMachine.getAllStates
+  fullName: BDeshi.BTSM.StateMachine<TState>.forceTakeTransition
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).forceTakeTransition
+  nameWithType: StateMachine<TState>.forceTakeTransition
+  nameWithType.vb: StateMachine(Of TState).forceTakeTransition
+- uid: BDeshi.BTSM.StateMachine`1.getAllStates
   name: getAllStates()
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_getAllStates
-  commentId: M:BDeshi.BTSM.StateMachine.getAllStates
-  fullName: BDeshi.BTSM.StateMachine.getAllStates()
-  nameWithType: StateMachine.getAllStates()
-- uid: BDeshi.BTSM.StateMachine.getAllStates*
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_getAllStates
+  commentId: M:BDeshi.BTSM.StateMachine`1.getAllStates
+  fullName: BDeshi.BTSM.StateMachine<TState>.getAllStates()
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).getAllStates()
+  nameWithType: StateMachine<TState>.getAllStates()
+  nameWithType.vb: StateMachine(Of TState).getAllStates()
+- uid: BDeshi.BTSM.StateMachine`1.getAllStates*
   name: getAllStates
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_getAllStates_
-  commentId: Overload:BDeshi.BTSM.StateMachine.getAllStates
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_getAllStates_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.getAllStates
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.getAllStates
-  nameWithType: StateMachine.getAllStates
-- uid: BDeshi.BTSM.StateMachine.globalTransitions
+  fullName: BDeshi.BTSM.StateMachine<TState>.getAllStates
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).getAllStates
+  nameWithType: StateMachine<TState>.getAllStates
+  nameWithType.vb: StateMachine(Of TState).getAllStates
+- uid: BDeshi.BTSM.StateMachine`1.globalTransitions
   name: globalTransitions
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_globalTransitions
-  commentId: P:BDeshi.BTSM.StateMachine.globalTransitions
-  fullName: BDeshi.BTSM.StateMachine.globalTransitions
-  nameWithType: StateMachine.globalTransitions
-- uid: BDeshi.BTSM.StateMachine.globalTransitions*
-  name: globalTransitions
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_globalTransitions_
-  commentId: Overload:BDeshi.BTSM.StateMachine.globalTransitions
-  isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.globalTransitions
-  nameWithType: StateMachine.globalTransitions
-- uid: BDeshi.BTSM.StateMachine.startingState
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_globalTransitions
+  commentId: F:BDeshi.BTSM.StateMachine`1.globalTransitions
+  fullName: BDeshi.BTSM.StateMachine<TState>.globalTransitions
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).globalTransitions
+  nameWithType: StateMachine<TState>.globalTransitions
+  nameWithType.vb: StateMachine(Of TState).globalTransitions
+- uid: BDeshi.BTSM.StateMachine`1.manualTransitions
+  name: manualTransitions
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_manualTransitions
+  commentId: F:BDeshi.BTSM.StateMachine`1.manualTransitions
+  fullName: BDeshi.BTSM.StateMachine<TState>.manualTransitions
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).manualTransitions
+  nameWithType: StateMachine<TState>.manualTransitions
+  nameWithType.vb: StateMachine(Of TState).manualTransitions
+- uid: BDeshi.BTSM.StateMachine`1.startingState
   name: startingState
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_startingState
-  commentId: F:BDeshi.BTSM.StateMachine.startingState
-  fullName: BDeshi.BTSM.StateMachine.startingState
-  nameWithType: StateMachine.startingState
-- uid: BDeshi.BTSM.StateMachine.transitionTo(BDeshi.BTSM.State,System.Boolean,System.Boolean)
-  name: transitionTo(State, bool, bool)
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_transitionTo_BDeshi_BTSM_State_System_Boolean_System_Boolean_
-  commentId: M:BDeshi.BTSM.StateMachine.transitionTo(BDeshi.BTSM.State,System.Boolean,System.Boolean)
-  name.vb: transitionTo(State, Boolean, Boolean)
-  fullName: BDeshi.BTSM.StateMachine.transitionTo(BDeshi.BTSM.State, bool, bool)
-  fullName.vb: BDeshi.BTSM.StateMachine.transitionTo(BDeshi.BTSM.State, Boolean, Boolean)
-  nameWithType: StateMachine.transitionTo(State, bool, bool)
-  nameWithType.vb: StateMachine.transitionTo(State, Boolean, Boolean)
-- uid: BDeshi.BTSM.StateMachine.transitionTo*
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_startingState
+  commentId: F:BDeshi.BTSM.StateMachine`1.startingState
+  fullName: BDeshi.BTSM.StateMachine<TState>.startingState
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).startingState
+  nameWithType: StateMachine<TState>.startingState
+  nameWithType.vb: StateMachine(Of TState).startingState
+- uid: BDeshi.BTSM.StateMachine`1.transitionTo(`0,System.Boolean,System.Boolean)
+  name: transitionTo(TState, bool, bool)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_transitionTo__0_System_Boolean_System_Boolean_
+  commentId: M:BDeshi.BTSM.StateMachine`1.transitionTo(`0,System.Boolean,System.Boolean)
+  name.vb: transitionTo(TState, Boolean, Boolean)
+  fullName: BDeshi.BTSM.StateMachine<TState>.transitionTo(TState, bool, bool)
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).transitionTo(TState, Boolean, Boolean)
+  nameWithType: StateMachine<TState>.transitionTo(TState, bool, bool)
+  nameWithType.vb: StateMachine(Of TState).transitionTo(TState, Boolean, Boolean)
+- uid: BDeshi.BTSM.StateMachine`1.transitionTo*
   name: transitionTo
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_transitionTo_
-  commentId: Overload:BDeshi.BTSM.StateMachine.transitionTo
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_transitionTo_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.transitionTo
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.transitionTo
-  nameWithType: StateMachine.transitionTo
-- uid: BDeshi.BTSM.StateMachine.transitions
+  fullName: BDeshi.BTSM.StateMachine<TState>.transitionTo
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).transitionTo
+  nameWithType: StateMachine<TState>.transitionTo
+  nameWithType.vb: StateMachine(Of TState).transitionTo
+- uid: BDeshi.BTSM.StateMachine`1.transitions
   name: transitions
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_transitions
-  commentId: P:BDeshi.BTSM.StateMachine.transitions
-  fullName: BDeshi.BTSM.StateMachine.transitions
-  nameWithType: StateMachine.transitions
-- uid: BDeshi.BTSM.StateMachine.transitions*
-  name: transitions
-  href: api/BDeshi.BTSM.StateMachine.html#BDeshi_BTSM_StateMachine_transitions_
-  commentId: Overload:BDeshi.BTSM.StateMachine.transitions
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_transitions
+  commentId: F:BDeshi.BTSM.StateMachine`1.transitions
+  fullName: BDeshi.BTSM.StateMachine<TState>.transitions
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).transitions
+  nameWithType: StateMachine<TState>.transitions
+  nameWithType.vb: StateMachine(Of TState).transitions
+- uid: BDeshi.BTSM.StateMachine`1.tryGetTransitionsForState(BDeshi.BTSM.IState,System.Collections.Generic.IEnumerable{BDeshi.BTSM.TransitionBase}@)
+  name: tryGetTransitionsForState(IState, out IEnumerable<TransitionBase>)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_tryGetTransitionsForState_BDeshi_BTSM_IState_System_Collections_Generic_IEnumerable_BDeshi_BTSM_TransitionBase___
+  commentId: M:BDeshi.BTSM.StateMachine`1.tryGetTransitionsForState(BDeshi.BTSM.IState,System.Collections.Generic.IEnumerable{BDeshi.BTSM.TransitionBase}@)
+  name.vb: tryGetTransitionsForState(IState, IEnumerable(Of TransitionBase))
+  fullName: BDeshi.BTSM.StateMachine<TState>.tryGetTransitionsForState(BDeshi.BTSM.IState, out System.Collections.Generic.IEnumerable<BDeshi.BTSM.TransitionBase>)
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).tryGetTransitionsForState(BDeshi.BTSM.IState, System.Collections.Generic.IEnumerable(Of BDeshi.BTSM.TransitionBase))
+  nameWithType: StateMachine<TState>.tryGetTransitionsForState(IState, out IEnumerable<TransitionBase>)
+  nameWithType.vb: StateMachine(Of TState).tryGetTransitionsForState(IState, IEnumerable(Of TransitionBase))
+- uid: BDeshi.BTSM.StateMachine`1.tryGetTransitionsForState*
+  name: tryGetTransitionsForState
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_tryGetTransitionsForState_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.tryGetTransitionsForState
   isSpec: "True"
-  fullName: BDeshi.BTSM.StateMachine.transitions
-  nameWithType: StateMachine.transitions
+  fullName: BDeshi.BTSM.StateMachine<TState>.tryGetTransitionsForState
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).tryGetTransitionsForState
+  nameWithType: StateMachine<TState>.tryGetTransitionsForState
+  nameWithType.vb: StateMachine(Of TState).tryGetTransitionsForState
 - uid: BDeshi.BTSM.TimeoutNode
   name: TimeoutNode
   href: api/BDeshi.BTSM.TimeoutNode.html
@@ -2775,77 +3460,196 @@ references:
   commentId: F:BDeshi.BTSM.TimeoutNode.timer
   fullName: BDeshi.BTSM.TimeoutNode.timer
   nameWithType: TimeoutNode.timer
-- uid: BDeshi.BTSM.Transition
-  name: Transition
-  href: api/BDeshi.BTSM.Transition.html
-  commentId: T:BDeshi.BTSM.Transition
-  fullName: BDeshi.BTSM.Transition
-  nameWithType: Transition
-- uid: BDeshi.BTSM.Transition.Evaluate
+- uid: BDeshi.BTSM.TimerNode
+  name: TimerNode
+  href: api/BDeshi.BTSM.TimerNode.html
+  commentId: T:BDeshi.BTSM.TimerNode
+  fullName: BDeshi.BTSM.TimerNode
+  nameWithType: TimerNode
+- uid: BDeshi.BTSM.TimerNode.#ctor(BDeshi.BTSM.IBtNode,System.Single)
+  name: TimerNode(IBtNode, float)
+  href: api/BDeshi.BTSM.TimerNode.html#BDeshi_BTSM_TimerNode__ctor_BDeshi_BTSM_IBtNode_System_Single_
+  commentId: M:BDeshi.BTSM.TimerNode.#ctor(BDeshi.BTSM.IBtNode,System.Single)
+  name.vb: New(IBtNode, Single)
+  fullName: BDeshi.BTSM.TimerNode.TimerNode(BDeshi.BTSM.IBtNode, float)
+  fullName.vb: BDeshi.BTSM.TimerNode.New(BDeshi.BTSM.IBtNode, Single)
+  nameWithType: TimerNode.TimerNode(IBtNode, float)
+  nameWithType.vb: TimerNode.New(IBtNode, Single)
+- uid: BDeshi.BTSM.TimerNode.#ctor*
+  name: TimerNode
+  href: api/BDeshi.BTSM.TimerNode.html#BDeshi_BTSM_TimerNode__ctor_
+  commentId: Overload:BDeshi.BTSM.TimerNode.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BDeshi.BTSM.TimerNode.TimerNode
+  fullName.vb: BDeshi.BTSM.TimerNode.New
+  nameWithType: TimerNode.TimerNode
+  nameWithType.vb: TimerNode.New
+- uid: BDeshi.BTSM.TimerNode.EditorName
+  name: EditorName
+  href: api/BDeshi.BTSM.TimerNode.html#BDeshi_BTSM_TimerNode_EditorName
+  commentId: P:BDeshi.BTSM.TimerNode.EditorName
+  fullName: BDeshi.BTSM.TimerNode.EditorName
+  nameWithType: TimerNode.EditorName
+- uid: BDeshi.BTSM.TimerNode.EditorName*
+  name: EditorName
+  href: api/BDeshi.BTSM.TimerNode.html#BDeshi_BTSM_TimerNode_EditorName_
+  commentId: Overload:BDeshi.BTSM.TimerNode.EditorName
+  isSpec: "True"
+  fullName: BDeshi.BTSM.TimerNode.EditorName
+  nameWithType: TimerNode.EditorName
+- uid: BDeshi.BTSM.TimerNode.Enter
+  name: Enter()
+  href: api/BDeshi.BTSM.TimerNode.html#BDeshi_BTSM_TimerNode_Enter
+  commentId: M:BDeshi.BTSM.TimerNode.Enter
+  fullName: BDeshi.BTSM.TimerNode.Enter()
+  nameWithType: TimerNode.Enter()
+- uid: BDeshi.BTSM.TimerNode.Enter*
+  name: Enter
+  href: api/BDeshi.BTSM.TimerNode.html#BDeshi_BTSM_TimerNode_Enter_
+  commentId: Overload:BDeshi.BTSM.TimerNode.Enter
+  isSpec: "True"
+  fullName: BDeshi.BTSM.TimerNode.Enter
+  nameWithType: TimerNode.Enter
+- uid: BDeshi.BTSM.TimerNode.Exit
+  name: Exit()
+  href: api/BDeshi.BTSM.TimerNode.html#BDeshi_BTSM_TimerNode_Exit
+  commentId: M:BDeshi.BTSM.TimerNode.Exit
+  fullName: BDeshi.BTSM.TimerNode.Exit()
+  nameWithType: TimerNode.Exit()
+- uid: BDeshi.BTSM.TimerNode.Exit*
+  name: Exit
+  href: api/BDeshi.BTSM.TimerNode.html#BDeshi_BTSM_TimerNode_Exit_
+  commentId: Overload:BDeshi.BTSM.TimerNode.Exit
+  isSpec: "True"
+  fullName: BDeshi.BTSM.TimerNode.Exit
+  nameWithType: TimerNode.Exit
+- uid: BDeshi.BTSM.TimerNode.InternalTick
+  name: InternalTick()
+  href: api/BDeshi.BTSM.TimerNode.html#BDeshi_BTSM_TimerNode_InternalTick
+  commentId: M:BDeshi.BTSM.TimerNode.InternalTick
+  fullName: BDeshi.BTSM.TimerNode.InternalTick()
+  nameWithType: TimerNode.InternalTick()
+- uid: BDeshi.BTSM.TimerNode.InternalTick*
+  name: InternalTick
+  href: api/BDeshi.BTSM.TimerNode.html#BDeshi_BTSM_TimerNode_InternalTick_
+  commentId: Overload:BDeshi.BTSM.TimerNode.InternalTick
+  isSpec: "True"
+  fullName: BDeshi.BTSM.TimerNode.InternalTick
+  nameWithType: TimerNode.InternalTick
+- uid: BDeshi.BTSM.TimerNode.duration
+  name: duration
+  href: api/BDeshi.BTSM.TimerNode.html#BDeshi_BTSM_TimerNode_duration
+  commentId: F:BDeshi.BTSM.TimerNode.duration
+  fullName: BDeshi.BTSM.TimerNode.duration
+  nameWithType: TimerNode.duration
+- uid: BDeshi.BTSM.TimerNode.timeoutStatus
+  name: timeoutStatus
+  href: api/BDeshi.BTSM.TimerNode.html#BDeshi_BTSM_TimerNode_timeoutStatus
+  commentId: F:BDeshi.BTSM.TimerNode.timeoutStatus
+  fullName: BDeshi.BTSM.TimerNode.timeoutStatus
+  nameWithType: TimerNode.timeoutStatus
+- uid: BDeshi.BTSM.TransitionBase
+  name: TransitionBase
+  href: api/BDeshi.BTSM.TransitionBase.html
+  commentId: T:BDeshi.BTSM.TransitionBase
+  fullName: BDeshi.BTSM.TransitionBase
+  nameWithType: TransitionBase
+- uid: BDeshi.BTSM.TransitionBase.Evaluate
   name: Evaluate()
-  href: api/BDeshi.BTSM.Transition.html#BDeshi_BTSM_Transition_Evaluate
-  commentId: M:BDeshi.BTSM.Transition.Evaluate
-  fullName: BDeshi.BTSM.Transition.Evaluate()
-  nameWithType: Transition.Evaluate()
-- uid: BDeshi.BTSM.Transition.Evaluate*
+  href: api/BDeshi.BTSM.TransitionBase.html#BDeshi_BTSM_TransitionBase_Evaluate
+  commentId: M:BDeshi.BTSM.TransitionBase.Evaluate
+  fullName: BDeshi.BTSM.TransitionBase.Evaluate()
+  nameWithType: TransitionBase.Evaluate()
+- uid: BDeshi.BTSM.TransitionBase.Evaluate*
   name: Evaluate
-  href: api/BDeshi.BTSM.Transition.html#BDeshi_BTSM_Transition_Evaluate_
-  commentId: Overload:BDeshi.BTSM.Transition.Evaluate
+  href: api/BDeshi.BTSM.TransitionBase.html#BDeshi_BTSM_TransitionBase_Evaluate_
+  commentId: Overload:BDeshi.BTSM.TransitionBase.Evaluate
   isSpec: "True"
-  fullName: BDeshi.BTSM.Transition.Evaluate
-  nameWithType: Transition.Evaluate
-- uid: BDeshi.BTSM.Transition.OnTaken
-  name: OnTaken
-  href: api/BDeshi.BTSM.Transition.html#BDeshi_BTSM_Transition_OnTaken
-  commentId: P:BDeshi.BTSM.Transition.OnTaken
-  fullName: BDeshi.BTSM.Transition.OnTaken
-  nameWithType: Transition.OnTaken
-- uid: BDeshi.BTSM.Transition.OnTaken*
-  name: OnTaken
-  href: api/BDeshi.BTSM.Transition.html#BDeshi_BTSM_Transition_OnTaken_
-  commentId: Overload:BDeshi.BTSM.Transition.OnTaken
-  isSpec: "True"
-  fullName: BDeshi.BTSM.Transition.OnTaken
-  nameWithType: Transition.OnTaken
-- uid: BDeshi.BTSM.Transition.SuccessState
+  fullName: BDeshi.BTSM.TransitionBase.Evaluate
+  nameWithType: TransitionBase.Evaluate
+- uid: BDeshi.BTSM.TransitionBase.SuccessState
   name: SuccessState
-  href: api/BDeshi.BTSM.Transition.html#BDeshi_BTSM_Transition_SuccessState
-  commentId: P:BDeshi.BTSM.Transition.SuccessState
-  fullName: BDeshi.BTSM.Transition.SuccessState
-  nameWithType: Transition.SuccessState
-- uid: BDeshi.BTSM.Transition.SuccessState*
+  href: api/BDeshi.BTSM.TransitionBase.html#BDeshi_BTSM_TransitionBase_SuccessState
+  commentId: P:BDeshi.BTSM.TransitionBase.SuccessState
+  fullName: BDeshi.BTSM.TransitionBase.SuccessState
+  nameWithType: TransitionBase.SuccessState
+- uid: BDeshi.BTSM.TransitionBase.SuccessState*
   name: SuccessState
-  href: api/BDeshi.BTSM.Transition.html#BDeshi_BTSM_Transition_SuccessState_
-  commentId: Overload:BDeshi.BTSM.Transition.SuccessState
+  href: api/BDeshi.BTSM.TransitionBase.html#BDeshi_BTSM_TransitionBase_SuccessState_
+  commentId: Overload:BDeshi.BTSM.TransitionBase.SuccessState
   isSpec: "True"
-  fullName: BDeshi.BTSM.Transition.SuccessState
-  nameWithType: Transition.SuccessState
-- uid: BDeshi.BTSM.Transition.TakenLastTime
+  fullName: BDeshi.BTSM.TransitionBase.SuccessState
+  nameWithType: TransitionBase.SuccessState
+- uid: BDeshi.BTSM.TransitionBase.TakenLastTime
   name: TakenLastTime
-  href: api/BDeshi.BTSM.Transition.html#BDeshi_BTSM_Transition_TakenLastTime
-  commentId: P:BDeshi.BTSM.Transition.TakenLastTime
-  fullName: BDeshi.BTSM.Transition.TakenLastTime
-  nameWithType: Transition.TakenLastTime
-- uid: BDeshi.BTSM.Transition.TakenLastTime*
+  href: api/BDeshi.BTSM.TransitionBase.html#BDeshi_BTSM_TransitionBase_TakenLastTime
+  commentId: P:BDeshi.BTSM.TransitionBase.TakenLastTime
+  fullName: BDeshi.BTSM.TransitionBase.TakenLastTime
+  nameWithType: TransitionBase.TakenLastTime
+- uid: BDeshi.BTSM.TransitionBase.TakenLastTime*
   name: TakenLastTime
-  href: api/BDeshi.BTSM.Transition.html#BDeshi_BTSM_Transition_TakenLastTime_
-  commentId: Overload:BDeshi.BTSM.Transition.TakenLastTime
+  href: api/BDeshi.BTSM.TransitionBase.html#BDeshi_BTSM_TransitionBase_TakenLastTime_
+  commentId: Overload:BDeshi.BTSM.TransitionBase.TakenLastTime
   isSpec: "True"
-  fullName: BDeshi.BTSM.Transition.TakenLastTime
-  nameWithType: Transition.TakenLastTime
-- uid: BDeshi.BTSM.Transition.TransitionToSameState
+  fullName: BDeshi.BTSM.TransitionBase.TakenLastTime
+  nameWithType: TransitionBase.TakenLastTime
+- uid: BDeshi.BTSM.TransitionBase.TransitionToSameState
   name: TransitionToSameState
-  href: api/BDeshi.BTSM.Transition.html#BDeshi_BTSM_Transition_TransitionToSameState
-  commentId: P:BDeshi.BTSM.Transition.TransitionToSameState
-  fullName: BDeshi.BTSM.Transition.TransitionToSameState
-  nameWithType: Transition.TransitionToSameState
-- uid: BDeshi.BTSM.Transition.TransitionToSameState*
+  href: api/BDeshi.BTSM.TransitionBase.html#BDeshi_BTSM_TransitionBase_TransitionToSameState
+  commentId: P:BDeshi.BTSM.TransitionBase.TransitionToSameState
+  fullName: BDeshi.BTSM.TransitionBase.TransitionToSameState
+  nameWithType: TransitionBase.TransitionToSameState
+- uid: BDeshi.BTSM.TransitionBase.TransitionToSameState*
   name: TransitionToSameState
-  href: api/BDeshi.BTSM.Transition.html#BDeshi_BTSM_Transition_TransitionToSameState_
-  commentId: Overload:BDeshi.BTSM.Transition.TransitionToSameState
+  href: api/BDeshi.BTSM.TransitionBase.html#BDeshi_BTSM_TransitionBase_TransitionToSameState_
+  commentId: Overload:BDeshi.BTSM.TransitionBase.TransitionToSameState
   isSpec: "True"
-  fullName: BDeshi.BTSM.Transition.TransitionToSameState
-  nameWithType: Transition.TransitionToSameState
+  fullName: BDeshi.BTSM.TransitionBase.TransitionToSameState
+  nameWithType: TransitionBase.TransitionToSameState
+- uid: BDeshi.BTSM.Transition`1
+  name: Transition<TState>
+  href: api/BDeshi.BTSM.Transition-1.html
+  commentId: T:BDeshi.BTSM.Transition`1
+  name.vb: Transition(Of TState)
+  fullName: BDeshi.BTSM.Transition<TState>
+  fullName.vb: BDeshi.BTSM.Transition(Of TState)
+  nameWithType: Transition<TState>
+  nameWithType.vb: Transition(Of TState)
+- uid: BDeshi.BTSM.Transition`1.OnTaken
+  name: OnTaken
+  href: api/BDeshi.BTSM.Transition-1.html#BDeshi_BTSM_Transition_1_OnTaken
+  commentId: P:BDeshi.BTSM.Transition`1.OnTaken
+  fullName: BDeshi.BTSM.Transition<TState>.OnTaken
+  fullName.vb: BDeshi.BTSM.Transition(Of TState).OnTaken
+  nameWithType: Transition<TState>.OnTaken
+  nameWithType.vb: Transition(Of TState).OnTaken
+- uid: BDeshi.BTSM.Transition`1.OnTaken*
+  name: OnTaken
+  href: api/BDeshi.BTSM.Transition-1.html#BDeshi_BTSM_Transition_1_OnTaken_
+  commentId: Overload:BDeshi.BTSM.Transition`1.OnTaken
+  isSpec: "True"
+  fullName: BDeshi.BTSM.Transition<TState>.OnTaken
+  fullName.vb: BDeshi.BTSM.Transition(Of TState).OnTaken
+  nameWithType: Transition<TState>.OnTaken
+  nameWithType.vb: Transition(Of TState).OnTaken
+- uid: BDeshi.BTSM.Transition`1.SuccessTypedState
+  name: SuccessTypedState
+  href: api/BDeshi.BTSM.Transition-1.html#BDeshi_BTSM_Transition_1_SuccessTypedState
+  commentId: P:BDeshi.BTSM.Transition`1.SuccessTypedState
+  fullName: BDeshi.BTSM.Transition<TState>.SuccessTypedState
+  fullName.vb: BDeshi.BTSM.Transition(Of TState).SuccessTypedState
+  nameWithType: Transition<TState>.SuccessTypedState
+  nameWithType.vb: Transition(Of TState).SuccessTypedState
+- uid: BDeshi.BTSM.Transition`1.SuccessTypedState*
+  name: SuccessTypedState
+  href: api/BDeshi.BTSM.Transition-1.html#BDeshi_BTSM_Transition_1_SuccessTypedState_
+  commentId: Overload:BDeshi.BTSM.Transition`1.SuccessTypedState
+  isSpec: "True"
+  fullName: BDeshi.BTSM.Transition<TState>.SuccessTypedState
+  fullName.vb: BDeshi.BTSM.Transition(Of TState).SuccessTypedState
+  nameWithType: Transition<TState>.SuccessTypedState
+  nameWithType.vb: Transition(Of TState).SuccessTypedState
 - uid: BDeshi.BTSM.WaitNode
   name: WaitNode
   href: api/BDeshi.BTSM.WaitNode.html
@@ -2916,3 +3720,24 @@ references:
   commentId: F:BDeshi.BTSM.WaitNode.timer
   fullName: BDeshi.BTSM.WaitNode.timer
   nameWithType: WaitNode.timer
+- uid: Global
+  name: ''
+  href: api/Global.html
+- uid: Global.FSMEditorWindow
+  name: FSMEditorWindow
+  href: api/Global.FSMEditorWindow.html
+  commentId: T:Global.FSMEditorWindow
+  fullName: FSMEditorWindow
+  nameWithType: FSMEditorWindow
+- uid: Global.FSMEditorWindow.runner
+  name: runner
+  href: api/Global.FSMEditorWindow.html#Global_FSMEditorWindow_runner
+  commentId: F:Global.FSMEditorWindow.runner
+  fullName: FSMEditorWindow.runner
+  nameWithType: FSMEditorWindow.runner
+- uid: Global.FSMEditorWindow.selectedState
+  name: selectedState
+  href: api/Global.FSMEditorWindow.html#Global_FSMEditorWindow_selectedState
+  commentId: F:Global.FSMEditorWindow.selectedState
+  fullName: FSMEditorWindow.selectedState
+  nameWithType: FSMEditorWindow.selectedState

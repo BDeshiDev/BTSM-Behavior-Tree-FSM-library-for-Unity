@@ -91,7 +91,7 @@
 
   <h1 id="BDeshi_BTSM_Parallel" data-uid="BDeshi.BTSM.Parallel" class="text-break">
     Class Parallel
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -191,7 +191,7 @@ If the later, the children may or may not restart</p>
 
   <h3 id="BDeshi_BTSM_Parallel__ctor_System_Boolean_System_Boolean_" data-uid="BDeshi.BTSM.Parallel.#ctor(System.Boolean,System.Boolean)">
   Parallel(bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -224,14 +224,14 @@ If the later, the children may or may not restart</p>
 
   <h3 id="BDeshi_BTSM_Parallel__ctor_System_Collections_Generic_List_BDeshi_BTSM_IBtNode__System_Boolean_System_Boolean_" data-uid="BDeshi.BTSM.Parallel.#ctor(System.Collections.Generic.List{BDeshi.BTSM.IBtNode},System.Boolean,System.Boolean)">
   Parallel(List&lt;IBtNode&gt;, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Parallel(List&lt;IBtNode&gt; activeChildren, bool allMustSucceed, bool repeatSuccessfullChildren)</code></pre>
+    <pre><code class="lang-csharp hljs">public Parallel(List&lt;IBtNode&gt; activeChildren, bool allMustSucceed = false, bool repeatSuccessfullChildren = false)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -263,11 +263,10 @@ If the later, the children may or may not restart</p>
 
   <h3 id="BDeshi_BTSM_Parallel_GetActiveChildren" data-uid="BDeshi.BTSM.Parallel.GetActiveChildren">
   GetActiveChildren
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Get the list of children that would be shown in the editor</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -299,11 +298,10 @@ If the later, the children may or may not restart</p>
 
   <h3 id="BDeshi_BTSM_Parallel_Enter" data-uid="BDeshi.BTSM.Parallel.Enter">
   Enter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Called to initialize the  BTNode before the first tick()</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -326,11 +324,10 @@ If the later, the children may or may not restart</p>
 
   <h3 id="BDeshi_BTSM_Parallel_Exit" data-uid="BDeshi.BTSM.Parallel.Exit">
   Exit()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Called when the BTNode is being exited</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -353,11 +350,10 @@ If the later, the children may or may not restart</p>
 
   <h3 id="BDeshi_BTSM_Parallel_InternalTick" data-uid="BDeshi.BTSM.Parallel.InternalTick">
   InternalTick()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The tick() method that should be overwritten
-To allow caching status onto lastStatus</p>
+  <div class="markdown level1 summary"><p>To allow caching status onto lastStatus</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -386,7 +382,7 @@ To allow caching status onto lastStatus</p>
 
   <h3 id="BDeshi_BTSM_Parallel_addChild_BDeshi_BTSM_IBtNode_" data-uid="BDeshi.BTSM.Parallel.addChild(BDeshi.BTSM.IBtNode)">
   addChild(IBtNode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/Parallel.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

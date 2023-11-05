@@ -91,7 +91,7 @@
 
   <h1 id="BDeshi_BTSM_FSMRunner" data-uid="BDeshi.BTSM.FSMRunner" class="text-break">
     Class FSMRunner
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FSMRunner.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FSMRunner.cs/#L5"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -99,11 +99,7 @@
   
   </div>
 
-  <div class="markdown summary"><p>Maintains a FSM
-Calls tick,enter etc on it
-The Custom Editor Script looks for this.
-While you can update the fsm with a different class, it won't show up in the editor without this</p>
-</div>
+  <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -136,14 +132,14 @@ While you can update the fsm with a different class, it won't show up in the edi
 
   <h3 id="BDeshi_BTSM_FSMRunner_fsm" data-uid="BDeshi.BTSM.FSMRunner.fsm">
   fsm
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FSMRunner.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FSMRunner.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StateMachine fsm</code></pre>
+    <pre><code class="lang-csharp hljs">public IRunnableStateMachine fsm</code></pre>
   </div>
 
 
@@ -151,7 +147,37 @@ While you can update the fsm with a different class, it won't show up in the edi
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.StateMachine.html">StateMachine</a></dt>
+    <dt><a class="xref" href="BDeshi.BTSM.IRunnableStateMachine.html">IRunnableStateMachine</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="BDeshi_BTSM_FSMRunner_shouldTickAutomatically" data-uid="BDeshi.BTSM.FSMRunner.shouldTickAutomatically">
+  shouldTickAutomatically
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FSMRunner.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool shouldTickAutomatically</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -169,9 +195,9 @@ While you can update the fsm with a different class, it won't show up in the edi
 
   <a id="BDeshi_BTSM_FSMRunner_Initialize_" data-uid="BDeshi.BTSM.FSMRunner.Initialize*"></a>
 
-  <h3 id="BDeshi_BTSM_FSMRunner_Initialize_BDeshi_BTSM_StateMachine_System_Boolean_" data-uid="BDeshi.BTSM.FSMRunner.Initialize(BDeshi.BTSM.StateMachine,System.Boolean)">
-  Initialize(StateMachine, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FSMRunner.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BDeshi_BTSM_FSMRunner_Initialize_BDeshi_BTSM_IRunnableStateMachine_System_Boolean_" data-uid="BDeshi.BTSM.FSMRunner.Initialize(BDeshi.BTSM.IRunnableStateMachine,System.Boolean)">
+  Initialize(IRunnableStateMachine, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FSMRunner.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Calls fsm.enter</p>
@@ -179,12 +205,12 @@ While you can update the fsm with a different class, it won't show up in the edi
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Initialize(StateMachine fsm, bool callEnter = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Initialize(IRunnableStateMachine fsm, bool callEnter = true)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fsm</code> <a class="xref" href="BDeshi.BTSM.StateMachine.html">StateMachine</a></dt>
+    <dt><code>fsm</code> <a class="xref" href="BDeshi.BTSM.IRunnableStateMachine.html">IRunnableStateMachine</a></dt>
     <dd></dd>
     <dt><code>callEnter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
@@ -205,7 +231,7 @@ While you can update the fsm with a different class, it won't show up in the edi
 
   <h3 id="BDeshi_BTSM_FSMRunner_Update" data-uid="BDeshi.BTSM.FSMRunner.Update">
   Update()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FSMRunner.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FSMRunner.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Just ticks FSM.</p>
@@ -214,6 +240,33 @@ While you can update the fsm with a different class, it won't show up in the edi
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BDeshi_BTSM_FSMRunner_manualTick_" data-uid="BDeshi.BTSM.FSMRunner.manualTick*"></a>
+
+  <h3 id="BDeshi_BTSM_FSMRunner_manualTick" data-uid="BDeshi.BTSM.FSMRunner.manualTick">
+  manualTick()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/FSMRunner.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Manually tick FSM.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void manualTick()</code></pre>
   </div>
 
 
