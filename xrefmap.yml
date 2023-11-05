@@ -3741,3 +3741,9 @@ references:
   commentId: F:Global.FSMEditorWindow.selectedState
   fullName: FSMEditorWindow.selectedState
   nameWithType: FSMEditorWindow.selectedState
+- uid: Global.FSMExample
+  name: FSMExample
+  href: api/Global.FSMExample.html
+  commentId: T:Global.FSMExample
+  fullName: FSMExample
+  nameWithType: FSMExample

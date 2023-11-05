@@ -219,10 +219,15 @@
     "title": "Class FSMEditorWindow | |",
     "keywords": "Class FSMEditorWindow Namespace Global public class FSMEditorWindow : EditorWindow Inheritance object FSMEditorWindow Fields runner public FSMRunner runner Field Value FSMRunner selectedState public IState selectedState Field Value IState"
   },
+  "api/Global.FSMExample.html": {
+    "href": "api/Global.FSMExample.html",
+    "title": "Class FSMExample | |",
+    "keywords": "Class FSMExample Namespace Global public class FSMExample : MonoBehaviour Inheritance object FSMExample"
+  },
   "api/Global.html": {
     "href": "api/Global.html",
     "title": "Namespace | |",
-    "keywords": "Namespace Classes FSMEditorWindow"
+    "keywords": "Namespace Classes FSMEditorWindow FSMExample"
   },
   "api/index.html": {
     "href": "api/index.html",
