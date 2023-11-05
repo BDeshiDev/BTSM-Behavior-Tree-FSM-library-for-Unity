@@ -2,19 +2,13 @@
 
 namespace BDeshi.BTSM
 {
-    /// <summary>
-    /// Maintains a FSM
-    /// Calls tick,enter etc on it
-    /// The Custom Editor Script looks for this.
-    /// While you can update the fsm with a different class, it won't show up in the editor without this
-    /// </summary>
     public class FSMRunner: MonoBehaviour
     {
-        public StateMachine fsm;
+        public IRunnableStateMachine fsm;
         /// <summary>
         /// Calls fsm.enter
         /// </summary>
-        public  void Initialize(StateMachine fsm, bool callEnter = true)
+        public  void Initialize(IRunnableStateMachine fsm, bool callEnter = true)
         {
             this.fsm = fsm;
             fsm.DebugContext = gameObject;
@@ -22,14 +16,25 @@ namespace BDeshi.BTSM
         }
         
 
-        
+        public bool shouldTickAutomatically = true;
+        /// <summary>
+        /// Manually tick FSM.
+        /// </summary>
+        public void manualTick()
+        {
+            fsm.Tick();
+        }
+
+
+
         /// <summary>
         /// Just ticks FSM.
         /// </summary>
         protected virtual void Update()
         {
-            fsm.Tick();
+            if(shouldTickAutomatically)
+                fsm.Tick();
         }
-
+        
     }
 }

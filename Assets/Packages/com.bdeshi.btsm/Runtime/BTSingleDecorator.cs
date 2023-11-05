@@ -4,9 +4,7 @@ namespace BDeshi.BTSM
 {
     public abstract class BTSingleDecorator : BTDecorator
     {
-        /// <summary>
-        /// The single child BTNode of this decorator
-        /// </summary>
+        
         protected IBtNode child;
         public override  IEnumerable<IBtNode> GetActiveChildren => getChildWrapper();
 

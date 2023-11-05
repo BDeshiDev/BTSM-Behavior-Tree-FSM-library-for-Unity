@@ -2,7 +2,13 @@
 
 namespace BDeshi.BTSM
 {
-    public class BTWrapperState: StateBase
+    public interface IBTWrapperState
+    {
+         IBtNode BTRoot { get; }
+         public BTStatus LastStatus{ get; }
+
+    }
+    public class BTWrapperState: StateBase, IBTWrapperState
     {
         public IBtNode BTRoot { get; private set; }
         private BTStatus lastStatus;
@@ -14,15 +20,17 @@ namespace BDeshi.BTSM
         /// Do that yourself.
         /// </summary>
         /// <returns>Newly Created transition.</returns>
-        public BTCompleteTransition createRootSuccessTransition(State to)
+        public BTCompleteTransition<TState> createRootSuccessTransition<TState>(TState to)
+        where  TState:IState
         {
-            return new BTCompleteTransition(this.BTRoot, to);
+            return new BTCompleteTransition<TState>(this.BTRoot, to);
         }
 
         public BTWrapperState(BtNodeBase btRoot)
         {
             this.BTRoot = btRoot;
         }
+        
 
         public override void EnterState()
         {

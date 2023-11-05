@@ -4,11 +4,11 @@ using UnityEngine;
 namespace BDeshi.BTSM
 {
     /// <summary>
-    /// Continue running one by one until one fail, if no child succeeds, it fails.
+    /// Continue running one by one until one fail, then it itself fails.
     /// </summary>
     public class SequenceNode : BTMultiDecorator
     {
-        [SerializeField] List<IBtNode> children;
+        [SerializeField] protected List<IBtNode> children;
         [SerializeField] private int curIndex;
         public override IEnumerable<IBtNode> GetActiveChildren => children;
         public override void addChild(IBtNode child)

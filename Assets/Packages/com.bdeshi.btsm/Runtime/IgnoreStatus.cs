@@ -1,8 +1,5 @@
 namespace BDeshi.BTSM
 {
-    /// <summary>
-    /// Calls child but always returns a given BTStatus instead
-    /// </summary>
     public class IgnoreStatus : BTSingleDecorator
     {
         private BTStatus statusToOverrideWith;

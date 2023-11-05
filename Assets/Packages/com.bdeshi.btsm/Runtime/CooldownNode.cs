@@ -4,7 +4,7 @@ using UnityEngine;
 namespace BDeshi.BTSM
 {
     /// <summary>
-    /// prevent running child for x secs after it has run or it started running
+    /// prevent running child for x secs after it has run || it started running
     /// </summary>
     public class CooldownNode : BTSingleDecorator
     {
@@ -13,8 +13,9 @@ namespace BDeshi.BTSM
 
         private bool isRunning;
         
-        private CoolDownType type;
-        public enum CoolDownType
+        private CoolDownResetType resetType;
+        public BTStatus cooldownFailStatus = BTStatus.Failure;
+        public enum CoolDownResetType
         {
             ResetOnStart,
             ResetOnExit,
@@ -23,35 +24,59 @@ namespace BDeshi.BTSM
         public override void Enter()
         {
             isRunning = false;
-            if(type == CoolDownType.ResetOnStart)
+            // if(resetType == CoolDownResetType.ResetOnStart)
+            //     waitStart = Time.time;
+            
+            if(lastStatus == BTStatus.NotRunYet)
                 waitStart = Time.time;
         }
 
         public void startRunning()
         {
+            Debug.Log(" really start runnning");
             isRunning = true;
+            // waitStart = Time.time;
             child.Enter();
         }
 
 
         public override BTStatus InternalTick()
         {
+            Debug.Log(isRunning);
             if (isRunning)
             {
-                return child.Tick();
+                Debug.Log("is runnning");
+                var childStatus = child.Tick();
+                if (childStatus == BTStatus.Success)
+                {
+                    waitStart = Time.time;
+                    isRunning = false;
+                }
+                return childStatus;
             }else if((Time.time - waitStart) >= waitDuration)
             {
-                if (child == null)
+                Debug.Log("start runnning");
+                if (child == null){
+
                     return BTStatus.Success;
+                }
                 else
                 {
                     startRunning();
-                    return child.Tick();
+                    var childStatus = child.Tick();
+                    if (childStatus == BTStatus.Success)
+                    {
+                        waitStart = Time.time;
+                        isRunning = false;
+                    }
+                        
+                    return childStatus;
                 }
             }
             else
             {
-                return BTStatus.Failure;
+                Debug.Log("fail");
+                return cooldownFailStatus;
             }
         }
 
@@ -60,18 +85,20 @@ namespace BDeshi.BTSM
             if(isRunning)
             {
                 child.Exit();
-                if (type == CoolDownType.ResetOnExit)
-                    waitStart = Time.time;
             }
+            // if (resetType == CoolDownResetType.ResetOnExit)
+            //     waitStart = Time.time;
+            
         }
 
         public override string EditorName => $"{base.EditorName} [{waitDuration - (Time.time - waitStart)}] left";
 
-        public CooldownNode(BtNodeBase child, float waitDuration, CoolDownType type = CoolDownType.ResetOnExit, bool shouldWaitAtStart = false) : base(child)
+        public CooldownNode(BtNodeBase child, float waitDuration, BTStatus cooldownFailStatus = BTStatus.Failure, CoolDownResetType resetType = CoolDownResetType.ResetOnExit, bool shouldWaitAtStart = false) : base(child)
         {
             this.waitDuration = waitDuration;
             this.waitStart = Time.time;
-            this.type = type;
+            this.resetType = resetType;
+            this.cooldownFailStatus = cooldownFailStatus;
             this.isRunning = !shouldWaitAtStart;
         }
     }
