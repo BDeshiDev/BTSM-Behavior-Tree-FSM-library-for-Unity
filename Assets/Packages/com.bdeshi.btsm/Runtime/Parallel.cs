@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Bdeshi.Helpers.Utility;
 using Bdeshi.Helpers.Utility.Extensions;
 using UnityEngine;
 
@@ -15,10 +14,6 @@ namespace BDeshi.BTSM
         public override IEnumerable<IBtNode> GetActiveChildren => children;
         private List<IBtNode> children;
         private int runThreshold;
-        /// <summary>
-        /// IF true, won't return success until all children have succeeded
-        /// else, return success when the first child returns success
-        /// </summary>
         private bool allMustSucceed;
         /// <summary>
         /// Will it restart children that have succeded if allMustSucceed = true?
@@ -26,7 +21,7 @@ namespace BDeshi.BTSM
         private bool repeatSuccessfullChildren;
         
 
-        public Parallel(List<IBtNode> activeChildren, bool allMustSucceed, bool repeatSuccessfullChildren)
+        public Parallel(List<IBtNode> activeChildren, bool allMustSucceed =false, bool repeatSuccessfullChildren =false)
         {
             this.children = activeChildren;
             this.allMustSucceed = allMustSucceed;
@@ -43,7 +38,6 @@ namespace BDeshi.BTSM
         public override void Enter()
         {
             runThreshold = children.Count;
-            Debug.Log("weeeb ling");
 
             foreach (var btNodeBase in children)
             {
@@ -95,6 +89,66 @@ namespace BDeshi.BTSM
 
             if ((allMustSucceed && allSuccess) || (!allMustSucceed && anySuccess))
                 return BTStatus.Success;
+            return BTStatus.Running;
+        }
+
+
+        public override void Exit()
+        {
+            foreach (var btNodeBase in children)
+            {
+                btNodeBase.Exit();
+            }
+        }
+
+        public override void addChild(IBtNode child)
+        {
+            children.Add(child);
+        }
+    }
+    
+    /// <summary>
+    /// Run all children every tick
+    /// Succeed on first on succeeding, or when all do.
+    /// If the later, the children may or may not restart
+    /// </summary>
+    public class ParallelRepeat: BTMultiDecorator
+    {
+        public override IEnumerable<IBtNode> GetActiveChildren => children;
+        private List<IBtNode> children;
+        private int runThreshold;
+        public BTStatus runninStatus = BTStatus.Running;
+        
+
+        public ParallelRepeat(List<IBtNode> activeChildren)
+        {
+            this.children = activeChildren;
+        }
+        
+
+        public override void Enter()
+        {
+            runThreshold = children.Count;
+
+            foreach (var btNodeBase in children)
+            {
+                btNodeBase.Enter();
+            }
+        }
+
+        public override BTStatus InternalTick()
+        {
+            for(int i = 0; i < children.Count; i++)
+            {
+                var child = children[i];
+                var status = child.Tick();
+                if (status== BTStatus.Success || status == BTStatus.Failure)
+                {
+                    child.Exit();
+                    child.Enter();
+                }
+            }
+
             return BTStatus.Running;
         }
 

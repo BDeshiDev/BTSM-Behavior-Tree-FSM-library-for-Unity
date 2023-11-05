@@ -2,12 +2,9 @@
 
 namespace BDeshi.BTSM
 {
-    /// <summary>
-    /// Basic transition class
-    /// </summary>
-    public class SimpleTransition: Transition
+    public class SimpleTransition<TState>: Transition<TState>
+    where TState: IState
     {
-        private State s;
         private Func<bool> evaluateFunc;
 
         /// <summary>
@@ -16,23 +13,24 @@ namespace BDeshi.BTSM
         /// <param name="s"></param>
         /// <param name="evaluateFunc">If NULL Transition will ALWAYS BE TRUE</param>
         /// <param name="onTaken">Executed if this is taken</param>
-        public SimpleTransition(State s, Func<bool> evaluateFunc = null, Action onTaken= null)
+        public SimpleTransition(TState s, Func<bool> evaluateFunc = null, Action onTaken= null)
         {
-            this.s = s;
+            this.SuccessTypedState = s;
             this.evaluateFunc = evaluateFunc;
             OnTaken = onTaken;
         }
 
-        public State SuccessState => s;
+        public IState SuccessState => SuccessTypedState;
         public bool TakenLastTime { get; set; }
         public bool TransitionToSameState { get; set; } = false;
+        public TState SuccessTypedState { get; private set; }
         public Action OnTaken { get; }
 
         /// <summary>
         /// If Func return true, else return false
         /// </summary>
         /// <returns></returns>
-        bool Transition.Evaluate()
+        public bool Evaluate()
         {
             if (evaluateFunc == null || evaluateFunc.Invoke())
                 return true;

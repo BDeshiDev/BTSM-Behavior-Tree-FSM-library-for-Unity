@@ -1,10 +1,8 @@
 namespace BDeshi.BTSM
 {
-    /// <summary>
-    /// Decorator that returns failure until child succeeds
-    /// </summary>
     public class FailTillComplete : BTSingleDecorator
     {
+
         public override void Enter()
         {
             

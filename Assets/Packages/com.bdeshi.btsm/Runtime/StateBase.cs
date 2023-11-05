@@ -2,21 +2,18 @@
 
 namespace BDeshi.BTSM
 {
-    /// <summary>
-    /// Base POCO state class 
-    /// </summary>
-    public abstract class StateBase: State
+    public abstract class StateBase: IState
     {
         public abstract void EnterState();
         public abstract void Tick();
         public abstract void ExitState();
         public string Prefix { get; set; }
         public string FullStateName => Prefix +"_"+ GetParentChainName();
-        public State Parent { get; set; }
+        public IState Parent { get; set; }
                
         public string Name => this.GetType().Name;
 
-        public State AsChildOf(State p)
+        public IState AsChildOf(IState p)
         {
             Parent = p;
             return this;

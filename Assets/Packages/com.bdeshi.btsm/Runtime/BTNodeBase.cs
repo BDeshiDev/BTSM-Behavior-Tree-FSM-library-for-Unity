@@ -1,12 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Bdeshi.Helpers.Utility;
 using UnityEngine;
 
 namespace BDeshi.BTSM
 {
-    /// <summary>
-    /// Base class for decorator BT nodes that can have multiple children
-    /// </summary>
     public abstract class BTMultiDecorator: BTDecorator
     {
         public abstract void addChild(IBtNode child);
@@ -17,49 +16,150 @@ namespace BDeshi.BTSM
             return this;
         }
     }
-    /// <summary>
-    /// Base class for decorator BT nodes that can have children
-    /// </summary>
+
     public abstract class BTDecorator : BtNodeBase
     {
-        /// <summary>
-        /// Get the list of children that would be shown in the editor
-        /// </summary>
         public abstract IEnumerable<IBtNode> GetActiveChildren { get; }
     }
+    
+    public class ConditionNode:BtNodeBase
+    {
+        private Func<bool> func;
+        public BTStatus successState;
+        public BTStatus failState;
 
-    /// <summary>
-    /// Base interface for BT nodes
-    /// </summary>
+        public ConditionNode(Func<bool> func, BTStatus successState = BTStatus.Success, BTStatus failState = BTStatus.Failure)
+        {
+            this.func = func;
+            this.successState = successState;
+            this.failState = failState;
+        }
+
+        public override void Enter( )
+        {
+            
+        }
+
+        public override void Exit()
+        {
+            
+        }
+
+        public override BTStatus InternalTick()
+        {
+            return func() ? successState : failState;
+        }
+    }
+    
+    public class MaintainConditionNode:BtNodeBase
+    {
+        private Func<bool> func;
+        public BTStatus successState;
+        public BTStatus waitState;
+        public bool resetOnFail;
+        public FiniteTimer maintainTimer;
+
+        public MaintainConditionNode(Func<bool> func, float maintainTime, bool resetOnFail = true, BTStatus successState = BTStatus.Success, BTStatus waitState = BTStatus.Running)
+        {
+            this.func = func;
+            this.successState = successState;
+            this.waitState = waitState;
+            this.maintainTimer = new FiniteTimer(maintainTime);
+            this.resetOnFail = resetOnFail;
+        }
+
+        public override void Enter( )
+        {
+            maintainTimer.reset();
+        }
+
+        public override void Exit()
+        {
+            
+        }
+
+        public override BTStatus InternalTick()
+        {
+            bool success = func();
+            if (success)
+            {
+                if (maintainTimer.tryCompleteTimer(Time.deltaTime))
+                {
+                    return successState;
+                }
+                else
+                {
+                    return BTStatus.Running;
+                }
+            }
+            else
+            {
+                if (resetOnFail)
+                {
+                    maintainTimer.reset();
+                    
+                }
+
+                return waitState;
+            }
+        }
+    }
+
+    public class TimerNode:BTSingleDecorator
+    {
+        public FiniteTimer duration;
+        public BTStatus timeoutStatus = BTStatus.Success;
+
+    
+        public override string EditorName => $"{base.EditorName} [{duration.remaingValue()}] left";
+        public override void Enter()
+        {
+            duration.reset();
+            child.Enter();   
+        }
+
+        public override void Exit()
+        {
+            child.Exit();
+        }
+
+        public override BTStatus InternalTick()
+        {
+            duration.updateTimer(Time.deltaTime);
+            if (duration.isComplete)
+            {
+                return timeoutStatus;
+            }
+            else
+            {
+
+    
+                return child.Tick();
+            }
+        }
+
+        public TimerNode(IBtNode child, float timeDuration) : base(child)
+        {
+            this.duration = new FiniteTimer(timeDuration);
+        }
+
+    }
+
     public interface IBtNode
     {
-        /// <summary>
-        /// Called to initialize the  BTNode before the first tick()
-        /// </summary>
         void Enter();
-        /// <summary>
-        /// Internally called to update the BTNode
-        /// Also expected to set the LastStatus
-        /// </summary>
-        /// <returns> BT Node evaluation status</returns>
+        
         BTStatus Tick();
-        /// <summary>
-        /// Called when the BTNode is being exited
-        /// </summary>
         void Exit();
-        /// <summary>
-        /// Node Evaluation result from last tick
-        /// </summary>
+
         public BTStatus LastStatus { get; }
+
         public string Prefix { get; set; } 
         public string Typename => GetType().Name;
         public  string EditorName => Prefix +"_"+ Typename;
 
     }
-    /// <summary>
-    /// Base POCO abstract class for BT Nodes
-    /// Inherit from this if you don't want monobehavior BT nodes
-    /// </summary>
+
     public abstract class BtNodeBase : IBtNode
     {
         public abstract void Enter();
@@ -77,7 +177,6 @@ namespace BDeshi.BTSM
         }
 
         /// <summary>
-        /// The tick() method that should be overwritten
         /// To allow caching status onto lastStatus
         /// </summary>
         /// <returns></returns>
@@ -91,9 +190,7 @@ namespace BDeshi.BTSM
         public string Typename => GetType().Name;
         public virtual string EditorName => Prefix +"_"+ Typename;
     }
-    /// <summary>
-    /// Base abstract class for BT Nodes that are monobehaviors
-    /// </summary>
+    
     public abstract class BtNodeMonoBase : MonoBehaviour,IBtNode
     {
         public abstract void Enter();
@@ -126,27 +223,18 @@ namespace BDeshi.BTSM
     }
 
     public enum BTStatus{
+        NotRunYet,
         /// <summary>
         /// Is actively running, will block sequence nodes
         /// </summary>
         Running,
-        /// <summary>
-        /// Succeeded last tick()
-        /// </summary>
         Success,
-        /// <summary>
-        /// Failed last tick()
-        /// </summary>
         Failure,
         /// <summary>
         /// Neither success nor failure, non blocking running
         /// Ex Use case: Parallel node where you want to keep running child regardless of what others do 
         /// </summary>
         Ignore,
-        /// <summary>
-        /// the node has not been called yet
-        /// DO NOT RETURN THIS ON TICK()
-        /// </summary>
-        NotRunYet,
+
     }
 }

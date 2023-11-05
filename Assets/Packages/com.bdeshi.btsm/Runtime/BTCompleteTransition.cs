@@ -1,30 +1,25 @@
 ﻿using System;
+using UnityEditorInternal;
 using UnityEngine;
 
 namespace BDeshi.BTSM
 {
-    /// <summary>
-    /// Transition that will be taken when a BTNode succeeeds
-    /// </summary>
-    public class BTCompleteTransition : Transition
+    public class BTCompleteTransition<TState> : Transition<TState>
+    where TState:IState
     {
-        /// <summary>
-        /// The BT node that will be tracked
-        /// </summary>
         private IBtNode node;
-        public State SuccessState => successState;
+        public IState SuccessState => SuccessTypedState;
         public bool TakenLastTime { get; set; }
         public bool TransitionToSameState { get; set; }
         public Action OnTaken { get; }
-        /// <summary>
-        /// The state that the transition will pick if the BTNode succeeds
-        /// </summary>
-        public State successState;
 
-        public BTCompleteTransition(IBtNode node, State state)
+        public TState SuccessTypedState { get; private set; }
+
+        public BTCompleteTransition(IBtNode node, TState typedState)
         {
             this.node = node;
-            this.successState = state;
+            this.SuccessTypedState = typedState;
+            // Debug.Log("??" + (successState == null?"nnnnnulll":successState.EditorName));
         }
 
         public bool Evaluate()

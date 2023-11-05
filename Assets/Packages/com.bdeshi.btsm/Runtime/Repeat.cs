@@ -63,7 +63,7 @@ namespace BDeshi.BTSM
 
         public override void Exit()
         {
-            
+            child.Exit();
         }
     }
 }

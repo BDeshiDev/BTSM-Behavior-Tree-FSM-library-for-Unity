@@ -4,21 +4,20 @@ using UnityEngine;
 namespace BDeshi.BTSM
 {
     /// <summary>
-    /// Inherit from this if you want a Monobehavior state
-    /// C# interfaces are not easily visible in Editor.
-    /// So this is a Implementation of statebase with monobehaviour
+    /// C# default interface issues so this is a copy of statebase with monobehaviour inheritance
     /// </summary>
-    public abstract class MonoBehaviourStateBase: MonoBehaviour, MonoBehaviorState
+    public abstract class MonoBehaviourStateBase: MonoBehaviour,IState
     {
         public abstract void EnterState();
         public abstract void Tick();
         public abstract void ExitState();
         public string Prefix { get; set; }
         public string FullStateName => Prefix +"_"+ GetParentChainName();
-        public State Parent { get; set; }
+        public IState Parent { get; set; }
+               
         public string Name => GetType().Name;
 
-        public State AsChildOf(State p)
+        public IState AsChildOf(IState p)
         {
             Parent = p;
             return this;
@@ -36,6 +35,9 @@ namespace BDeshi.BTSM
             return chain;
         }
         
-
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
     }
 }

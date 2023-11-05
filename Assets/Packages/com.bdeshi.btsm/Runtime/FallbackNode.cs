@@ -4,7 +4,7 @@ using UnityEngine;
 namespace BDeshi.BTSM
 {
     /// <summary>
-    /// Decorator that keeps on trying children one by one until one succeeds
+    /// keep on trying child    ren one by one until one succeeds
     /// </summary>
     public class FallbackNode : BTMultiDecorator
     {
@@ -79,6 +79,104 @@ namespace BDeshi.BTSM
             }
         }
 
+    }
+
+    public class FallbackRepeatNode : BTMultiDecorator
+    {
+        [SerializeField] List<IBtNode> children;
+        [SerializeField] private int curIndex;
+        public override IEnumerable<IBtNode> GetActiveChildren => children;
+        public override void addChild(IBtNode child)
+        {
+            children.Add(child);
+        }
+
+        public FallbackRepeatNode(List<IBtNode> children)
+        {
+            this.children = children;
+        }
+
+        public FallbackRepeatNode()
+        {
+            this.children = new List<IBtNode>();
+        }
+
+        public override void Enter()
+        {
+            curIndex = 0;
+
+            if (curIndex >= children.Count || curIndex < 0)
+            {
+                return;
+            }
+            else
+            {
+                children[curIndex].Enter();
+            }
+        }
+
+
+        public override BTStatus InternalTick()
+        {
+            for (int i = 0; i < curIndex && i < children.Count; i++)
+            {
+                var child = children[i];
+                child.Enter();
+                var childResult = child.Tick();
+
+
+                if (childResult != BTStatus.Failure)
+                {
+                    if (curIndex < children.Count)
+                    {
+                        children[curIndex].Exit();
+                    }
+                    curIndex = i;
+                    if (childResult == BTStatus.Success)
+                    {
+                        return BTStatus.Success;
+                    }
+                    return BTStatus.Running;
+                }
+            }
+
+            for (int i = curIndex; i < children.Count; i++)
+            {
+                var child = children[i];
+                if (i != curIndex)
+                {
+                    child.Enter();
+                }
+                
+                curIndex = i;
+                var childResult = child.Tick();
+                
+                if (childResult == BTStatus.Success)
+                {
+                    return BTStatus.Success;
+                }else if (childResult == BTStatus.Failure)
+                {
+                    child.Exit();
+                }
+                else
+                {
+                    return BTStatus.Running;
+                }
+
+            }
+            //every child failed try from start again next tick()
+            curIndex = 0;
+            return BTStatus.Running;
+
+        }
+
+        public override void Exit()
+        {
+            if (curIndex < children.Count  && curIndex >= 0)
+            {
+                children[curIndex].Exit();
+            }
+        }
     }
     
     /// <summary>
