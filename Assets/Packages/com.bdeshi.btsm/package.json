@@ -1,8 +1,8 @@
 {
     "name": "com.bdeshi.btsm",
-    "version": "1.1.0",
-    "displayName": "BT/FSM system",
-    "description": "BTSM is a Behavior Tree + Finite State Machine library that allwos you to define BT/FSMs entirely through code.",
+    "version": "1.1.1",
+    "displayName": "BTSM : Behavior Tree + FSM library",
+    "description": "BTSM is a Behavior Tree + Finite State Machine library that allows you to define BT/FSMs entirely through code.",
     "unity": "2022.3",
     "unityRelease": "10f1",
     "documentationUrl": "https://openupm.com/packages/com.bdeshi.btsm/",
@@ -17,7 +17,7 @@
         ]
       }], 
     "dependencies": {
-        "com.bdeshi.helpers": "1.0.0"
+        "com.bdeshi.helpers": "2.0.0"
    },
    "keywords": [
       "BT",
