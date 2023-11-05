@@ -1,0 +1,16 @@
+{
+    "name": "com.bdeshi.btsm",
+    "rootNamespace": "",
+    "references": [
+        "GUID:46158582eccf34a44b1babd93ec99d06"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
