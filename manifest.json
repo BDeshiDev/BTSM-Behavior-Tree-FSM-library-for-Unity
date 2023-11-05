@@ -1,0 +1,497 @@
+{
+  "sitemap": {
+    "baseUrl": "https://bdeshidev.github.io/BTSM-Behavior-Tree-FSM-library-for-Unity/"
+  },
+  "source_base_path": "/home/runner/work/BTSM-Behavior-Tree-FSM-library-for-Unity/BTSM-Behavior-Tree-FSM-library-for-Unity/Documentation~",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.BTCompleteTransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.BTCompleteTransition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.BTDecorator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.BTDecorator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.BTMultiDecorator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.BTMultiDecorator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.BTSingleDecorator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.BTSingleDecorator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.BTStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.BTStatus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.BTWrapperState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.BTWrapperState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.BtNodeBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.BtNodeBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.BtNodeMonoBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.BtNodeMonoBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.ContainerState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.ContainerState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.CooldownNode.CoolDownType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.CooldownNode.CoolDownType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.CooldownNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.CooldownNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.Editor.FSMEditorWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.Editor.FSMEditorWindow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.Editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.EnterExitDecorator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.EnterExitDecorator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.EventDrivenStateMachine-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.EventDrivenStateMachine-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.FSMRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.FSMRunner.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.FailTillComplete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.FailTillComplete.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.FallbackNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.FallbackNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.IBtNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.IBtNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.IgnoreStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.IgnoreStatus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.ModularState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.ModularState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.MonoBehaviorState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.MonoBehaviorState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.MonoBehaviourStateBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.MonoBehaviourStateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.Parallel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.Parallel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.PriorityFallbackNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.PriorityFallbackNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.Randomizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.Randomizer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.Repeat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.Repeat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.SequenceNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.SequenceNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.SimpleTransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.SimpleTransition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.State.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.StateBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.StateBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.StateCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.StateCondition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.StateMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.StateMachine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.TimeoutNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.TimeoutNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.Transition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.Transition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.WaitNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.WaitNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "changelog/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "changelog/CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "changelog/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "changelog/toc.html"
+        },
+        ".json": {
+          "relative_path": "changelog/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "license/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "license/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "license/toc.html"
+        },
+        ".json": {
+          "relative_path": "license/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
