@@ -55,3 +55,4 @@ void Start()
     });
 }
 ```
+`fsm.forceTakeTransition(transition)` works for non-manual transitions as well. Use manual transitions when there is no reason to poll a condition.
