@@ -8,6 +8,9 @@ public class FSMExample : MonoBehaviour
     FSMRunner runner;
     private void Awake()
     {
+        runner = GetComponent<FSMRunner>();
+
         
+        StateMachine<IState> fsm = new StateMachine<IState>();
     }
 }

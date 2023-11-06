@@ -2,7 +2,8 @@
     "name": "com.bdeshi.btsm",
     "rootNamespace": "",
     "references": [
-        "GUID:46158582eccf34a44b1babd93ec99d06"
+        "GUID:46158582eccf34a44b1babd93ec99d06",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

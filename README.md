@@ -15,16 +15,43 @@ BTSM is a Behavior Tree + Finite State Machine library for Unity.
 # Manual
 [Manual available here](https://bdeshidev.github.io/BTSM-Behavior-Tree-FSM-library-for-Unity/manual/) 
 # Usage
-To use:
-1. Add a FSMRunner component.
-2. Create a FSM, add states and transitions(can be done in start())
-3. Use a BTWrapperState if you want behavior trees. The BT will be run through this state.
-4. Pass fsm object to FSMRunner via initialize()
-5. Open the FSMEditorwindow.
-6. Select the Gameobject with the FSMRunner.
-7. The Editor window will work during playmode.
 
-I mostly made this for myself but I will add a demo scene if there is interest. The project I'm using this in would be hard to use as an independent demo project.
+## Basic example
+You will need to have a FSMRunner component on the Gameobject. Then:
+```csharp
+// ensure that you have a reference to a FSMRunner component
+runner = GetComponent<FSMRunner>();
+// make a state, BT not necessary
+// this is an example state that just patrols repeatedly.
+var patrolState = new BTWrapperState(
+        new Repeat(
+                new PatrolBTNode(patrolPath, moveComponent)
+            )
+    );
+// create a new statemachine, set initial state
+// Generic parameter can be any type implementing IState
+var fsm = new StateMachine<IState>(patrolState);
+// initialize the runner
+runner.Initialize(fsm);
+```
+In the Editor:
+1. Open the FSMEditorwindow.
+1. Select the Gameobject with the FSMRunner.
+1. The FSMEditorwindow window will work during playmode.
 
-# Manual
-https://bdeshidev.github.io/BTSM-Behavior-Tree-FSM-library-for-Unity/manual/
+## What are manual transitions used for?
+You may want transitions that you only want to take manually/immediately but will never want to repeatedly check/poll a condition for. Ex: Take a transition stateA->stateB when a UI button has been pressed. 
+You can just define a manual transition, keep a reference to it and call when the button is pressed.
+```csharp
+IState stateA;
+IState stateB;
+StateMachine<IState> fsm;
+Button button;
+void Start()
+{
+    var manualTransitionToStateB = fsm.addManualTransitionTo(stateB);
+    button.onClick.AddListener(() => {
+        fsm.forceTakeTransition(manualTransitionToStateB);
+    });
+}
+```
