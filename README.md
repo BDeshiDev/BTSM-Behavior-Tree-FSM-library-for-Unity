@@ -85,6 +85,8 @@ fsm.addTransition(attackState, chaseState,
     () => attackState.LastStatus == BTStatus.Success);
 runner.Initialize(fsm);
 ```
+See samples/demo1 for a demo scene utilizing the FSM/BT combo shown above.
+
 ### FAQ
 ## What types can states be?
 Any type inheriting from `IState`.
@@ -123,12 +125,31 @@ void OnDisable(){
 }
 
 ```
+However, FSMEditorWindow requires a FSMRunner. So you won't get an editorUI for BTs that are not part of a statemachine.
 
 ## Can I make a state that doesn't use BT?
-Yes. The statemechine can use anything implementing 'IState'. It has no dependency on BTs. You have the option of using BTs by using a BTWrapperState. 
+Yes. The statemechine can use anything implementing 'IState'. It has no dependency on BTs. You have the option of using BTs by using a BTWrapperState. You also have the option to just implment IState and write whatever state logic you want. The `TargetChaseState` class in the samples is an example of a State class that doesn't use BTs at all.
 
+## I don't want FSMRunner to tick() every update(). How can I control it manually?
+Turn off automatic ticking:
+```csharp
+runner.shouldTickAutomatically = false;
+```
+Call runner.manualTick() as needed:
+```csharp
+runner.manualTick();
+```
+## Can I write my own decorators?
+Yes. inherit `BTSingleDecorator` or `BTMultiDecorator` or just `BTDecorator`. You can write a decorator that doesn't do that. But the FSMEditorWindow requires inheriting from those classes for child BT nodes to show up in the UI.
 
-But you can just implment IState and write whatever state logic you want. The `TargetChaseState` class in the samples is an example of a State class that doesn't use BT's at all
+## Can I keep references to states/BT Nodes?
+Yes. Assuming you are using plain C# classes/monobehaviors for them. `[Serializable]` C# classes are not recommended as they can break when a different monobehavior keeps a reference to them.
+
+## What about blackboards?
+BTSM neither provides nor is reliant on blackboards for state managent. You can use any data storage you want and write custom nodes/states accordingly.
+
+## Can I tell the FSM to change states without using transitions?
+Yes. `statemachine.enter(someState)` can change states. However, if you use transitions, the FSMEditorWindow can track and show which transitions were taken. That is the main benefit of using transitions. 
 
 ## What are manual transitions used for?
 You may want transitions that you only want to take manually/immediately but will never want to repeatedly check/poll a condition for. Ex: Take a transition stateA->stateB when a UI button has been pressed. 
