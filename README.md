@@ -9,6 +9,7 @@ BTSM is a Behavior Tree + Finite State Machine library for Unity.
 - Sequence, Parallel etc. common decorators are provided.
 - Runtime debugging via custom editor window.
 - Since it's fully code based, you can use your IDE to debug, refactor and reuse BT/States easily
+
 <img src="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/assets/17526821/f0e6b3d5-9bee-4b6d-9678-f391be67cb23" height="360" />
 <img src="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/assets/17526821/30f21259-0fa5-43bf-9563-00bf68bf0f00" height="360" />
 
