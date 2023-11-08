@@ -125,6 +125,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.Editor.FSMEditorWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.Editor.FSMEditorWindow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.Editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BDeshi.BTSM.EnterExitDecorator.yml",
       "output": {
         ".html": {
@@ -499,26 +519,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Bdeshi.BTSM.Samples.Demo1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.FSMEditorWindow.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.FSMEditorWindow.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Global.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.html"
         }
       },
       "version": ""

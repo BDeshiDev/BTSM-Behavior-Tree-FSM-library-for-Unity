@@ -54,6 +54,16 @@
     "title": "Class CooldownNode | |",
     "keywords": "Class CooldownNode Namespace BDeshi.BTSM prevent running child for x secs after it has run || it started running public class CooldownNode : BTSingleDecorator, IBtNode Inheritance object BtNodeBase BTDecorator BTSingleDecorator CooldownNode Implements IBtNode Inherited Members BTSingleDecorator.child BTSingleDecorator.GetActiveChildren BtNodeBase.Tick() BtNodeBase.LastStatus BtNodeBase.Prefix BtNodeBase.lastStatus BtNodeBase.Typename object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors CooldownNode(BtNodeBase, float, BTStatus, CoolDownResetType, bool) public CooldownNode(BtNodeBase child, float waitDuration, BTStatus cooldownFailStatus = BTStatus.Failure, CooldownNode.CoolDownResetType resetType = CoolDownResetType.ResetOnExit, bool shouldWaitAtStart = false) Parameters child BtNodeBase waitDuration float cooldownFailStatus BTStatus resetType CooldownNode.CoolDownResetType shouldWaitAtStart bool Fields cooldownFailStatus public BTStatus cooldownFailStatus Field Value BTStatus waitDuration public float waitDuration Field Value float waitStart public float waitStart Field Value float Properties EditorName public override string EditorName { get; } Property Value string Methods Enter() public override void Enter() Exit() public override void Exit() InternalTick() Called everytime the node is ticked Override this for subclass nodes public override BTStatus InternalTick() Returns BTStatus The result from ticking startRunning() public void startRunning()"
   },
+  "api/BDeshi.BTSM.Editor.FSMEditorWindow.html": {
+    "href": "api/BDeshi.BTSM.Editor.FSMEditorWindow.html",
+    "title": "Class FSMEditorWindow | |",
+    "keywords": "Class FSMEditorWindow Namespace BDeshi.BTSM.Editor public class FSMEditorWindow : EditorWindow Inheritance object FSMEditorWindow Fields runner public FSMRunner runner Field Value FSMRunner selectedState public IState selectedState Field Value IState"
+  },
+  "api/BDeshi.BTSM.Editor.html": {
+    "href": "api/BDeshi.BTSM.Editor.html",
+    "title": "Namespace BDeshi.BTSM.Editor | |",
+    "keywords": "Namespace BDeshi.BTSM.Editor Classes FSMEditorWindow"
+  },
   "api/BDeshi.BTSM.EnterExitDecorator.html": {
     "href": "api/BDeshi.BTSM.EnterExitDecorator.html",
     "title": "Class EnterExitDecorator | |",
@@ -244,16 +254,6 @@
     "title": "Namespace Bdeshi.BTSM.Samples.Demo1 | |",
     "keywords": "Namespace Bdeshi.BTSM.Samples.Demo1 Classes BasicMoveComponent ChargeTowardsTargetNode PatrolBTNode RotateToFaceTargetNode Rotate to face target for x amount of time TargetChaseState TestEnemy TestPlayer"
   },
-  "api/Global.FSMEditorWindow.html": {
-    "href": "api/Global.FSMEditorWindow.html",
-    "title": "Class FSMEditorWindow | |",
-    "keywords": "Class FSMEditorWindow Namespace Global public class FSMEditorWindow : EditorWindow Inheritance object FSMEditorWindow Fields runner public FSMRunner runner Field Value FSMRunner selectedState public IState selectedState Field Value IState"
-  },
-  "api/Global.html": {
-    "href": "api/Global.html",
-    "title": "Namespace | |",
-    "keywords": "Namespace Classes FSMEditorWindow"
-  },
   "api/index.html": {
     "href": "api/index.html",
     "title": "| |",
@@ -261,8 +261,8 @@
   },
   "changelog/CHANGELOG.html": {
     "href": "changelog/CHANGELOG.html",
-    "title": "1.0.0 | |",
-    "keywords": "1.0.0 Initial version"
+    "title": "1.1.2 | |",
+    "keywords": "1.1.2 Custom Editors moved to a separate asmdef and namespace 1.1.1 Sample Scene and scripts Added. 1.1.0 Overall fixes. Hard typed generic statemachines are allowed now. 1.0.0 Initial version"
   },
   "index.html": {
     "href": "index.html",

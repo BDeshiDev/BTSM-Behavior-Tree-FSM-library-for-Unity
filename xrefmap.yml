@@ -825,6 +825,30 @@ references:
   commentId: F:BDeshi.BTSM.CooldownNode.waitStart
   fullName: BDeshi.BTSM.CooldownNode.waitStart
   nameWithType: CooldownNode.waitStart
+- uid: BDeshi.BTSM.Editor
+  name: BDeshi.BTSM.Editor
+  href: api/BDeshi.BTSM.Editor.html
+  commentId: N:BDeshi.BTSM.Editor
+  fullName: BDeshi.BTSM.Editor
+  nameWithType: BDeshi.BTSM.Editor
+- uid: BDeshi.BTSM.Editor.FSMEditorWindow
+  name: FSMEditorWindow
+  href: api/BDeshi.BTSM.Editor.FSMEditorWindow.html
+  commentId: T:BDeshi.BTSM.Editor.FSMEditorWindow
+  fullName: BDeshi.BTSM.Editor.FSMEditorWindow
+  nameWithType: FSMEditorWindow
+- uid: BDeshi.BTSM.Editor.FSMEditorWindow.runner
+  name: runner
+  href: api/BDeshi.BTSM.Editor.FSMEditorWindow.html#BDeshi_BTSM_Editor_FSMEditorWindow_runner
+  commentId: F:BDeshi.BTSM.Editor.FSMEditorWindow.runner
+  fullName: BDeshi.BTSM.Editor.FSMEditorWindow.runner
+  nameWithType: FSMEditorWindow.runner
+- uid: BDeshi.BTSM.Editor.FSMEditorWindow.selectedState
+  name: selectedState
+  href: api/BDeshi.BTSM.Editor.FSMEditorWindow.html#BDeshi_BTSM_Editor_FSMEditorWindow_selectedState
+  commentId: F:BDeshi.BTSM.Editor.FSMEditorWindow.selectedState
+  fullName: BDeshi.BTSM.Editor.FSMEditorWindow.selectedState
+  nameWithType: FSMEditorWindow.selectedState
 - uid: BDeshi.BTSM.EnterExitDecorator
   name: EnterExitDecorator
   href: api/BDeshi.BTSM.EnterExitDecorator.html
@@ -4011,24 +4035,3 @@ references:
   commentId: F:Bdeshi.BTSM.Samples.Demo1.TestPlayer.moveAction
   fullName: Bdeshi.BTSM.Samples.Demo1.TestPlayer.moveAction
   nameWithType: TestPlayer.moveAction
-- uid: Global
-  name: ''
-  href: api/Global.html
-- uid: Global.FSMEditorWindow
-  name: FSMEditorWindow
-  href: api/Global.FSMEditorWindow.html
-  commentId: T:Global.FSMEditorWindow
-  fullName: FSMEditorWindow
-  nameWithType: FSMEditorWindow
-- uid: Global.FSMEditorWindow.runner
-  name: runner
-  href: api/Global.FSMEditorWindow.html#Global_FSMEditorWindow_runner
-  commentId: F:Global.FSMEditorWindow.runner
-  fullName: FSMEditorWindow.runner
-  nameWithType: FSMEditorWindow.runner
-- uid: Global.FSMEditorWindow.selectedState
-  name: selectedState
-  href: api/Global.FSMEditorWindow.html#Global_FSMEditorWindow_selectedState
-  commentId: F:Global.FSMEditorWindow.selectedState
-  fullName: FSMEditorWindow.selectedState
-  nameWithType: FSMEditorWindow.selectedState
