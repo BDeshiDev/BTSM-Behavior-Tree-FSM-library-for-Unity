@@ -167,7 +167,7 @@ namespace BDeshi.BTSM
         /// <summary>
         /// NOT VIRTUAL OR ABSTRACT. DO NOT OVERRIDE.
         /// Override internal tick instead.
-        /// This approach is for making tracking status is easier
+        /// This just calls InternalTick() and saves the result onto lastStatus
         /// </summary>
         /// <returns></returns>
         public BTStatus Tick()
@@ -177,11 +177,14 @@ namespace BDeshi.BTSM
         }
 
         /// <summary>
-        /// To allow caching status onto lastStatus
+        /// Called everytime the node is ticked
+        /// Override this for subclass nodes
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The result from ticking </returns>
         public abstract BTStatus InternalTick();
-
+        /// <summary>
+        /// Result from last tick
+        /// </summary>
         public BTStatus LastStatus => lastStatus;
         public abstract void Exit();
         public string Prefix { get; set; }

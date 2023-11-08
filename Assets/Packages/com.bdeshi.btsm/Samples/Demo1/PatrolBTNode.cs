@@ -11,16 +11,19 @@ namespace Bdeshi.BTSM.Samples.Demo1
         BasicMoveComponent mover;
         int pathIndex = 0;
         public float stopDist = 1.25f;
+        public float moveSpeed;
 
-        public PatrolBTNode(List<Transform> path, BasicMoveComponent mover)
+        public PatrolBTNode(List<Transform> path, BasicMoveComponent mover, float moveSpeed = 4)
         {
             this.path = path;
             this.mover = mover;
+            this.moveSpeed = moveSpeed; 
         }
 
         public override void Enter()
         {
             pathIndex = 0;
+            mover.speed = moveSpeed;
         }
 
         public override void Exit()

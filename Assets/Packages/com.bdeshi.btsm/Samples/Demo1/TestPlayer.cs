@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-namespace Bdeshi.BTSM.Samples.Demo
+namespace Bdeshi.BTSM.Samples.Demo1
 {
     [RequireComponent(typeof(BasicMoveComponent))]
     public class TestPlayer : MonoBehaviour
