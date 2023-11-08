@@ -1,11 +1,12 @@
 {
-    "name": "com.bdeshi.btsm",
+    "name": "com.bdeshi.btsm.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:46158582eccf34a44b1babd93ec99d06",
-        "GUID:75469ad4d38634e559750d17036d5f7c"
+        "GUID:461d4688dd0b3fc4088b5d15ee1c71bb"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
