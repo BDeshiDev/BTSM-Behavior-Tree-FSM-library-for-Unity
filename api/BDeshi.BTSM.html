@@ -233,19 +233,18 @@ Earlier in list = higher priority</p>
 Interfaces
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="BDeshi.BTSM.ContainerState.html">ContainerState</a></dt>
-      <dd><p>State interface for states that have children
-You can manage child states without this
-but implementing this is needed for them to be detected by the editor view</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.IBTWrapperState.html">IBTWrapperState</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a></dt>
       <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BDeshi.BTSM.IMonoBehaviorState.html">IMonoBehaviorState</a></dt>
+      <dd><p>Implement this interface for monobehavior based states, if you want to avoid inheriting MonoBehaviourStateBase
+But still have editor state click -&gt; object select and other functionality</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.IRunnableStateMachine.html">IRunnableStateMachine</a></dt>
@@ -256,19 +255,8 @@ but implementing this is needed for them to be detected by the editor view</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="BDeshi.BTSM.MonoBehaviorState.html">MonoBehaviorState</a></dt>
-      <dd><p>Implement this interface for monobehavior based states, if you want to avoid inheriting MonoBehaviourStateBase
-But still have editor state click -&gt; object select and other functionality</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.MultiState.html">MultiState</a></dt>
       <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="BDeshi.BTSM.State.html">State</a></dt>
-      <dd><p>Interface for a state</p>
-</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="BDeshi.BTSM.TransitionBase.html">TransitionBase</a></dt>

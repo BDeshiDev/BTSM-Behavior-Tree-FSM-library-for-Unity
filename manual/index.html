@@ -95,26 +95,147 @@
 <li>Can transition between states depending on func/lambda based conditions.</li>
 <li>Sequence, Parallel etc. common decorators are provided.</li>
 <li>Runtime debugging via custom editor window.</li>
-<li>Since it's fully code based, you can use your IDE to debug, refactor and reuse BT/States easily</li>
-</ul>
+<li>Since it's fully code based, you can use your IDE to debug, refactor and reuse BT/States easily
 <img src="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/assets/17526821/f0e6b3d5-9bee-4b6d-9678-f391be67cb23" height="360">
-<img src="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/assets/17526821/30f21259-0fa5-43bf-9563-00bf68bf0f00" height="360">
+<img src="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/assets/17526821/30f21259-0fa5-43bf-9563-00bf68bf0f00" height="360"></li>
+</ul>
 <h1 id="manual">Manual</h1>
 <p><a href="https://bdeshidev.github.io/BTSM-Behavior-Tree-FSM-library-for-Unity/manual/">Manual available here</a></p>
 <h1 id="usage">Usage</h1>
-<p>To use:</p>
+<h2 id="basic-example">Basic example</h2>
+<h3 id="creating-the-states-fsm">Creating the states, FSM</h3>
+<p>You will need to have a FSMRunner component on the Gameobject. Then:</p>
+<pre><code class="lang-csharp">// ensure that you have a reference to a FSMRunner component
+runner = GetComponent&lt;FSMRunner&gt;();
+// make a state, BT not necessary
+// this is an example state that just patrols repeatedly.
+var patrolState = new BTWrapperState(
+        new Repeat(
+                new PatrolBTNode(patrolPath, moveComponent)
+            )
+    );
+// create a new statemachine, set initial state
+// Generic parameter can be any type implementing IState
+var fsm = new StateMachine&lt;IState&gt;(patrolState);
+// initialize the runner
+runner.Initialize(fsm);
+</code></pre>
+<p>In the Editor:</p>
 <ol>
-<li>Add a FSMRunner component.</li>
-<li>Create a FSM, add states and transitions(can be done in start())</li>
-<li>Use a BTWrapperState if you want behavior trees. The BT will be run through this state.</li>
-<li>Pass fsm object to FSMRunner via initialize()</li>
 <li>Open the FSMEditorwindow.</li>
 <li>Select the Gameobject with the FSMRunner.</li>
-<li>The Editor window will work during playmode.</li>
+<li>The FSMEditorwindow window will work during playmode.</li>
 </ol>
-<p>I mostly made this for myself but I will add a demo scene if there is interest. The project I'm using this in would be hard to use as an independent demo project.</p>
-<h1 id="manual-1">Manual</h1>
-<p><a href="https://bdeshidev.github.io/BTSM-Behavior-Tree-FSM-library-for-Unity/manual/">https://bdeshidev.github.io/BTSM-Behavior-Tree-FSM-library-for-Unity/manual/</a></p>
+<h3 id="adding-transitions">Adding transitions</h3>
+<p>Transitions are added on the Statemachine object by evaluating a condition:</p>
+<pre><code class="lang-csharp">Istate patrolState;
+Istate chaseState;
+//...
+fsm.addTransition(patrolState, chaseState,
+    () =&gt; (player.position - transform.position).magnitude &lt;= aggroStartDistance);
+</code></pre>
+<p>Here, if distance to the player is less then aggroStartDistance, the fsm will go from patrolState to chaseState. This transition will only be evaluated when the current state is patrolState.
+You can add any amount of transitions.</p>
+<h2 id="a-full-example">A full example:</h2>
+<pre><code class="lang-csharp">runner = GetComponent&lt;FSMRunner&gt;();
+//make a state, BT not necessary
+var patrolState = new BTWrapperState(
+        new Repeat(
+                new PatrolBTNode(patrolPath, moveComponent)
+            )
+    );
+var chaseState = new TargetChaseState(moveComponent, player);
+var attackState = new BTWrapperState(
+        new SequenceNode()
+            .appendChild(new RotateToFaceTargetNode(player, moveComponent, 1.2f))
+            .appendChild(new ChargeTowardsTargetNode(player, moveComponent, 1.69f))
+            .appendChild(new WaitNode(1.2f)
+        )
+);
+//create a new statemachine, set initial state
+var fsm = new StateMachine&lt;IState&gt;(patrolState);
+
+// patrolstate =&gt; chasestate if player is close
+fsm.addTransition(patrolState, chaseState,
+    () =&gt; (player.position - transform.position).magnitude &lt;= aggroStartDistance);
+// patrolstate =&gt; chasestate if player is far
+fsm.addTransition(chaseState, patrolState,
+    () =&gt; (player.position - transform.position).magnitude &gt;= aggroEndDistance);
+// chasestate =&gt; attackState if charge cooldown is complete
+fsm.addTransition(chaseState, attackState,
+    () =&gt; attackCoolDownTimer.isComplete,
+    () =&gt; attackCoolDownTimer.reset());// when this transition is taken, reset the cooldown
+// attackState.LastStatus == BTStatus.Success when the whole BT is executed
+fsm.addTransition(attackState, chaseState,
+    () =&gt; attackState.LastStatus == BTStatus.Success);
+runner.Initialize(fsm);
+</code></pre>
+<p>See samples/demo1 for a demo scene utilizing the FSM/BT combo shown above.</p>
+<h3 id="faq">FAQ</h3>
+<h2 id="what-types-can-states-be">What types can states be?</h2>
+<p>Any type inheriting from <code>IState</code>.</p>
+<p>It can be a plain C# class or a monobehavior. <code>Monobehavior</code> states should implement <code>IMonoBehaviorState</code> instead of <code>IState</code>. Doing so will allow you to go to the gameobject when you click on the State in the FSMEditor window.</p>
+<p>Serializable c# classes will also work but it's not recommended due to reference issues.</p>
+<h2 id="what-types-can-bt-nodes-be">What types can BT nodes be?</h2>
+<p>Any type inheriting from <code>IBtNode</code>.</p>
+<p>It can be a plain C# class or a monobehavior. <code>Monobehavior</code> states should implement <code>BtNodeMonoBase</code> instead of <code>IBtNode</code>.</p>
+<p>Serializable c# classes will also work but it's not recommended due to reference issues.</p>
+<h2 id="do-i-have-to-use-a-statemachine-to-use-bts">Do I have to use a statemachine to use BTs?</h2>
+<p>No. You can create a BT independently and call <code>Enter()</code>, <code>Exit()</code>, <code>Tick()</code> etc. manually. Ex:</p>
+<pre><code class="lang-csharp">IBTNode root;
+void Awake(){
+    root = new Repeat(
+        new PatrolBTNode(patrolPath, moveComponent)
+    );
+}
+
+void OnEnable(){
+    root.Enter();
+}
+
+void Update(){
+    root.Tick();
+}
+
+void OnDisable(){
+    root.Exit();
+}
+
+</code></pre>
+<p>However, FSMEditorWindow requires a FSMRunner. So you won't get an editorUI for BTs that are not part of a statemachine.</p>
+<h2 id="can-i-make-a-state-that-doesnt-use-bt">Can I make a state that doesn't use BT?</h2>
+<p>Yes. The statemechine can use anything implementing 'IState'. It has no dependency on BTs. You have the option of using BTs by using a BTWrapperState. You also have the option to just implment IState and write whatever state logic you want. The <code>TargetChaseState</code> class in the samples is an example of a State class that doesn't use BTs at all.</p>
+<h2 id="i-dont-want-fsmrunner-to-tick-every-update-how-can-i-control-it-manually">I don't want FSMRunner to tick() every update(). How can I control it manually?</h2>
+<p>Turn off automatic ticking:</p>
+<pre><code class="lang-csharp">runner.shouldTickAutomatically = false;
+</code></pre>
+<p>Call runner.manualTick() as needed:</p>
+<pre><code class="lang-csharp">runner.manualTick();
+</code></pre>
+<h2 id="can-i-write-my-own-decorators">Can I write my own decorators?</h2>
+<p>Yes. inherit <code>BTSingleDecorator</code> or <code>BTMultiDecorator</code> or just <code>BTDecorator</code>. You can write a decorator that doesn't do that. But the FSMEditorWindow requires inheriting from those classes for child BT nodes to show up in the UI.</p>
+<h2 id="can-i-keep-references-to-statesbt-nodes">Can I keep references to states/BT Nodes?</h2>
+<p>Yes. Assuming you are using plain C# classes/monobehaviors for them. <code>[Serializable]</code> C# classes are not recommended as they can break when a different monobehavior keeps a reference to them.</p>
+<h2 id="what-about-blackboards">What about blackboards?</h2>
+<p>BTSM neither provides nor is reliant on blackboards for state managent. You can use any data storage you want and write custom nodes/states accordingly.</p>
+<h2 id="can-i-tell-the-fsm-to-change-states-without-using-transitions">Can I tell the FSM to change states without using transitions?</h2>
+<p>Yes. <code>statemachine.enter(someState)</code> can change states. However, if you use transitions, the FSMEditorWindow can track and show which transitions were taken. That is the main benefit of using transitions.</p>
+<h2 id="what-are-manual-transitions-used-for">What are manual transitions used for?</h2>
+<p>You may want transitions that you only want to take manually/immediately but will never want to repeatedly check/poll a condition for. Ex: Take a transition stateA-&gt;stateB when a UI button has been pressed.
+You can just define a manual transition, keep a reference to it and call when the button is pressed.</p>
+<pre><code class="lang-csharp">IState stateA;
+IState stateB;
+StateMachine&lt;IState&gt; fsm;
+Button button;
+void Start()
+{
+    var manualTransitionToStateB = fsm.addManualTransitionTo(stateB);
+    button.onClick.AddListener(() =&gt; {
+        fsm.forceTakeTransition(manualTransitionToStateB);
+    });
+}
+</code></pre>
+<p><code>fsm.forceTakeTransition(transition)</code> works for non-manual transitions as well. Use manual transitions when there is no reason to poll a condition.</p>
 
 </article>
 

@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class TimerNode
+      <title>Class TargetChaseState
  |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class TimerNode
+      <meta name="title" content="Class TargetChaseState
  |  |  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_TimerNode.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.TimerNode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=Bdeshi_BTSM_Samples_Demo1_TargetChaseState.md&amp;value=---%0Auid%3A%20Bdeshi.BTSM.Samples.Demo1.TargetChaseState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,17 +85,17 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BDeshi.BTSM.TimerNode">
+        <article data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState">
 
 
 
-  <h1 id="BDeshi_BTSM_TimerNode" data-uid="BDeshi.BTSM.TimerNode" class="text-break">
-    Class TimerNode
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Bdeshi_BTSM_Samples_Demo1_TargetChaseState" data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState" class="text-break">
+    Class TargetChaseState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Samples/Demo1/Scripts/TargetChaseState.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BDeshi.html">BDeshi</a>.<a class="xref" href="BDeshi.BTSM.html">BTSM</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Bdeshi.html">Bdeshi</a>.<a class="xref" href="Bdeshi.BTSM.html">BTSM</a>.<a class="xref" href="Bdeshi.BTSM.Samples.html">Samples</a>.<a class="xref" href="Bdeshi.BTSM.Samples.Demo1.html">Demo1</a></dd></dl>
   
   </div>
 
@@ -103,7 +103,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TimerNode : BTSingleDecorator, IBtNode</code></pre>
+    <pre><code class="lang-csharp hljs">public class TargetChaseState : StateBase, IState</code></pre>
   </div>
 
 
@@ -113,17 +113,15 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.BtNodeBase.html">BtNodeBase</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.BTDecorator.html">BTDecorator</a></div>
-      <div><a class="xref" href="BDeshi.BTSM.BTSingleDecorator.html">BTSingleDecorator</a></div>
-      <div><span class="xref">TimerNode</span></div>
+      <div><a class="xref" href="BDeshi.BTSM.StateBase.html">StateBase</a></div>
+      <div><span class="xref">TargetChaseState</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a></div>
+      <div><a class="xref" href="BDeshi.BTSM.IState.html">IState</a></div>
     </dd>
   </dl>
 
@@ -132,25 +130,25 @@
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="BDeshi.BTSM.BTSingleDecorator.html#BDeshi_BTSM_BTSingleDecorator_child">BTSingleDecorator.child</a>
+      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_Prefix">StateBase.Prefix</a>
     </div>
     <div>
-      <a class="xref" href="BDeshi.BTSM.BTSingleDecorator.html#BDeshi_BTSM_BTSingleDecorator_GetActiveChildren">BTSingleDecorator.GetActiveChildren</a>
+      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_FullStateName">StateBase.FullStateName</a>
     </div>
     <div>
-      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_Tick">BtNodeBase.Tick()</a>
+      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_Parent">StateBase.Parent</a>
     </div>
     <div>
-      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_LastStatus">BtNodeBase.LastStatus</a>
+      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_Name">StateBase.Name</a>
     </div>
     <div>
-      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_Prefix">BtNodeBase.Prefix</a>
+      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_AsChildOf_BDeshi_BTSM_IState_">StateBase.AsChildOf(IState)</a>
     </div>
     <div>
-      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_lastStatus">BtNodeBase.lastStatus</a>
+      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_GetParentChainName">StateBase.GetParentChainName()</a>
     </div>
     <div>
-      <a class="xref" href="BDeshi.BTSM.BtNodeBase.html#BDeshi_BTSM_BtNodeBase_Typename">BtNodeBase.Typename</a>
+      <a class="xref" href="BDeshi.BTSM.StateBase.html#BDeshi_BTSM_StateBase_Clone">StateBase.Clone()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -184,25 +182,29 @@
 </h2>
 
 
-  <a id="BDeshi_BTSM_TimerNode__ctor_" data-uid="BDeshi.BTSM.TimerNode.#ctor*"></a>
+  <a id="Bdeshi_BTSM_Samples_Demo1_TargetChaseState__ctor_" data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState.#ctor*"></a>
 
-  <h3 id="BDeshi_BTSM_TimerNode__ctor_BDeshi_BTSM_IBtNode_System_Single_" data-uid="BDeshi.BTSM.TimerNode.#ctor(BDeshi.BTSM.IBtNode,System.Single)">
-  TimerNode(IBtNode, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Bdeshi_BTSM_Samples_Demo1_TargetChaseState__ctor_Bdeshi_BTSM_Samples_Demo1_BasicMoveComponent_Transform_System_Single_System_Single_" data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState.#ctor(Bdeshi.BTSM.Samples.Demo1.BasicMoveComponent,Transform,System.Single,System.Single)">
+  TargetChaseState(BasicMoveComponent, Transform, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Samples/Demo1/Scripts/TargetChaseState.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TimerNode(IBtNode child, float timeDuration)</code></pre>
+    <pre><code class="lang-csharp hljs">public TargetChaseState(BasicMoveComponent mover, Transform target, float stopDist = 2, float moveSpeed = 4)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>child</code> <a class="xref" href="BDeshi.BTSM.IBtNode.html">IBtNode</a></dt>
+    <dt><code>mover</code> <a class="xref" href="Bdeshi.BTSM.Samples.Demo1.BasicMoveComponent.html">BasicMoveComponent</a></dt>
     <dd></dd>
-    <dt><code>timeDuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dt><code>target</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>stopDist</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>moveSpeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
   </dl>
 
@@ -222,16 +224,16 @@
 
 
 
-  <h3 id="BDeshi_BTSM_TimerNode_duration" data-uid="BDeshi.BTSM.TimerNode.duration">
-  duration
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Bdeshi_BTSM_Samples_Demo1_TargetChaseState_moveSpeed" data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState.moveSpeed">
+  moveSpeed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Samples/Demo1/Scripts/TargetChaseState.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FiniteTimer duration</code></pre>
+    <pre><code class="lang-csharp hljs">public float moveSpeed</code></pre>
   </div>
 
 
@@ -239,7 +241,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">FiniteTimer</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
   </dl>
 
@@ -252,16 +254,16 @@
 
 
 
-  <h3 id="BDeshi_BTSM_TimerNode_timeoutStatus" data-uid="BDeshi.BTSM.TimerNode.timeoutStatus">
-  timeoutStatus
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Bdeshi_BTSM_Samples_Demo1_TargetChaseState_stopDist" data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState.stopDist">
+  stopDist
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Samples/Demo1/Scripts/TargetChaseState.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BTStatus timeoutStatus</code></pre>
+    <pre><code class="lang-csharp hljs">public float stopDist</code></pre>
   </div>
 
 
@@ -269,7 +271,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
   </dl>
 
@@ -281,33 +283,28 @@
 
 
 
-  <h2 class="section" id="properties">Properties
-</h2>
 
-
-  <a id="BDeshi_BTSM_TimerNode_EditorName_" data-uid="BDeshi.BTSM.TimerNode.EditorName*"></a>
-
-  <h3 id="BDeshi_BTSM_TimerNode_EditorName" data-uid="BDeshi.BTSM.TimerNode.EditorName">
-  EditorName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Bdeshi_BTSM_Samples_Demo1_TargetChaseState_target" data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState.target">
+  target
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Samples/Demo1/Scripts/TargetChaseState.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string EditorName { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Transform target</code></pre>
   </div>
 
 
 
 
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><span class="xref">Transform</span></dt>
     <dd></dd>
   </dl>
+
 
 
 
@@ -320,18 +317,18 @@
 </h2>
 
 
-  <a id="BDeshi_BTSM_TimerNode_Enter_" data-uid="BDeshi.BTSM.TimerNode.Enter*"></a>
+  <a id="Bdeshi_BTSM_Samples_Demo1_TargetChaseState_EnterState_" data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState.EnterState*"></a>
 
-  <h3 id="BDeshi_BTSM_TimerNode_Enter" data-uid="BDeshi.BTSM.TimerNode.Enter">
-  Enter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Bdeshi_BTSM_Samples_Demo1_TargetChaseState_EnterState" data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState.EnterState">
+  EnterState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Samples/Demo1/Scripts/TargetChaseState.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Enter()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void EnterState()</code></pre>
   </div>
 
 
@@ -346,18 +343,18 @@
 
 
 
-  <a id="BDeshi_BTSM_TimerNode_Exit_" data-uid="BDeshi.BTSM.TimerNode.Exit*"></a>
+  <a id="Bdeshi_BTSM_Samples_Demo1_TargetChaseState_ExitState_" data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState.ExitState*"></a>
 
-  <h3 id="BDeshi_BTSM_TimerNode_Exit" data-uid="BDeshi.BTSM.TimerNode.Exit">
-  Exit()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Bdeshi_BTSM_Samples_Demo1_TargetChaseState_ExitState" data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState.ExitState">
+  ExitState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Samples/Demo1/Scripts/TargetChaseState.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Exit()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void ExitState()</code></pre>
   </div>
 
 
@@ -372,29 +369,21 @@
 
 
 
-  <a id="BDeshi_BTSM_TimerNode_InternalTick_" data-uid="BDeshi.BTSM.TimerNode.InternalTick*"></a>
+  <a id="Bdeshi_BTSM_Samples_Demo1_TargetChaseState_Tick_" data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState.Tick*"></a>
 
-  <h3 id="BDeshi_BTSM_TimerNode_InternalTick" data-uid="BDeshi.BTSM.TimerNode.InternalTick">
-  InternalTick()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Bdeshi_BTSM_Samples_Demo1_TargetChaseState_Tick" data-uid="Bdeshi.BTSM.Samples.Demo1.TargetChaseState.Tick">
+  Tick()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Samples/Demo1/Scripts/TargetChaseState.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Called everytime the node is ticked
-Override this for subclass nodes</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override BTStatus InternalTick()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Tick()</code></pre>
   </div>
 
 
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="BDeshi.BTSM.BTStatus.html">BTStatus</a></dt>
-    <dd><p>The result from ticking</p>
-</dd>
-  </dl>
 
 
 

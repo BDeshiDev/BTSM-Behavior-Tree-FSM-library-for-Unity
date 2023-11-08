@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace 
+      <title>Interface IMonoBehaviorState
  |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace 
+      <meta name="title" content="Interface IMonoBehaviorState
  |  |  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      
+      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_IMonoBehaviorState.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.IMonoBehaviorState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,21 +85,100 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Global">
+        <article data-uid="BDeshi.BTSM.IMonoBehaviorState">
 
-  <h1 id="Global" data-uid="Global" class="text-break">Namespace 
-</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
 
-    <h3 id="classes">
-Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Global.FSMEditorWindow.html">FSMEditorWindow</a></dt>
-      <dd></dd>
-    </dl>
+
+  <h1 id="BDeshi_BTSM_IMonoBehaviorState" data-uid="BDeshi.BTSM.IMonoBehaviorState" class="text-break">
+    Interface IMonoBehaviorState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BDeshi.html">BDeshi</a>.<a class="xref" href="BDeshi.BTSM.html">BTSM</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Implement this interface for monobehavior based states, if you want to avoid inheriting MonoBehaviourStateBase
+But still have editor state click -&gt; object select and other functionality</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMonoBehaviorState : IState</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_EnterState">IState.EnterState()</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Tick">IState.Tick()</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_ExitState">IState.ExitState()</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Prefix">IState.Prefix</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_FullStateName">IState.FullStateName</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Name">IState.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="BDeshi.BTSM.IState.html#BDeshi_BTSM_IState_Parent">IState.Parent</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BDeshi_BTSM_IMonoBehaviorState_gameObject_" data-uid="BDeshi.BTSM.IMonoBehaviorState.gameObject*"></a>
+
+  <h3 id="BDeshi_BTSM_IMonoBehaviorState_gameObject" data-uid="BDeshi.BTSM.IMonoBehaviorState.gameObject">
+  gameObject
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/IState.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GameObject gameObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 </article>

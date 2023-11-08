@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Enum BTStatus
+      <title>Class BasicMoveComponent
  |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum BTStatus
+      <meta name="title" content="Class BasicMoveComponent
  |  |  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=BDeshi_BTSM_BTStatus.md&amp;value=---%0Auid%3A%20BDeshi.BTSM.BTStatus%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/new/main/apiSpec/new?filename=Bdeshi_BTSM_Samples_Demo1_BasicMoveComponent.md&amp;value=---%0Auid%3A%20Bdeshi.BTSM.Samples.Demo1.BasicMoveComponent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,18 +85,17 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BDeshi.BTSM.BTStatus">
+        <article data-uid="Bdeshi.BTSM.Samples.Demo1.BasicMoveComponent">
 
 
 
-
-  <h1 id="BDeshi_BTSM_BTStatus" data-uid="BDeshi.BTSM.BTStatus" class="text-break">
-    Enum BTStatus
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Runtime/BTNodeBase.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Bdeshi_BTSM_Samples_Demo1_BasicMoveComponent" data-uid="Bdeshi.BTSM.Samples.Demo1.BasicMoveComponent" class="text-break">
+    Class BasicMoveComponent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Samples/Demo1/Scripts/BasicMoveComponent.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BDeshi.html">BDeshi</a>.<a class="xref" href="BDeshi.BTSM.html">BTSM</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Bdeshi.html">Bdeshi</a>.<a class="xref" href="Bdeshi.BTSM.html">BTSM</a>.<a class="xref" href="Bdeshi.BTSM.Samples.html">Samples</a>.<a class="xref" href="Bdeshi.BTSM.Samples.Demo1.html">Demo1</a></dd></dl>
   
   </div>
 
@@ -104,34 +103,125 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum BTStatus</code></pre>
+    <pre><code class="lang-csharp hljs">public class BasicMoveComponent : MonoBehaviour</code></pre>
   </div>
 
 
 
 
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">BasicMoveComponent</span></div>
+    </dd>
+  </dl>
 
 
 
 
 
-  <h2 id="fields">Fields
+
+
+
+
+  <h2 class="section" id="fields">Fields
 </h2>
+
+
+
+  <h3 id="Bdeshi_BTSM_Samples_Demo1_BasicMoveComponent_MoveInputNextFrame" data-uid="Bdeshi.BTSM.Samples.Demo1.BasicMoveComponent.MoveInputNextFrame">
+  MoveInputNextFrame
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Samples/Demo1/Scripts/BasicMoveComponent.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 MoveInputNextFrame</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt id="BDeshi_BTSM_BTStatus_Failure"><code>Failure = 3</code></dt>
-    <dd></dd>
-    <dt id="BDeshi_BTSM_BTStatus_Ignore"><code>Ignore = 4</code></dt>
-    <dd><p>Neither success nor failure, non blocking running
-Ex Use case: Parallel node where you want to keep running child regardless of what others do</p>
-</dd>
-    <dt id="BDeshi_BTSM_BTStatus_NotRunYet"><code>NotRunYet = 0</code></dt>
-    <dd></dd>
-    <dt id="BDeshi_BTSM_BTStatus_Running"><code>Running = 1</code></dt>
-    <dd><p>Is actively running, will block sequence nodes</p>
-</dd>
-    <dt id="BDeshi_BTSM_BTStatus_Success"><code>Success = 2</code></dt>
+    <dt><span class="xref">Vector3</span></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Bdeshi_BTSM_Samples_Demo1_BasicMoveComponent_speed" data-uid="Bdeshi.BTSM.Samples.Demo1.BasicMoveComponent.speed">
+  speed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Samples/Demo1/Scripts/BasicMoveComponent.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float speed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Bdeshi_BTSM_Samples_Demo1_BasicMoveComponent_setLookDirection_" data-uid="Bdeshi.BTSM.Samples.Demo1.BasicMoveComponent.setLookDirection*"></a>
+
+  <h3 id="Bdeshi_BTSM_Samples_Demo1_BasicMoveComponent_setLookDirection_Vector3_" data-uid="Bdeshi.BTSM.Samples.Demo1.BasicMoveComponent.setLookDirection(Vector3)">
+  setLookDirection(Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BDeshiDev/BTSM-Behavior-Tree-FSM-library-for-Unity/blob/main/Assets/Packages/com.bdeshi.btsm/Samples/Demo1/Scripts/BasicMoveComponent.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void setLookDirection(Vector3 lookDir)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lookDir</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
 

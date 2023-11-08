@@ -105,16 +105,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BDeshi.BTSM.ContainerState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BDeshi.BTSM.ContainerState.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BDeshi.BTSM.CooldownNode.CoolDownResetType.yml",
       "output": {
         ".html": {
@@ -205,6 +195,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BDeshi.BTSM.IMonoBehaviorState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BDeshi.BTSM.IMonoBehaviorState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BDeshi.BTSM.IRunnableStateMachine.yml",
       "output": {
         ".html": {
@@ -249,16 +249,6 @@
       "output": {
         ".html": {
           "relative_path": "api/BDeshi.BTSM.ModularState.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/BDeshi.BTSM.MonoBehaviorState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BDeshi.BTSM.MonoBehaviorState.html"
         }
       },
       "version": ""
@@ -355,16 +345,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/BDeshi.BTSM.State.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/BDeshi.BTSM.State.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/BDeshi.BTSM.StateBase.yml",
       "output": {
         ".html": {
@@ -445,20 +425,90 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Global.FSMEditorWindow.yml",
+      "source_relative_path": "api/Bdeshi.BTSM.Samples.Demo1.BasicMoveComponent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Global.FSMEditorWindow.html"
+          "relative_path": "api/Bdeshi.BTSM.Samples.Demo1.BasicMoveComponent.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Global.FSMExample.yml",
+      "source_relative_path": "api/Bdeshi.BTSM.Samples.Demo1.ChargeTowardsTargetNode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Global.FSMExample.html"
+          "relative_path": "api/Bdeshi.BTSM.Samples.Demo1.ChargeTowardsTargetNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bdeshi.BTSM.Samples.Demo1.PatrolBTNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bdeshi.BTSM.Samples.Demo1.PatrolBTNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bdeshi.BTSM.Samples.Demo1.RotateToFaceTargetNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bdeshi.BTSM.Samples.Demo1.RotateToFaceTargetNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bdeshi.BTSM.Samples.Demo1.TargetChaseState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bdeshi.BTSM.Samples.Demo1.TargetChaseState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bdeshi.BTSM.Samples.Demo1.TestEnemy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bdeshi.BTSM.Samples.Demo1.TestEnemy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bdeshi.BTSM.Samples.Demo1.TestPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bdeshi.BTSM.Samples.Demo1.TestPlayer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bdeshi.BTSM.Samples.Demo1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bdeshi.BTSM.Samples.Demo1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.FSMEditorWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.FSMEditorWindow.html"
         }
       },
       "version": ""
