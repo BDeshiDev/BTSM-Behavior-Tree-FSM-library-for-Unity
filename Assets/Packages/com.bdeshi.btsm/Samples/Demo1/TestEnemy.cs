@@ -11,10 +11,10 @@ namespace Bdeshi.BTSM.Samples.Demo1
     [RequireComponent (typeof(FSMRunner))]
     public class TestEnemy : MonoBehaviour
     {
+        [SerializeField] Transform player;
+        [SerializeField] List<Transform> patrolPath;
         BasicMoveComponent moveComponent;
-        Transform player;
         FSMRunner runner;
-        List<Transform> patrolPath;
         public float aggroStartDistance = 4f;
         public float aggroEndDistance = 7f;
         public FiniteTimer attackCoolDownTimer = new FiniteTimer(6f);
@@ -36,7 +36,7 @@ namespace Bdeshi.BTSM.Samples.Demo1
             var attackState = new BTWrapperState(
                     new SequenceNode()
                         .appendChild(new RotateToFaceTargetNode(player, moveComponent, 1.2f))
-                        .appendChild(new ChargeTowardsTargetNode(player, moveComponent, 1.69f))
+                        .appendChild(new ChargeTowardsTargetNode(player, moveComponent, 1.2f))
                         .appendChild(new WaitNode(1.2f)
                     )
             );
@@ -63,7 +63,7 @@ namespace Bdeshi.BTSM.Samples.Demo1
 
         private void Update()
         {
-            
+            attackCoolDownTimer.safeUpdateTimer(Time.deltaTime);
         }
 
 

@@ -10,6 +10,7 @@ namespace Bdeshi.BTSM.Samples.Demo1
     {
         public InputActionReference moveAction; 
         BasicMoveComponent moveComponent;
+        Vector3 moveInput;
         // Use this for initialization
         void Awake()
         {
@@ -18,24 +19,33 @@ namespace Bdeshi.BTSM.Samples.Demo1
 
         private void OnEnable()
         {
+            moveAction.asset.Enable();
             moveAction.action.performed += handleMovePerformed;
             moveAction.action.canceled += handleMoveCancelled;
         }
 
         private void OnDisable()
         {
+            moveAction.asset.Disable();
+
             moveAction.action.performed -= handleMovePerformed;
             moveAction.action.canceled -= handleMoveCancelled;
         }
 
         private void handleMoveCancelled(InputAction.CallbackContext context)
         {
-            moveComponent.MoveInputNextFrame = Vector3.zero;
+            moveInput = Vector3.zero;
         }
 
         private void handleMovePerformed(InputAction.CallbackContext context)
         {
-            moveComponent.MoveInputNextFrame = context.ReadValue<Vector2>();
+            moveInput = context.ReadValue<Vector2>();
+            moveInput = new Vector3(moveInput.x, 0, moveInput.y).normalized;
+        }
+
+        private void Update()
+        {
+            moveComponent.MoveInputNextFrame = moveInput;
         }
 
     }

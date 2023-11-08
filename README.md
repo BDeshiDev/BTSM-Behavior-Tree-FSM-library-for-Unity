@@ -52,6 +52,7 @@ Here, if distance to the player is less then aggroStartDistance, the fsm will go
 You can add any amount of transitions.
 ## A full example:
 ```csharp
+runner = GetComponent<FSMRunner>();
 //make a state, BT not necessary
 var patrolState = new BTWrapperState(
         new Repeat(
@@ -82,6 +83,7 @@ fsm.addTransition(chaseState, attackState,
 // attackState.LastStatus == BTStatus.Success when the whole BT is executed
 fsm.addTransition(attackState, chaseState,
     () => attackState.LastStatus == BTStatus.Success);
+runner.Initialize(fsm);
 ```
 ### FAQ
 ## What types can states be?
@@ -96,6 +98,37 @@ Any type inheriting from `IBtNode`.
 It can be a plain C# class or a monobehavior. `Monobehavior` states should implement `BtNodeMonoBase` instead of `IBtNode`. 
 
 Serializable c# classes will also work but it's not recommended due to reference issues.
+
+## Do I have to use a statemachine to use BTs?
+No. You can create a BT independently and call `Enter()`, `Exit()`, `Tick()` etc. manually. Ex:
+
+```csharp
+IBTNode root;
+void Awake(){
+    root = new Repeat(
+        new PatrolBTNode(patrolPath, moveComponent)
+    );
+}
+
+void OnEnable(){
+    root.Enter();
+}
+
+void Update(){
+    root.Tick();
+}
+
+void OnDisable(){
+    root.Exit();
+}
+
+```
+
+## Can I make a state that doesn't use BT?
+Yes. The statemechine can use anything implementing 'IState'. It has no dependency on BTs. You have the option of using BTs by using a BTWrapperState. 
+
+
+But you can just implment IState and write whatever state logic you want. The `TargetChaseState` class in the samples is an example of a State class that doesn't use BT's at all
 
 ## What are manual transitions used for?
 You may want transitions that you only want to take manually/immediately but will never want to repeatedly check/poll a condition for. Ex: Take a transition stateA->stateB when a UI button has been pressed. 
