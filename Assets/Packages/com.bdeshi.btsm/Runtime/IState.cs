@@ -25,7 +25,7 @@ namespace BDeshi.BTSM
     /// Implement this interface for monobehavior based states, if you want to avoid inheriting MonoBehaviourStateBase
     /// But still have editor state click -> object select and other functionality
     /// </summary>
-    public interface MonoBehaviorState : IState
+    public interface IMonoBehaviorState : IState
     {
         GameObject gameObject { get; }
     }

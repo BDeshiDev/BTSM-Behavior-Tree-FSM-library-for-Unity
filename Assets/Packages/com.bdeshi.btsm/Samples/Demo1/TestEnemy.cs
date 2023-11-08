@@ -56,7 +56,6 @@ namespace Bdeshi.BTSM.Samples.Demo1
             // attackState.LastStatus == BTStatus.Success when the whole BT is executed
             fsm.addTransition(attackState, chaseState,
                 () => attackState.LastStatus == BTStatus.Success);
-
      
             //initialize the runner
             runner.Initialize(fsm);
