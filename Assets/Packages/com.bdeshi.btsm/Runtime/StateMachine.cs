@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using JetBrains.Annotations;
 using UnityEngine;
 
 namespace BDeshi.BTSM
@@ -63,7 +62,7 @@ namespace BDeshi.BTSM
         /// <summary>
         /// Transitions from a state to another
         /// </summary>
-        public Dictionary<IState, List<Transition<TState>>> transitions = new Dictionary<IState, List<Transition<TState>>>();
+        public Dictionary<TState, List<Transition<TState>>> transitions = new Dictionary<TState, List<Transition<TState>>>();
 
         public IEnumerable<TransitionBase> GlobalTransitions => globalTransitions;
 
@@ -80,10 +79,11 @@ namespace BDeshi.BTSM
         //hack
         private IState[] createAllStatesList()
         {
-            HashSet<IState> statesHash = new HashSet<IState>();
+            HashSet<TState> statesHash = new HashSet<TState>();
             foreach (var p in transitions)
             {
                 statesHash.Add(p.Key);
+
                 foreach (var transition in p.Value)
                 {
                     statesHash.Add(transition.SuccessTypedState);
@@ -120,9 +120,14 @@ namespace BDeshi.BTSM
 
         public void enter(bool callEnter = true)
         {
+            TransitionToInitialState(callEnter);
+        }
+
+        public void TransitionToInitialState(bool callEnter)
+        {
             transitionTo(startingState, callEnter);
         }
-        
+
         public void exitCurState()
         {
             IState cur = CurState;
@@ -251,7 +256,7 @@ namespace BDeshi.BTSM
         /// </summary>
         protected virtual void HandleTransitioned()
         {
-            if (transitions.TryGetValue(CurState, out var newTransitionsList))
+            if (transitions.TryGetValue(CurTypedState, out var newTransitionsList))
             {
                 activeTransitions = newTransitionsList;
             }
@@ -303,7 +308,7 @@ namespace BDeshi.BTSM
         /// </summary>
         /// <param name="child"> The child we start recursing from. DO NOT MAKE THIS == PARENT</param>
         /// <param name="limitParent">The parent we won't call enter on. </param>
-        void callEnterRecursive(IState child, [CanBeNull] IState limitParent)
+        void callEnterRecursive(IState child, IState limitParent)
         {
             if(child == null || child == limitParent)
                 return;
@@ -312,7 +317,7 @@ namespace BDeshi.BTSM
             child.EnterState();
         }
 
-        public Transition<TState> addTransition(IState from, Transition<TState> t)
+        public Transition<TState> addTransition(TState from, Transition<TState> t)
         {
             if(transitions.TryGetValue(from, out var l))
                 l.Add(t);
@@ -323,6 +328,7 @@ namespace BDeshi.BTSM
 
             return t;
         }
+
         
         public Transition<TState> addTransition(TState from, TState to, Func<bool> condition, Action onTaken = null )
         {
