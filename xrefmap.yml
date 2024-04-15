@@ -3047,6 +3047,24 @@ references:
   fullName.vb: BDeshi.BTSM.StateMachine(Of TState).Tick
   nameWithType: StateMachine<TState>.Tick
   nameWithType.vb: StateMachine(Of TState).Tick
+- uid: BDeshi.BTSM.StateMachine`1.TransitionToInitialState(System.Boolean)
+  name: TransitionToInitialState(bool)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_TransitionToInitialState_System_Boolean_
+  commentId: M:BDeshi.BTSM.StateMachine`1.TransitionToInitialState(System.Boolean)
+  name.vb: TransitionToInitialState(Boolean)
+  fullName: BDeshi.BTSM.StateMachine<TState>.TransitionToInitialState(bool)
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).TransitionToInitialState(Boolean)
+  nameWithType: StateMachine<TState>.TransitionToInitialState(bool)
+  nameWithType.vb: StateMachine(Of TState).TransitionToInitialState(Boolean)
+- uid: BDeshi.BTSM.StateMachine`1.TransitionToInitialState*
+  name: TransitionToInitialState
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_TransitionToInitialState_
+  commentId: Overload:BDeshi.BTSM.StateMachine`1.TransitionToInitialState
+  isSpec: "True"
+  fullName: BDeshi.BTSM.StateMachine<TState>.TransitionToInitialState
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).TransitionToInitialState
+  nameWithType: StateMachine<TState>.TransitionToInitialState
+  nameWithType.vb: StateMachine(Of TState).TransitionToInitialState
 - uid: BDeshi.BTSM.StateMachine`1.activeTransitions
   name: activeTransitions
   href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_activeTransitions
@@ -3108,15 +3126,15 @@ references:
   fullName.vb: BDeshi.BTSM.StateMachine(Of TState).addManualTransitionTo
   nameWithType: StateMachine<TState>.addManualTransitionTo
   nameWithType.vb: StateMachine(Of TState).addManualTransitionTo
-- uid: BDeshi.BTSM.StateMachine`1.addTransition(BDeshi.BTSM.IState,BDeshi.BTSM.Transition{`0})
-  name: addTransition(IState, Transition<TState>)
-  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_addTransition_BDeshi_BTSM_IState_BDeshi_BTSM_Transition__0__
-  commentId: M:BDeshi.BTSM.StateMachine`1.addTransition(BDeshi.BTSM.IState,BDeshi.BTSM.Transition{`0})
-  name.vb: addTransition(IState, Transition(Of TState))
-  fullName: BDeshi.BTSM.StateMachine<TState>.addTransition(BDeshi.BTSM.IState, BDeshi.BTSM.Transition<TState>)
-  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).addTransition(BDeshi.BTSM.IState, BDeshi.BTSM.Transition(Of TState))
-  nameWithType: StateMachine<TState>.addTransition(IState, Transition<TState>)
-  nameWithType.vb: StateMachine(Of TState).addTransition(IState, Transition(Of TState))
+- uid: BDeshi.BTSM.StateMachine`1.addTransition(`0,BDeshi.BTSM.Transition{`0})
+  name: addTransition(TState, Transition<TState>)
+  href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_addTransition__0_BDeshi_BTSM_Transition__0__
+  commentId: M:BDeshi.BTSM.StateMachine`1.addTransition(`0,BDeshi.BTSM.Transition{`0})
+  name.vb: addTransition(TState, Transition(Of TState))
+  fullName: BDeshi.BTSM.StateMachine<TState>.addTransition(TState, BDeshi.BTSM.Transition<TState>)
+  fullName.vb: BDeshi.BTSM.StateMachine(Of TState).addTransition(TState, BDeshi.BTSM.Transition(Of TState))
+  nameWithType: StateMachine<TState>.addTransition(TState, Transition<TState>)
+  nameWithType.vb: StateMachine(Of TState).addTransition(TState, Transition(Of TState))
 - uid: BDeshi.BTSM.StateMachine`1.addTransition(`0,`0,System.Func{System.Boolean},System.Action)
   name: addTransition(TState, TState, Func<bool>, Action)
   href: api/BDeshi.BTSM.StateMachine-1.html#BDeshi_BTSM_StateMachine_1_addTransition__0__0_System_Func_System_Boolean__System_Action_
