@@ -1,0 +1,18 @@
+{
+    "name": "com.bdeshi.btsm.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:461d4688dd0b3fc4088b5d15ee1c71bb"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
