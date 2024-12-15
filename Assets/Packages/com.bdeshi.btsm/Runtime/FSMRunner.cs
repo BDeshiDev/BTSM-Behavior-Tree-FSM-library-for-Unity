@@ -1,10 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace BDeshi.BTSM
 {
     public class FSMRunner: MonoBehaviour
     {
         public IRunnableStateMachine fsm;
+        public bool ShouldLog = false;
+        public bool shouldTickAutomatically = true;
         /// <summary>
         /// Calls fsm.enter
         /// </summary>
@@ -12,11 +15,16 @@ namespace BDeshi.BTSM
         {
             this.fsm = fsm;
             fsm.DebugContext = gameObject;
-            fsm.enter(callEnter);
+            SyncDebugOnInFSM();
+            fsm.Enter(callEnter);
         }
-        
 
-        public bool shouldTickAutomatically = true;
+        private void OnValidate()
+        {
+            if(fsm != null)
+                SyncDebugOnInFSM();
+        }
+
         /// <summary>
         /// Manually tick FSM.
         /// </summary>
@@ -25,8 +33,6 @@ namespace BDeshi.BTSM
             fsm.Tick();
         }
 
-
-
         /// <summary>
         /// Just ticks FSM.
         /// </summary>
@@ -34,6 +40,11 @@ namespace BDeshi.BTSM
         {
             if(shouldTickAutomatically)
                 fsm.Tick();
+        }
+
+        public void SyncDebugOnInFSM()
+        {
+            fsm.ShouldLog = ShouldLog;
         }
         
     }
