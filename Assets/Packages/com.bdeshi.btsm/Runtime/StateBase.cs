@@ -8,7 +8,7 @@ namespace BDeshi.BTSM
         public abstract void Tick();
         public abstract void ExitState();
         public string Prefix { get; set; }
-        public string FullStateName => Prefix +"_"+ GetParentChainName();
+        public virtual string FullStateName => Prefix +"_"+ GetParentChainName();
         public IState Parent { get; set; }
                
         public string Name => this.GetType().Name;

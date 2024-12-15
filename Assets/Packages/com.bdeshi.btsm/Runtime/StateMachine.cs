@@ -25,10 +25,11 @@ namespace BDeshi.BTSM
         /// </summary>
         IEnumerable<TransitionBase> ManualTransition { get; }
 
+        public bool ShouldLog { get; set; }
         IState CurState { get; }
         IState[] getAllStates();
         public GameObject DebugContext { get; set; }
-        void enter(bool callEnter = true);
+        void Enter(bool callEnter = true);
         void Tick();
         void cleanup();
 
@@ -74,7 +75,8 @@ namespace BDeshi.BTSM
         public IEnumerable<TransitionBase> ManualTransition => manualTransitions;
         public List<Transition<TState>> manualTransitions = new List<Transition<TState>>();
         private IState[] states = null;
-        public bool ShouldLog = false;
+        private Action<TState, TState> OnStateTransitioned;
+        public bool ShouldLog { get; set; } = false;
 
         //hack
         private IState[] createAllStatesList()
@@ -118,12 +120,12 @@ namespace BDeshi.BTSM
             this.startingState = startingState;
         }
 
-        public void enter(bool callEnter = true)
+        public void Enter(bool callEnter = true)
         {
             TransitionToInitialState(callEnter);
         }
 
-        public void TransitionToInitialState(bool callEnter)
+        public void TransitionToInitialState(bool callEnter = true)
         {
             transitionTo(startingState, callEnter);
         }
@@ -222,6 +224,8 @@ namespace BDeshi.BTSM
         {
             if (newState != null && (newState != CurTypedState || forceEnterIfSameState))
             {
+                var prevState = CurTypedState;
+
                 log((CurState == null?"null": CurState.FullStateName)  + " -> " + newState.FullStateName);
 
                 if(callEnter)
@@ -237,7 +241,7 @@ namespace BDeshi.BTSM
                     {
                         // recursiveTransitionToState(newState);
                         if(CurState != null)
-                            CurState.ExitState();
+                                CurState.ExitState();
                         CurTypedState = newState;
                         CurState.EnterState();
                     }
@@ -248,22 +252,16 @@ namespace BDeshi.BTSM
                 }
                 
 
-                HandleTransitioned();
+                HandleTransitioned(prevState, newState);
             }
         }
+
         /// <summary>
         /// Set transitions list to curState's.
         /// </summary>
-        protected virtual void HandleTransitioned()
+        protected virtual void HandleTransitioned(TState prevState, TState newState)
         {
-            if (transitions.TryGetValue(CurTypedState, out var newTransitionsList))
-            {
-                activeTransitions = newTransitionsList;
-            }
-            else
-            {
-                activeTransitions = emptyTransitions;
-            }
+            activeTransitions = transitions.GetValueOrDefault(CurTypedState, emptyTransitions);
             //need to clear active transition list of new cur state
 #if UNITY_EDITOR
             foreach (var activeTransition in activeTransitions)
@@ -271,6 +269,7 @@ namespace BDeshi.BTSM
                 activeTransition.TakenLastTime = false;
             }
 #endif
+            OnStateTransitioned?.Invoke(prevState, newState);
         }
 
 
