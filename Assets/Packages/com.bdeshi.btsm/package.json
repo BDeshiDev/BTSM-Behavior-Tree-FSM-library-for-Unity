@@ -1,6 +1,6 @@
 {
     "name": "com.bdeshi.btsm",
-    "version": "1.1.3",
+    "version": "1.1.4",
     "displayName": "BTSM : Behavior Tree + FSM library",
     "description": "BTSM is a Behavior Tree + Finite State Machine library that allows you to define BT/FSMs entirely through code.",
     "unity": "2022.3",
